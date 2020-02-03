@@ -9,15 +9,22 @@ public class Walking_script : MonoBehaviour
     public Animator down;
     public Animator right;
     public Animator left;
+    public float moveSpeed = 5f;
+    public Rigidbody2D rb;
+    Vector2 movment;
    
     public void Update()
     {
+        movment.x = Input.GetAxisRaw("Horizontal");
+        movment.y = Input.GetAxisRaw("Vertical");
+
         if (Input.GetKeyDown(KeyCode.W))
         {
             Debug.Log("up-on");
             up.SetFloat("up", 1);
             
         }
+        
         if (Input.GetKeyUp(KeyCode.W))
         {
             Debug.Log("up-off");
@@ -63,5 +70,10 @@ public class Walking_script : MonoBehaviour
 
 
 
+    }
+
+    private void FixedUpdate()
+    {
+        rb.MovePosition(rb.position + movment * moveSpeed * Time.fixedUnscaledDeltaTime);
     }
 }
