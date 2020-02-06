@@ -22,7 +22,10 @@ public class Walking_script : MonoBehaviour
         {
             Debug.Log("up-on");
             up.SetFloat("up", 1);
-            
+            down.SetFloat("down", 0);
+            left.SetFloat("left", 0);
+            right.SetFloat("right", 0);
+
         }
         
         if (Input.GetKeyUp(KeyCode.W))
@@ -35,6 +38,9 @@ public class Walking_script : MonoBehaviour
         {
             Debug.Log("down-on");
             down.SetFloat("down", 1);
+            up.SetFloat("up", 0);
+            left.SetFloat("left", 0);
+            right.SetFloat("right", 0);
 
         }
         if (Input.GetKeyUp(KeyCode.S))
@@ -46,7 +52,10 @@ public class Walking_script : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.D))
         {
             Debug.Log("right-on");
-            right.SetFloat("right", 1);
+            right.SetFloat("right", 1); 
+            up.SetFloat("up", 0);
+            down.SetFloat("down", 0);
+            left.SetFloat("left", 0);
 
         }
         if (Input.GetKeyUp(KeyCode.D))
@@ -59,6 +68,9 @@ public class Walking_script : MonoBehaviour
         {
             Debug.Log("left-on");
             left.SetFloat("left", 1);
+            up.SetFloat("up", 0);
+            down.SetFloat("down", 0);
+            right.SetFloat("right", 0);
 
         }
         if (Input.GetKeyUp(KeyCode.A))
