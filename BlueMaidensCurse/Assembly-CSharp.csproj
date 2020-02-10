@@ -62,10 +62,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\vffgddffds.cs" />
-    <Compile Include="Assets\Scripts\Walking_script.cs" />
+    <Compile Include="Assets\Scripts\Entities\EnemyController.cs" />
+    <Compile Include="Assets\Scripts\Entities\MovementManager.cs" />
+    <Compile Include="Assets\Scripts\Entities\Walking_script.cs" />
+    <Compile Include="Assets\Scripts\Game Management\Game.cs" />
+    <Compile Include="Assets\Scripts\Game Management\SpriteLibrary.cs" />
+    <Compile Include="Assets\Scripts\Objects\Environment_Tree.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/tgg/Corruption/BlueMaidensCurse/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.PixelPerfect.Editor">
+      <HintPath>D:/tgg/Corruption/BlueMaidensCurse/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>D:/tgg/Corruption/BlueMaidensCurse/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
@@ -93,6 +100,9 @@
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
       <HintPath>D:/tgg/Corruption/BlueMaidensCurse/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.PixelPerfect">
+      <HintPath>D:/tgg/Corruption/BlueMaidensCurse/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>D:/tgg/Corruption/BlueMaidensCurse/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
