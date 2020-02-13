@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : EntityController
 {
-    MovementManager movement;
+    [SerializeField] Weapon equippedWeapon;
 
     public void Awake()
     {
@@ -24,6 +24,14 @@ public class PlayerController : MonoBehaviour
                 break;
             default:
                 break;
+        }
+    }
+    public void Attack()
+    {
+        if(movement.CanAttack())
+        {
+            equippedWeapon.OnAttack(movement.GetFacingDirection(), transform.position, "Player");
+            StartCoroutine(movement.WaitUntilCanAttack(equippedWeapon.GetReloadTime()));
         }
     }
 }

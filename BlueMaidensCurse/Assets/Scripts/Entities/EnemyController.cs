@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyController : MonoBehaviour
+public class EnemyController : EntityController
 {
-    MovementManager movement;
     Vector2 targetPosition;
     private void Awake()
     {
