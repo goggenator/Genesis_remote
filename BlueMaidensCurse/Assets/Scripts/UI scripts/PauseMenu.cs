@@ -4,22 +4,19 @@ using UnityEngine;
 
 public class PauseMenu : MonoBehaviour
 {
-    public static bool Paused = false;
+    private bool Paused = false;
 
     public GameObject pauseMenuUI;
 
-    // Update is called once per frame
-    void Update()
+    public void TogglePause()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Paused)
         {
-            if (Paused)
-            {
-                Resume();
-            } else
-            {
-                Pause();
-            }
+            Resume();
+        }
+        else
+        {
+            Pause();
         }
     }
 

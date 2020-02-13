@@ -6,19 +6,26 @@ public class Game : MonoBehaviour
 {
     public static Game I;
 
-    [SerializeField] Vector2 playerPosition; //This saves where the player is at all times, so anything can get the position
+    [SerializeField] PauseMenu pauseMenu;
+
+    [SerializeField] GameObject Player;
 
     private void Awake()
     {
         I = this;
     }
 
+    public void TogglePause()
+    {
+        pauseMenu.TogglePause();
+    }
+    public void OnMovementKeyPress(KeyCode key)
+    {
+        Player.GetComponent<PlayerController>().Move(key);
+    }
+
     public Vector2 GetPlayerPosition()
     {
-        return playerPosition;
-    }
-    public void SetPlayerPosition(Vector2 position)
-    {
-        playerPosition = position;
+        return Player.transform.position;
     }
 }
