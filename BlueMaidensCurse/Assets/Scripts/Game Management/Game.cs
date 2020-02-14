@@ -23,7 +23,10 @@ public class Game : MonoBehaviour
     {
         Player.GetComponent<PlayerController>().Move(key);
     }
-
+    public void OnActionKeyPress()
+    {
+        Player.GetComponent<PlayerController>().Attack();
+    }
     public Vector2 GetPlayerPosition()
     {
         return Player.transform.position;
