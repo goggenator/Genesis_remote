@@ -38,12 +38,27 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Background
+  - name: sky
+    uniqueID: 1918814295
+    locked: 0
+  - name: Illustraion
     uniqueID: 3502739171
     locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Foreground
-    uniqueID: 1918814295
+  - name: menu back
+    uniqueID: 419200273
+    locked: 0
+  - name: button idle
+    uniqueID: 723651495
+    locked: 0
+  - name: button hover
+    uniqueID: 882994037
+    locked: 0
+  - name: button click
+    uniqueID: 544700101
+    locked: 0
+  - name: Icon
+    uniqueID: 1427751883
     locked: 0

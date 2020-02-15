@@ -1,0 +1,391 @@
+fileFormatVersion: 2
+guid: 44d8ba3d0e45cc0469c02fd7546b00dc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5928028619628401145
+    second: tomidril_menubuttons_v3_0
+  - first:
+      213: -2623385048003517563
+    second: tomidril_menubuttons_v3_1
+  - first:
+      213: 4710288749581261994
+    second: tomidril_menubuttons_v3_2
+  - first:
+      213: -3898859761389349262
+    second: tomidril_menubuttons_v3_3
+  - first:
+      213: -7007681431804297808
+    second: tomidril_menubuttons_v3_4
+  - first:
+      213: -5981036996968186894
+    second: tomidril_menubuttons_v3_5
+  - first:
+      213: 4779346610626959685
+    second: tomidril_menubuttons_v3_6
+  - first:
+      213: 8633080833378256289
+    second: tomidril_menubuttons_v3_7
+  - first:
+      213: -5892398244208606944
+    second: tomidril_menubuttons_v3_8
+  - first:
+      213: -1499582326258840146
+    second: tomidril_menubuttons_v3_9
+  - first:
+      213: 1631503949250881269
+    second: tomidril_menubuttons_v3_10
+  - first:
+      213: -6730433744989204426
+    second: tomidril_menubuttons_v3_11
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tomidril_menubuttons_v3_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 266.66666
+        width: 160
+        height: 53.333332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce62e9b25a22a64489d4743d679eaab0
+      internalID: 5928028619628401145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tomidril_menubuttons_v3_1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 266.66666
+        width: 160
+        height: 53.333332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b30c8865d75d7c4da7ad89221534a12
+      internalID: -2623385048003517563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tomidril_menubuttons_v3_2
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 266.66666
+        width: 160
+        height: 53.333332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 487912033caf0d44fbf86b99f164841f
+      internalID: 4710288749581261994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tomidril_menubuttons_v3_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 213.66667
+        width: 160
+        height: 53.333332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f076c2b0cfdb3a74b963f86688ff255e
+      internalID: -3898859761389349262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tomidril_menubuttons_v3_4
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 213.66667
+        width: 160
+        height: 53.333332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4559d405b9517bf47b9c27b1017fc3ac
+      internalID: -7007681431804297808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tomidril_menubuttons_v3_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 213.66667
+        width: 160
+        height: 53.333332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74a0b6ccc2f3938489de061a0b1ac2c6
+      internalID: -5981036996968186894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tomidril_menubuttons_v3_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160.66667
+        width: 160
+        height: 53.333332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dbe707ce0dafb0408a9b2f286d67804
+      internalID: 4779346610626959685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tomidril_menubuttons_v3_7
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160.66667
+        width: 160
+        height: 53.333332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfe53e25f0f2eb44785946a2e234d773
+      internalID: 8633080833378256289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tomidril_menubuttons_v3_8
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 160.66667
+        width: 160
+        height: 53.333332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5d101e1c9cb1cd41b5255dce1f452b1
+      internalID: -5892398244208606944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tomidril_menubuttons_v3_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 107.66667
+        width: 160
+        height: 53.333332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c74a7757eaa5f7499b5a4e50f1f495e
+      internalID: -1499582326258840146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tomidril_menubuttons_v3_10
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 107.66667
+        width: 160
+        height: 53.333332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96a39fe3dd3db79469c9de9164cd5afe
+      internalID: 1631503949250881269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tomidril_menubuttons_v3_11
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 107.66667
+        width: 160
+        height: 53.333332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0d35e07bbd1e594590121837d8d37e2
+      internalID: -6730433744989204426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
