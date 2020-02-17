@@ -16,6 +16,7 @@ using UnityEngine;
     }
 
     public Sprite[] treeSprites;
+    public Sprite[] wallSprites;
 
     public Sprite GetSprite(TreeType type) //This gives back the correct sprite to the tree
     {
@@ -37,6 +38,17 @@ using UnityEngine;
                 return treeSprites[6];
             default:
                 return treeSprites[0];
+        }
+    }
+    public Sprite GetWallSprite(bool isLeft)
+    {
+        if(isLeft)
+        {
+            return wallSprites[0];
+        }
+        else
+        {
+            return wallSprites[1];
         }
     }
 }

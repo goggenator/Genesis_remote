@@ -22,7 +22,6 @@ public class Environment_Tree: MonoBehaviour
         else
         {
             //Editor logic
-            Debug.Log("Changing sprite");
             myRenderer.sprite = SpriteLibrary.I.GetSprite(myType);
         }
     }

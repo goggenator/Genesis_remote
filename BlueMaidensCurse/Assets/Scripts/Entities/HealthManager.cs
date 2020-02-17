@@ -5,7 +5,7 @@ using UnityEngine;
 public class HealthManager : MonoBehaviour
 {
     [SerializeField] int MaxHP;
-    [SerializeField] int HP;
+    [SerializeField] float HP;
     public void Awake()
     {
         HP = MaxHP;
@@ -17,12 +17,27 @@ public class HealthManager : MonoBehaviour
             HP -= damage;
         }
     }
+    public void OnHit(float damage)
+    {
+        if (HP > 0)
+        {
+            HP -= damage;
+        }
+    }
     public void OnRestoreHP()
     {
         HP = MaxHP;
     }
-    public int GetHP()
+    public float GetHP()
     {
         return HP;
+    }
+    public int GetMaxHP()
+    {
+        return MaxHP;
+    }
+    public float GetHPPercentage()
+    {
+        return HP / MaxHP;
     }
 }

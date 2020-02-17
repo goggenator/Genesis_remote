@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[ExecuteAlways]
 public class LayerManager : MonoBehaviour
 {
     [SerializeField] int layer;
@@ -13,13 +14,16 @@ public class LayerManager : MonoBehaviour
     }
     public void Update()
     {
-        if(isEntity)
+        m_renderer.transform.position = transform.position;
+        int lowerLeftPosition = 2 * (int)((transform.position.y - m_renderer.sprite.bounds.extents.y) * 10);
+        if (isEntity)
         {
-            layer = 2 * (int)(transform.position.y * 10);
+            layer = lowerLeftPosition;
         }
         else
         {
-            layer = (2 * (int)(transform.position.y * 10)) + 1;
+           // Debug.Log("Object: " + gameObject + ", Y: " +(transform.position.y - m_renderer.sprite.bounds.extents.y) * 10);
+            layer = lowerLeftPosition + 1;
         }
         m_renderer.sortingOrder = -layer;
     }
