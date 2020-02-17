@@ -8,11 +8,14 @@ public class Wall : MonoBehaviour
     [SerializeField]int amountOfWalls;
     [SerializeField]WallSegment wall;
     [SerializeField] List<WallSegment> walls;
-    Transform[] children;
+    [SerializeField] List<Transform> children;
 
     public void Update()
     {
-        children = GetComponentsInChildren<Transform>();
+        foreach(Transform child in transform)
+        {
+            children.Add(child);
+        }
         if(walls.Count != amountOfWalls)
         {
             DestroyWalls();
@@ -21,20 +24,28 @@ public class Wall : MonoBehaviour
                 Debug.Log("Instantiating");
                 Debug.Log(i);
                 walls.Add(Instantiate(wall, transform));
-                walls[i].transform.position = new Vector2(transform.position.x + i * 2, transform.position.y);
+                walls[i].transform.position = new Vector2(transform.position.x + i * 1.5f, transform.position.y);
             }
-            walls[0].UpdateEdge(true);
-            walls[amountOfWalls - 1].UpdateEdge(false);
+            if(walls[0] != null)
+            {
+                walls[0].UpdateEdge(true);
+                walls[amountOfWalls - 1].UpdateEdge(false);
+            }
         }
+        children.Clear();
     }
     public void DestroyWalls()
     {
         Debug.Log("Deleting walls");
-        for(int i = children.Length;i >= 0; i--)
+        Debug.Log("Amount of children: " + children.Count);
+        foreach(Transform child in children)
+        {
+            Debug.Log(child);
+        }
+        for (int i = children.Count - 1; i >= 0; i--)
         {
             Debug.Log(i);
-            DestroyImmediate(children[i]);
-            i++;
+            DestroyImmediate(children[i].gameObject);
         }
         walls.Clear();
     }
