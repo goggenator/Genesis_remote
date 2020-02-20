@@ -12,7 +12,7 @@ public class ControlManager : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.P))
         {
             g.TogglePause();
             //pause or resume PauseMenu
