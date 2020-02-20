@@ -5,6 +5,7 @@ using UnityEngine;
 public class EntityController : MonoBehaviour
 {
     protected MovementManager movement;
+    bool isDead = false;
     [SerializeField] HealthManager HP;
 
     public void OnHit(int damage)
@@ -15,8 +16,15 @@ public class EntityController : MonoBehaviour
         }
         else
         {
-            movement.OnDeath();
+            isDead = true;
         }
     }
-  
+    public bool GetIsDead()
+    {
+        return isDead;
+    }
+    public void OnDeath()
+    {
+        movement.OnDeath();
+    }
 }
