@@ -7,6 +7,7 @@ public class EntityManager : MonoBehaviour
     List<EnemyController> enemies = new List<EnemyController>();
     List<Item> spawnedItems = new List<Item>();
     [SerializeField] List<Item> items;
+    [SerializeField] int EnemiesKilled = 0;
 
     public void Awake()
     {
@@ -30,40 +31,40 @@ public class EntityManager : MonoBehaviour
     }
     public void UpdateEnemies()
     {
-        foreach (EnemyController enemy in enemies)
+        for(int i = 0; i < enemies.Count; i++)
         {
-            if (enemy == null)
+            if (enemies[i] == null)
             {
                 continue;
             }
-            if (enemy.GetIsDead())
+            if (enemies[i].GetIsDead())
             {
-                if (enemy.GetComponent<DropItem>())
+                if (enemies[i].GetComponent<DropItem>())
                 {
-                    DropItem(enemy.GetComponent<DropItem>().GetItem(), enemy.GetComponent<DropItem>().GetLocation());
+                    DropItem(enemies[i].GetComponent<DropItem>().GetItem(), enemies[i].GetComponent<DropItem>().GetLocation());
                 }
-                enemy.OnDeath();
-                enemies.Remove(enemy); //change to a for loop instead, and remove the return;
-                return;
+                enemies[i].OnDeath();
+                enemies.Remove(enemies[i]); //change to a for loop instead, and remove the return;
+                EnemiesKilled++;
+                i++;
             }
         }
     }
 
     public void UpdateItems()
     {
-        foreach (Item spawnedItem in spawnedItems)
+        for (int i = 0; i < spawnedItems.Count; i++)
         {
-            if (spawnedItem == null)
+            if (spawnedItems[i] == null)
             {
                 continue;
             }
-            if (spawnedItem.GetPickedUp())
+            if (spawnedItems[i].GetPickedUp())
             {
-                GetComponent<ItemManager>().OnPickUp(spawnedItem.GetItem());
-                spawnedItems.Remove(spawnedItem);
-                Destroy(spawnedItem.gameObject);
-                spawnedItems.Remove(spawnedItem);
-                return;
+                GetComponent<ItemManager>().OnPickUp(spawnedItems[i].GetItem());
+                Destroy(spawnedItems[i].gameObject);
+                spawnedItems.Remove(spawnedItems[i]);
+                i++;
             }
         }
     }

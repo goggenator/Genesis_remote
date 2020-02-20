@@ -39,6 +39,7 @@ public class Projectile : MonoBehaviour
                 if (collision.gameObject.GetComponentInParent<EntityController>())
                 {
                     collision.gameObject.GetComponentInParent<EntityController>().OnHit(damage);
+                    Destroy(gameObject);
                 }
             }
         }

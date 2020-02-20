@@ -71,8 +71,10 @@
     <Compile Include="Assets\Scripts\Entities\MovementManager.cs" />
     <Compile Include="Assets\Scripts\Entities\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Entities\Projectile.cs" />
+    <Compile Include="Assets\Scripts\Entities\PushAttack.cs" />
     <Compile Include="Assets\Scripts\Entities\Shoot.cs" />
     <Compile Include="Assets\Scripts\Entities\Spawner.cs" />
+    <Compile Include="Assets\Scripts\Game Management\CameraController.cs" />
     <Compile Include="Assets\Scripts\Game Management\ControlManager.cs" />
     <Compile Include="Assets\Scripts\Game Management\EntityManager.cs" />
     <Compile Include="Assets\Scripts\Game Management\Game.cs" />

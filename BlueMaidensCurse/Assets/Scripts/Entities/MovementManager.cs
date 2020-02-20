@@ -5,9 +5,16 @@ using UnityEngine;
 public class MovementManager : MonoBehaviour //This is the script that should be used for everything that moves!
 {
     Rigidbody2D myBody;
-    [SerializeField] float speed;
+
     Vector2 directionToMove;
+    [SerializeField] float speed;
+
+    Vector2 directionToPush;
+    [SerializeField]float pushStrength = 0;
+    [SerializeField] float resilience; //How fast the player recovers from being pushed. It functions negatively, the higher the number, the further you fly
+
     Vector2 facingDirection;
+    bool canMove = true;
 
     [SerializeField] bool canAttack;
 
@@ -23,7 +30,31 @@ public class MovementManager : MonoBehaviour //This is the script that should be
     }
     public void Move()
     {
-        myBody.velocity = directionToMove * speed * Time.deltaTime;
+        myBody.velocity = directionToMove * speed * Time.deltaTime
+                + directionToPush * pushStrength * Time.deltaTime
+                ;
+        if(pushStrength > 1)
+        {
+            RecoverFromPush();
+        }
+        else if(pushStrength != 0)
+        {
+            NeutralizePush();
+        }
+    }
+    public void Push(Vector2 direction, float strength)
+    {
+        directionToPush = direction;
+        pushStrength = strength;
+    }
+    public void RecoverFromPush()
+    {
+        pushStrength = Mathf.Lerp(0, pushStrength, resilience * Time.deltaTime);
+    }
+    public void NeutralizePush()
+    {
+        pushStrength = 0;
+        directionToPush = new Vector2(0,0);
     }
     public void SetDirection(Vector2 direction)
     {

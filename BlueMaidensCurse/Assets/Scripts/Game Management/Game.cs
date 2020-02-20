@@ -10,9 +10,26 @@ public class Game : MonoBehaviour
 
     [SerializeField] GameObject Player;
 
+    [SerializeField] SpawnerManager spawnerManager;
+
     private void Awake()
     {
         I = this;
+    }
+
+    public void Update()
+    {
+        if(Player != null)
+        {
+            if (!spawnerManager.GetSpawning())
+            {
+                StartCoroutine(spawnerManager.Spawn(spawnerManager.ChooseSpawners(), spawnerManager.ChooseWaveAmount()));
+            }
+            if (Player.GetComponentInChildren<HealthManager>().GetHP() <= 0)
+            {
+                Player.GetComponent<MovementManager>().OnDeath();
+            }
+        }
     }
 
     public void TogglePause()
@@ -21,7 +38,10 @@ public class Game : MonoBehaviour
     }
     public void OnMovementKeyPress(KeyCode key)
     {
-        Player.GetComponent<PlayerController>().Move(key);
+        if(Player != null)
+        {
+            Player.GetComponent<PlayerController>().Move(key);
+        }
     }
     public void OnActionKeyPress()
     {
@@ -29,6 +49,13 @@ public class Game : MonoBehaviour
     }
     public Vector2 GetPlayerPosition()
     {
-        return Player.transform.position;
+        if(Player != null)
+        {
+            return Player.transform.position;
+        }
+        else
+        {
+            return Vector2.zero;
+        }
     }
 }

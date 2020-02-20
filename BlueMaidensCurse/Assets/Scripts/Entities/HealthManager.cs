@@ -28,6 +28,17 @@ public class HealthManager : MonoBehaviour
     {
         HP = MaxHP;
     }
+    public void OnHeal(int heal)
+    {
+        if(HP + heal <= MaxHP)
+        {
+            HP += heal;
+        }
+        else
+        {
+            HP = MaxHP;
+        }
+    }
     public float GetHP()
     {
         return HP;
