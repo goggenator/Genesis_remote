@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 909420278161925435}
   - component: {fileID: 909420278161925445}
-  - component: {fileID: 909420278161925434}
   - component: {fileID: 909420278161925444}
+  - component: {fileID: 3219628371190957014}
   m_Layer: 0
   m_Name: Bush2
   m_TagString: Untagged
@@ -70,7 +70,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -25
+  m_SortingOrder: -9
   m_Sprite: {fileID: -6952789898772213861, guid: 93be1ebafcdf70646934f3312d3693c1,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -83,22 +83,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!70 &909420278161925434
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 909420278161925432}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.03727217, y: -0.5740884}
-  m_Size: {x: 1.077748, y: 0.12374593}
-  m_Direction: 1
 --- !u!114 &909420278161925444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111,5 +95,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce08bf016245fcb4fbadcc9f31a97051, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  layer: 25
+  layer: 9
   isEntity: 0
+--- !u!60 &3219628371190957014
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909420278161925432}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.6, y: 1.6}
+    newSize: {x: 1.6, y: 1.6}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.5439601, y: -0.5093289}
+      - {x: 0.5439601, y: -0.5514088}
+      - {x: 0.55805254, y: -0.49543548}
+      - {x: 0.4460392, y: -0.4574486}
+      - {x: 0.23201323, y: -0.44080424}
+      - {x: 0.119999886, y: -0.34476435}
+      - {x: -0.263422, y: -0.41744864}
+      - {x: -0.51946163, y: -0.44476438}
+      - {x: -0.52664423, y: -0.45006645}
+      - {x: -0.622684, y: -0.51409316}
+      - {x: -0.62798643, y: -0.5614088}
+      - {x: -0.62396026, y: -0.5240266}
+      - {x: -0.6132891, y: -0.5806711}
+      - {x: -0.5212755, y: -0.62}
+      - {x: -0.5, y: -0.64}
+      - {x: -0.32999998, y: -0.63}
+      - {x: -0.13, y: -0.69}
+      - {x: 0.04, y: -0.69}
+      - {x: 0.12, y: -0.68}
+      - {x: 0.16, y: -0.61}
+      - {x: 0.48, y: -0.63}
+      - {x: 0.57, y: -0.61}
