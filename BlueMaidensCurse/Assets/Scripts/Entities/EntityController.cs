@@ -16,7 +16,6 @@ public class EntityController : MonoBehaviour
         }
         else
         {
-            Debug.Log("Im dead");
             isDead = true;
         }
     }

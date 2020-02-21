@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyController : EntityController
+public class DraugController : EnemyController
 {
-    Vector2 targetPosition;
     private void Awake()
     {
         movement = GetComponent<MovementManager>();

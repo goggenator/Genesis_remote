@@ -7,12 +7,11 @@ public class Spawner : MonoBehaviour
     [SerializeField] int amountToSpawn;
     [SerializeField] EnemyController enemyToSpawn;
     [SerializeField] Transform entityParent;
-    public void Awake()
-    {
-        amountToSpawn = 3;
-    }
     public void Spawn(EntityManager entityManager)
     {
-        entityManager.AddEnemyToList(Instantiate(enemyToSpawn, transform.position, Quaternion.identity, entityParent));
+        for(int i = 0; i < amountToSpawn; i++)
+        {
+            entityManager.AddEnemyToList(Instantiate(enemyToSpawn, transform.position, Quaternion.identity, entityParent));
+        }
     }
 }

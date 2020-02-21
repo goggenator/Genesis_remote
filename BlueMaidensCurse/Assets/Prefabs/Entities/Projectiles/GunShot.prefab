@@ -70,6 +70,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 200
+  resilience: 0
   canAttack: 0
 --- !u!114 &8837730764019656142
 MonoBehaviour:
@@ -194,7 +195,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e3c5249001d11e043aa13d0efa344c5f, type: 3}
+  m_Sprite: {fileID: 6663373183569330, guid: a2f44effd47c401479140c0cc5d8f3b8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

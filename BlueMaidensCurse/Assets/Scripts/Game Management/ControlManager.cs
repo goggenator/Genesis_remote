@@ -21,6 +21,10 @@ public class ControlManager : MonoBehaviour
         {
             g.OnActionKeyPress();
         }
+        if(Input.GetKey(KeyCode.LeftShift))
+        {
+
+        }
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
         {
             if (Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S))

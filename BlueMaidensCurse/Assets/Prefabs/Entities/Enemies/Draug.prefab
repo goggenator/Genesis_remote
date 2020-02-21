@@ -83,11 +83,11 @@ GameObject:
   - component: {fileID: 7734950603754878050}
   - component: {fileID: 7734950603754878053}
   - component: {fileID: 7734950603754878052}
-  - component: {fileID: 7734950603754878055}
   - component: {fileID: 44915230}
   - component: {fileID: 8294691189918417101}
+  - component: {fileID: 5920139581065336860}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: Draug
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -144,22 +144,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 50
-  pushStrength: 0
   resilience: 0
   canAttack: 0
---- !u!114 &7734950603754878055
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7734950603754878054}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74ea6ed282093f244bf99503035623c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HP: {fileID: 819005157975150880}
 --- !u!114 &44915230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -187,6 +173,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemToDrop: 0
+--- !u!114 &5920139581065336860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7734950603754878054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6392ff2ae44ed34f8c5be2035116b38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HP: {fileID: 819005157975150880}
 --- !u!1 &7734950604017450257
 GameObject:
   m_ObjectHideFlags: 0

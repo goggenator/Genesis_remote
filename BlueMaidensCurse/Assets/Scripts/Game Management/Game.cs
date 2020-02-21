@@ -45,7 +45,10 @@ public class Game : MonoBehaviour
     }
     public void OnActionKeyPress()
     {
-        Player.GetComponent<PlayerController>().Attack();
+        if(Player != null)
+        {
+            Player.GetComponent<PlayerController>().Attack();
+        }
     }
     public Vector2 GetPlayerPosition()
     {

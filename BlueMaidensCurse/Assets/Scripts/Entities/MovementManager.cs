@@ -10,7 +10,7 @@ public class MovementManager : MonoBehaviour //This is the script that should be
     [SerializeField] float speed;
 
     Vector2 directionToPush;
-    [SerializeField]float pushStrength = 0;
+    float pushStrength = 0;
     [SerializeField] float resilience; //How fast the player recovers from being pushed. It functions negatively, the higher the number, the further you fly
 
     Vector2 facingDirection;

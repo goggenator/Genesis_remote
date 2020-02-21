@@ -27,9 +27,24 @@ public class SpawnerManager : MonoBehaviour
         }
         spawning = false;
     }
+
     public List<int> ChooseSpawners()
     {
-        return new List<int> { 0 };
+        List<int> newList = new List<int> { };
+        int amountOfSpawners = Random.Range(0, spawners.Count);
+        for(int i = 0; i < amountOfSpawners; i++)
+        {
+            int spawnerID = Random.Range(0, spawners.Count);
+            if(!newList.Contains(spawnerID))
+            {
+                newList.Add(spawnerID);
+            }
+            else
+            {
+                i--;
+            }
+        }
+        return newList;
     }
 
     public int ChooseWaveAmount()
