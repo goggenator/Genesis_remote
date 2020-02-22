@@ -21,13 +21,16 @@ public class Game : MonoBehaviour
     {
         if(Player != null)
         {
-            if (!spawnerManager.GetSpawning())
+            if(spawnerManager != null)
             {
-                StartCoroutine(spawnerManager.Spawn(spawnerManager.ChooseSpawners(), spawnerManager.ChooseWaveAmount()));
-            }
-            if (Player.GetComponentInChildren<HealthManager>().GetHP() <= 0)
-            {
-                Player.GetComponent<MovementManager>().OnDeath();
+                if (!spawnerManager.GetSpawning())
+                {
+                    StartCoroutine(spawnerManager.Spawn(spawnerManager.ChooseSpawners(), spawnerManager.ChooseWaveAmount()));
+                }
+                if (Player.GetComponentInChildren<HealthManager>().GetHP() <= 0)
+                {
+                    Player.GetComponent<MovementManager>().OnDeath();
+                }
             }
         }
     }

@@ -9,8 +9,9 @@ public class RandomEnemyController : EnemyController
     [SerializeField] float waitUntilChangeDirection;
     private void Awake()
     {
-        targetPosition = Vector2.zero;
         movement = GetComponent<MovementManager>();
+        HP = GetComponentInChildren<HealthManager>();
+        targetPosition = Vector2.zero;
     }
     public virtual void Update()
     {

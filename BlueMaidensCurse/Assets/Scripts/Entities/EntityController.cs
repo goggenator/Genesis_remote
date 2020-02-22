@@ -6,7 +6,7 @@ public class EntityController : MonoBehaviour
 {
     protected MovementManager movement;
     bool isDead = false;
-    [SerializeField] HealthManager HP;
+    protected HealthManager HP;
 
     public void OnHit(int damage)
     {

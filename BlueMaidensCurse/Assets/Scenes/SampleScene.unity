@@ -973,7 +973,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &527560458
 Transform:
   m_ObjectHideFlags: 0
@@ -1952,8 +1952,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6eb39c76b7aabd24699dbd9f68cd46d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amountToSpawn: 6
-  enemyToSpawn: {fileID: 8764175898201662637, guid: 998d6e365c278314194385161c6c1253,
+  amountToSpawn: 1
+  enemyToSpawn: {fileID: 7173430509989559749, guid: 9ed3249c2702635478bc24f7362a6aaf,
     type: 3}
   entityParent: {fileID: 486182824}
 --- !u!1 &1427939118
@@ -3683,6 +3683,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ShotGun
       objectReference: {fileID: 0}
+    - target: {fileID: 6068523412827656254, guid: 1288ceb6f7a8c794192dc8577e2b2ec2,
+        type: 3}
+      propertyPath: amountOfShots
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 315859233518779, guid: 1288ceb6f7a8c794192dc8577e2b2ec2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -3726,11 +3731,6 @@ PrefabInstance:
     - target: {fileID: 315859233518779, guid: 1288ceb6f7a8c794192dc8577e2b2ec2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6068523412827656254, guid: 1288ceb6f7a8c794192dc8577e2b2ec2,
-        type: 3}
-      propertyPath: amountOfShots
-      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1288ceb6f7a8c794192dc8577e2b2ec2, type: 3}

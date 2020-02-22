@@ -9,6 +9,7 @@ public class PlayerController : EntityController
     public void Awake()
     {
         movement = GetComponent<MovementManager>();
+        HP = GetComponentInChildren<HealthManager>();
     }
     public void Move(KeyCode key)
     {
@@ -31,7 +32,7 @@ public class PlayerController : EntityController
         if(movement.CanAttack())
         {
             equippedWeapon.OnAttack(movement.GetFacingDirection(), transform.position, "Player");
-            StartCoroutine(movement.WaitUntilCanAttack(equippedWeapon.GetReloadTime()));
+            StartCoroutine(movement.WaitUntilCanAttack(equippedWeapon.GetReloadTime() * HP.GetHPPercentage()));
         }
     }
 }

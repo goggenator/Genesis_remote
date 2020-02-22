@@ -20,7 +20,6 @@ public class ShotGun : Weapon
         for(int i = 0; i < amountOfShots; i++)
         {
             Vector2 newDirection = new Vector2(direction.x * Mathf.Cos(separatedAngle*Mathf.Deg2Rad) - direction.y * Mathf.Sin(separatedAngle * Mathf.Deg2Rad), direction.x * Mathf.Sin(separatedAngle * Mathf.Deg2Rad) + direction.y * Mathf.Cos(separatedAngle * Mathf.Deg2Rad));
-            Debug.Log(newDirection);
             shoot.OnShoot(shootingSpeed, projectile, newDirection, origin, identity);
             separatedAngle += spreadAngle / amountOfShots;
         }
