@@ -68,7 +68,7 @@ public class FogManager : MonoBehaviour
                 (cloud.GetComponent<SpriteRenderer>().color.r,
                 cloud.GetComponent<SpriteRenderer>().color.g,
                 cloud.GetComponent<SpriteRenderer>().color.b,
-                0
+                0)
                 ;
         }
     }
