@@ -22,7 +22,6 @@ public class AltEnemyController : EnemyController
         {
             if(!GetComponent<SpiralShooting>().GetIsShooting())
             {
-                Debug.Log("Coroutine started");
                 GetComponent<SpiralShooting>().SetIsShooting(true);
             }
         }

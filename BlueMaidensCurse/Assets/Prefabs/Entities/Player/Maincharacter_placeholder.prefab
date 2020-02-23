@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8718653746958554556}
   - component: {fileID: 8718653746958554531}
+  - component: {fileID: 7142618621659882327}
   - component: {fileID: 8718653746958554529}
   - component: {fileID: 8718653746958554528}
   - component: {fileID: 8718653746958554559}
@@ -59,6 +60,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &7142618621659882327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8718653746958554558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1b1c6b526f20954f8127e6f303628f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionCollider: {fileID: 0}
+  healthCollider: {fileID: 0}
 --- !u!114 &8718653746958554529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86,7 +101,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96e45f05726f3844db719dc14bbd5be0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: {fileID: 8718653747090892858}
   equippedWeapon: {fileID: 0}
 --- !u!114 &8718653746958554559
 MonoBehaviour:

@@ -64,4 +64,18 @@ public class Game : MonoBehaviour
             return Vector2.zero;
         }
     }
+    public void OnLockPositionKeyPress()
+    {
+        if(Player != null)
+        {
+            Player.GetComponent<PlayerController>().LockPosition();
+        }
+    }
+    public void OnLockPositionKeyLift()
+    {
+        if (Player != null)
+        {
+            Player.GetComponent<PlayerController>().UnlockPosition();
+        }
+    }
 }

@@ -21,30 +21,31 @@ public class Wall : MonoBehaviour
             DestroyWalls();
             for (int i = 0; i < amountOfWalls; i++)
             {
-                Debug.Log("Instantiating");
-                Debug.Log(i);
                 walls.Add(Instantiate(wall, transform));
-                walls[i].transform.position = new Vector2(transform.position.x + i * 1.5f, transform.position.y);
+                if(i != 0)
+                {
+                    walls[i].transform.position = new Vector2(transform.position.x + i * walls[i - 1].GetComponentInChildren<SpriteRenderer>().size.x, transform.position.y);
+                }
+                else
+                {
+                    walls[0].transform.position = new Vector2(transform.position.x, transform.position.y);
+                }
             }
             if(walls[0] != null)
             {
-                walls[0].UpdateEdge(true);
-                walls[amountOfWalls - 1].UpdateEdge(false);
+                if(walls[1]!= null)
+                {
+                    walls[0].UpdateEdge(true);
+                    walls[amountOfWalls - 1].UpdateEdge(false);
+                }
             }
         }
         children.Clear();
     }
     public void DestroyWalls()
     {
-        Debug.Log("Deleting walls");
-        Debug.Log("Amount of children: " + children.Count);
-        foreach(Transform child in children)
-        {
-            Debug.Log(child);
-        }
         for (int i = children.Count - 1; i >= 0; i--)
         {
-            Debug.Log(i);
             DestroyImmediate(children[i].gameObject);
         }
         walls.Clear();

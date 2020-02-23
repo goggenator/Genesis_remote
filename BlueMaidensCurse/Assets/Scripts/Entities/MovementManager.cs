@@ -16,31 +16,40 @@ public class MovementManager : MonoBehaviour //This is the script that should be
     Vector2 facingDirection;
     bool canMove = true;
 
+    Vector2 constantDirection;
+
     [SerializeField] bool canAttack;
 
     void Awake()
     {
         myBody = GetComponent<Rigidbody2D>();
-        directionToMove = Vector2.zero; facingDirection = new Vector2(0, -1);
+        directionToMove = Vector2.zero; facingDirection = new Vector2(0, -1); constantDirection = new Vector2(0, 0);
     }
+
     public void FixedUpdate()
     {
         Move();
         directionToMove = Vector2.zero;
     }
+
     public void Move()
     {
         myBody.velocity = directionToMove * speed * Time.deltaTime
-                + directionToPush * pushStrength * Time.deltaTime
-                ;
-        if(pushStrength > 1)
+            + directionToPush * pushStrength * Time.deltaTime
+            + constantDirection * speed * Time.deltaTime
+            ;
+        if (pushStrength > 1)
         {
             RecoverFromPush();
         }
-        else if(pushStrength != 0)
+        else if (pushStrength != 0)
         {
             NeutralizePush();
         }
+    }
+    public void FreezeMovement()
+    {
+        myBody.velocity = new Vector2(0, 0);
     }
     public void Push(Vector2 direction, float strength)
     {
@@ -58,14 +67,21 @@ public class MovementManager : MonoBehaviour //This is the script that should be
     }
     public void SetDirection(Vector2 direction)
     {
-        directionToMove += direction;
-        directionToMove.Normalize();
-        facingDirection = directionToMove;
+        if(canMove)
+        {
+            directionToMove += direction;
+            directionToMove.Normalize();
+        }
+        facingDirection = direction.normalized;
         facingDirection = new Vector2(Mathf.Round(facingDirection.x), Mathf.Round(facingDirection.y));
     }
     public Vector2 GetDirection()
     {
         return directionToMove.normalized;
+    }
+    public void SetConstantDirection(Vector2 direction)
+    {
+        constantDirection = direction;
     }
     public Vector2 GetFacingDirection()
     {
@@ -75,13 +91,17 @@ public class MovementManager : MonoBehaviour //This is the script that should be
     {
         speed = newSpeed;
     }
-    public void SetCantAttack()
+    public void SetCanAttack(bool value)
     {
-        canAttack = false;
+        canAttack = value;
     }
     public bool CanAttack()
     {
         return canAttack;
+    }
+    public void SetCanMove(bool value)
+    {
+        canMove = value;
     }
     public void OnDeath()
     {

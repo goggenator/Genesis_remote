@@ -63,25 +63,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Entities\AttackPatterns\SpiralShooting.cs" />
     <Compile Include="Assets\Scripts\Entities\Curse.cs" />
     <Compile Include="Assets\Scripts\Entities\DropItem.cs" />
     <Compile Include="Assets\Scripts\Entities\EnemyControllers\AltEnemyController.cs" />
     <Compile Include="Assets\Scripts\Entities\EnemyControllers\DraugController.cs" />
     <Compile Include="Assets\Scripts\Entities\EnemyControllers\EnemyController.cs" />
     <Compile Include="Assets\Scripts\Entities\EnemyControllers\RandomEnemyController.cs" />
+    <Compile Include="Assets\Scripts\Entities\Entity.cs" />
     <Compile Include="Assets\Scripts\Entities\EntityController.cs" />
     <Compile Include="Assets\Scripts\Entities\HealthManager.cs" />
     <Compile Include="Assets\Scripts\Entities\LayerManager.cs" />
     <Compile Include="Assets\Scripts\Entities\MovementManager.cs" />
     <Compile Include="Assets\Scripts\Entities\PlayerController.cs" />
-    <Compile Include="Assets\Scripts\Entities\Projectile.cs" />
+    <Compile Include="Assets\Scripts\Entities\Projectiles\Projectile.cs" />
+    <Compile Include="Assets\Scripts\Entities\Projectiles\ProjectileShadow.cs" />
     <Compile Include="Assets\Scripts\Entities\PushAttack.cs" />
     <Compile Include="Assets\Scripts\Entities\Shoot.cs" />
     <Compile Include="Assets\Scripts\Entities\Spawner.cs" />
-    <Compile Include="Assets\Scripts\Entities\SpiralShooting.cs" />
     <Compile Include="Assets\Scripts\Game Management\CameraController.cs" />
     <Compile Include="Assets\Scripts\Game Management\ControlManager.cs" />
     <Compile Include="Assets\Scripts\Game Management\EntityManager.cs" />
+    <Compile Include="Assets\Scripts\Game Management\FogManager.cs" />
     <Compile Include="Assets\Scripts\Game Management\Game.cs" />
     <Compile Include="Assets\Scripts\Game Management\ItemManager.cs" />
     <Compile Include="Assets\Scripts\Game Management\SpawnerManager.cs" />

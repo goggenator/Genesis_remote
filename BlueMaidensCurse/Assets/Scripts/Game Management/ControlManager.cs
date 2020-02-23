@@ -21,9 +21,13 @@ public class ControlManager : MonoBehaviour
         {
             g.OnActionKeyPress();
         }
-        if(Input.GetKey(KeyCode.LeftShift))
+        if(Input.GetKeyDown(KeyCode.LeftShift))
         {
-
+            g.OnLockPositionKeyPress();
+        }
+        if(Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            g.OnLockPositionKeyLift();
         }
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
         {

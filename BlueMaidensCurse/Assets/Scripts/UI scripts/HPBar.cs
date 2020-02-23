@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class HPBar : MonoBehaviour
 {
-    public HealthManager HP;
-    [SerializeField] Image HealthBar;
+    public HealthManager HP = null;
+    [SerializeField] Image HealthBar = null;
     public Text HealthText;
     private float currentFill;
     public float BarChangeSpeed;

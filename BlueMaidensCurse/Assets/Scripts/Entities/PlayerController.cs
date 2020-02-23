@@ -35,4 +35,13 @@ public class PlayerController : EntityController
             StartCoroutine(movement.WaitUntilCanAttack(equippedWeapon.GetReloadTime() * HP.GetHPPercentage()));
         }
     }
+    public void LockPosition()
+    {
+        movement.FreezeMovement();
+        movement.SetCanMove(false);
+    }
+    public void UnlockPosition()
+    {
+        movement.SetCanMove(true);
+    }
 }

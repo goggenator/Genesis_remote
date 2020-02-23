@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c671f55f12ab0af4db29263cd0e64b81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: {fileID: 2365978342066941329}
   direction: 4
   walking: 0
   waitUntilChangeDirection: 0.2
@@ -83,6 +82,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7801839441795160438, guid: 2ba14a91de8665e4fad50078bb501165,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 7734950604017450271, guid: 2ba14a91de8665e4fad50078bb501165,
         type: 3}
       propertyPath: m_Color.r
@@ -107,15 +111,3 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 3136779261012655281}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2365978342066941329 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 819005157975150880, guid: 2ba14a91de8665e4fad50078bb501165,
-    type: 3}
-  m_PrefabInstance: {fileID: 3136779261012655281}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba1d3de8a520a184a8d2b7df1976f18c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

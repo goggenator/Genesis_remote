@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class SpiralShooting : MonoBehaviour
 {
-    [SerializeField] Projectile projectile;
-    [SerializeField] Shoot shoot;
+    [SerializeField] Projectile projectile = null;
+    [SerializeField] Shoot shoot = null;
     [SerializeField] float shootingSpeed;
     [SerializeField] float shootingDelay;
     [SerializeField] float cooldown;

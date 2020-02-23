@@ -11,5 +11,13 @@ public class Shoot : MonoBehaviour
         newProjectile.SetDirection(direction);
         newProjectile.SetIdentity(identity);
         newProjectile.transform.position = origin;
+        if(transform.parent.transform.parent.GetComponent<Entity>())
+        {
+            Physics2D.IgnoreCollision(transform.parent.transform.parent.GetComponent<Entity>().positionCollider, newProjectile.GetComponentInChildren<ProjectileShadow>().GetComponent<BoxCollider2D>());
+        }
+        else
+        {
+            Physics2D.IgnoreCollision(transform.parent.GetComponent<Entity>().positionCollider, newProjectile.GetComponentInChildren<ProjectileShadow>().GetComponent<BoxCollider2D>());
+        }
     }
 }

@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    [SerializeField] int amountToSpawn;
-    [SerializeField] EnemyController enemyToSpawn;
-    [SerializeField] Transform entityParent;
+    [SerializeField] int amountToSpawn = 0;
+    [SerializeField] EnemyController enemyToSpawn = null;
+    [SerializeField] Transform entityParent = null;
     public void Spawn(EntityManager entityManager)
     {
         for(int i = 0; i < amountToSpawn; i++)
