@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Entities\AttackPatterns\SpiralShooting.cs" />
+    <Compile Include="Assets\Scripts\Entities\BasicMovement.cs" />
     <Compile Include="Assets\Scripts\Entities\Curse.cs" />
     <Compile Include="Assets\Scripts\Entities\DropItem.cs" />
     <Compile Include="Assets\Scripts\Entities\EnemyControllers\AltEnemyController.cs" />
@@ -103,6 +104,48 @@
     <Compile Include="Assets\Water2D Surface\scripts\WaterReflectableScript.cs" />
     <None Include="Assets\Water2D Surface\shaders\Water2D Surface.shader" />
     <Reference Include="Unity.Timeline.Editor">
+<<<<<<< HEAD
+      <HintPath>C:/Users/Tinyb/OneDrive/Dokument/Skoldokument Uppsala Universitet/Genesis_remote/BlueMaidensCurse/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.PixelPerfect.Editor">
+      <HintPath>C:/Users/Tinyb/OneDrive/Dokument/Skoldokument Uppsala Universitet/Genesis_remote/BlueMaidensCurse/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+      <HintPath>C:/Users/Tinyb/OneDrive/Dokument/Skoldokument Uppsala Universitet/Genesis_remote/BlueMaidensCurse/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Recorder.Editor">
+      <HintPath>C:/Users/Tinyb/OneDrive/Dokument/Skoldokument Uppsala Universitet/Genesis_remote/BlueMaidensCurse/Library/ScriptAssemblies/Unity.Recorder.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>C:/Users/Tinyb/OneDrive/Dokument/Skoldokument Uppsala Universitet/Genesis_remote/BlueMaidensCurse/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Recorder">
+      <HintPath>C:/Users/Tinyb/OneDrive/Dokument/Skoldokument Uppsala Universitet/Genesis_remote/BlueMaidensCurse/Library/ScriptAssemblies/Unity.Recorder.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>C:/Users/Tinyb/OneDrive/Dokument/Skoldokument Uppsala Universitet/Genesis_remote/BlueMaidensCurse/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+      <HintPath>C:/Users/Tinyb/OneDrive/Dokument/Skoldokument Uppsala Universitet/Genesis_remote/BlueMaidensCurse/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.CollabProxy.Editor">
+      <HintPath>C:/Users/Tinyb/OneDrive/Dokument/Skoldokument Uppsala Universitet/Genesis_remote/BlueMaidensCurse/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>C:/Users/Tinyb/OneDrive/Dokument/Skoldokument Uppsala Universitet/Genesis_remote/BlueMaidensCurse/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>C:/Users/Tinyb/OneDrive/Dokument/Skoldokument Uppsala Universitet/Genesis_remote/BlueMaidensCurse/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.PixelPerfect">
+      <HintPath>C:/Users/Tinyb/OneDrive/Dokument/Skoldokument Uppsala Universitet/Genesis_remote/BlueMaidensCurse/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>C:/Users/Tinyb/OneDrive/Dokument/Skoldokument Uppsala Universitet/Genesis_remote/BlueMaidensCurse/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>C:/Users/Tinyb/OneDrive/Dokument/Skoldokument Uppsala Universitet/Genesis_remote/BlueMaidensCurse/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+=======
       <HintPath>D:/tgg/Corruption/BlueMaidensCurse/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.PixelPerfect.Editor">
@@ -143,6 +186,7 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>D:/tgg/Corruption/BlueMaidensCurse/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+>>>>>>> master
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

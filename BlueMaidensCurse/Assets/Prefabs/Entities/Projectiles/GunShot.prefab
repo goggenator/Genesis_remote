@@ -142,6 +142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 200
   resilience: 0
+  facingDirection: {x: 0, y: 0}
   canAttack: 0
 --- !u!114 &8837730764019656142
 MonoBehaviour:
@@ -169,7 +170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce08bf016245fcb4fbadcc9f31a97051, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  layer: -2
+  layer: 0
   isEntity: 1
 --- !u!61 &1914798555791694803
 BoxCollider2D:
@@ -265,9 +266,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: e3c5249001d11e043aa13d0efa344c5f, type: 3}
-  m_Color: {r: 0.7169812, g: 0.1318975, b: 0.65128773, a: 1}
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 6663373183569330, guid: a2f44effd47c401479140c0cc5d8f3b8, type: 3}
+  m_Color: {r: 1, g: 0, b: 0.7525196, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
