@@ -9,11 +9,13 @@ public class MovementManager : MonoBehaviour //This is the script that should be
     Vector2 directionToMove;
     [SerializeField] float speed;
 
+    Vector2 lastDirectionMoved;
+
     Vector2 directionToPush;
     float pushStrength = 0;
     [SerializeField] float resilience; //How fast the player recovers from being pushed. It functions negatively, the higher the number, the further you fly
 
-    Vector2 facingDirection;
+    [SerializeField] Vector2 facingDirection;
     bool canMove = true;
 
     Vector2 constantDirection;
@@ -24,6 +26,7 @@ public class MovementManager : MonoBehaviour //This is the script that should be
     {
         myBody = GetComponent<Rigidbody2D>();
         directionToMove = Vector2.zero; facingDirection = new Vector2(0, -1); constantDirection = new Vector2(0, 0);
+        lastDirectionMoved = Vector2.zero;
     }
 
     public void FixedUpdate()
@@ -34,10 +37,19 @@ public class MovementManager : MonoBehaviour //This is the script that should be
 
     public void Move()
     {
-        myBody.velocity = directionToMove * speed * Time.deltaTime
-            + directionToPush * pushStrength * Time.deltaTime
-            + constantDirection * speed * Time.deltaTime
-            ;
+        if(canMove)
+        {
+            myBody.velocity = directionToMove * speed * Time.deltaTime
+           + directionToPush * pushStrength * Time.deltaTime
+           + constantDirection * speed * Time.deltaTime
+           ;
+        }
+        else
+        {
+            myBody.velocity = directionToPush * pushStrength * Time.deltaTime
+           + constantDirection * speed * Time.deltaTime
+           ;
+        }
         if (pushStrength > 1)
         {
             RecoverFromPush();
@@ -67,12 +79,10 @@ public class MovementManager : MonoBehaviour //This is the script that should be
     }
     public void SetDirection(Vector2 direction)
     {
-        if(canMove)
-        {
-            directionToMove += direction;
-            directionToMove.Normalize();
-        }
-        facingDirection = direction.normalized;
+        directionToMove += direction;
+        directionToMove.Normalize();
+
+        facingDirection = directionToMove.normalized;
         facingDirection = new Vector2(Mathf.Round(facingDirection.x), Mathf.Round(facingDirection.y));
     }
     public Vector2 GetDirection()
