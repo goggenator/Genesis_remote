@@ -14,7 +14,8 @@ public class HPBar : MonoBehaviour
     private void Update()
     {
         UpdateText();
-        UpdateHealthBar();
+        UpdateHealthBarLength();
+        UpdateHealthBarColor();
     }
     void UpdateText()
     {
@@ -22,14 +23,17 @@ public class HPBar : MonoBehaviour
         {
             HealthText.text = Mathf.RoundToInt(HP.GetHP()) + "/" + Mathf.RoundToInt(HP.GetMaxHP());
         }
-
     }
-    private void UpdateHealthBar()
+    private void UpdateHealthBarLength()
     {
         currentFill = HP.GetHPPercentage();
         if (currentFill != HealthBar.fillAmount)
         {
             HealthBar.fillAmount = Mathf.Lerp(HealthBar.fillAmount, currentFill, Time.deltaTime * BarChangeSpeed);
         }
+    }
+    private void UpdateHealthBarColor()
+    {
+        HealthBar.color = new Color(1, 0, 1 * (1 - HP.GetHPPercentage()), 1);
     }
 }
