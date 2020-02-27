@@ -131,6 +131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5745f6db53dd7174ab9539435bd062cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  score: 500
   walking: 0
   waitUntilChangeDirection: 0.3
 --- !u!114 &65477682159557598

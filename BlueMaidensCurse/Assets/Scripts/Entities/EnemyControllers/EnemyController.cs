@@ -14,4 +14,10 @@ public enum Direction
 public class EnemyController : EntityController
 {
     protected Vector2 targetPosition;
+    [SerializeField] protected uint score;
+
+    public uint GetScore()
+    {
+        return score;
+    }
 }

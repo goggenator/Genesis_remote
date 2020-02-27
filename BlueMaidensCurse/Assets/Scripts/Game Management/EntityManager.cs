@@ -8,6 +8,7 @@ public class EntityManager : MonoBehaviour
     List<Item> spawnedItems = new List<Item>();
     [SerializeField] List<Item> items;
     [SerializeField] int EnemiesKilled = 0;
+    [SerializeField] HighScoreManager highScoreManager;
 
     public void Awake()
     {
@@ -43,6 +44,7 @@ public class EntityManager : MonoBehaviour
                 {
                     DropItem(enemies[i].GetComponent<DropItem>().GetItem(), enemies[i].GetComponent<DropItem>().GetLocation());
                 }
+                highScoreManager.AddScore(enemies[i].GetScore());
                 enemies[i].OnDeath();
                 enemies.Remove(enemies[i]); //change to a for loop instead, and remove the return;
                 EnemiesKilled++;

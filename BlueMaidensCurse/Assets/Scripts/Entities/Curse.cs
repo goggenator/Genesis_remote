@@ -18,7 +18,10 @@ public class Curse : MonoBehaviour
     }
     public void IncreaseCurse()
     {
-        curseDamage *= 1.25f;
+        if(curseDamage <= 3)
+        {
+            curseDamage *= 1.25f;
+        }
     }
     public void ResetCurse()
     {
