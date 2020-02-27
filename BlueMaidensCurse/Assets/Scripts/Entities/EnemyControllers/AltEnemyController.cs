@@ -10,6 +10,7 @@ public class AltEnemyController : EnemyController
     {
         movement = GetComponent<MovementManager>();
         HP = GetComponentInChildren<HealthManager>();
+        HP.InitializeHealth(HP.GetMaxHP());
         targetPosition = Vector2.zero;
     }
     public virtual void Update()

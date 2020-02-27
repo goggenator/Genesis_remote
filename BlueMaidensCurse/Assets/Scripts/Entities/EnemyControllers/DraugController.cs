@@ -8,6 +8,7 @@ public class DraugController : EnemyController
     {
         movement = GetComponent<MovementManager>();
         HP = GetComponentInChildren<HealthManager>();
+        HP.InitializeHealth(HP.GetMaxHP());
     }
     public virtual void Update()
     {

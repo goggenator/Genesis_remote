@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Curse : MonoBehaviour
 {
-    [SerializeField] float curseDamage = 0.01f;
+    [SerializeField] float curseDamage = 0;
     HealthManager HP;
 
     public void Awake()

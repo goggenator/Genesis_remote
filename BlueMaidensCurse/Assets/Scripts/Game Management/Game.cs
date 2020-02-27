@@ -12,6 +12,8 @@ public class Game : MonoBehaviour
 
     [SerializeField] SpawnerManager spawnerManager;
 
+    [SerializeField] ItemManager itemManager;
+
     private void Awake()
     {
         I = this;
@@ -21,7 +23,7 @@ public class Game : MonoBehaviour
     {
         if(Player != null)
         {
-            if(spawnerManager != null)
+            if(spawnerManager != null && itemManager.GetAmountOfMeatEaten() > 0)
             {
                 if (!spawnerManager.GetSpawning())
                 {

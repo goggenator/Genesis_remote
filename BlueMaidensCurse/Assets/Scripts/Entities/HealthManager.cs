@@ -6,9 +6,10 @@ public class HealthManager : MonoBehaviour
 {
     [SerializeField] int MaxHP;
     [SerializeField] float HP;
-    public void Awake()
+
+    public void InitializeHealth(float givenHP)
     {
-        HP = MaxHP;
+        HP = givenHP;
     }
     public void OnHit(int damage)
     {
