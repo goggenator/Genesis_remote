@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3075290766836957100}
   - component: {fileID: 3075290766836957101}
   - component: {fileID: 9171110009006627101}
-  - component: {fileID: 3455461034609544854}
+  - component: {fileID: 416920223370274010}
   m_Layer: 0
   m_Name: Tree
   m_TagString: Untagged
@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5006c03c70528df4f9a1c2ff6d16985e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myType: 6
+  myType: 3
   myRenderer: {fileID: 3075290768165657278}
 --- !u!114 &9171110009006627101
 MonoBehaviour:
@@ -62,8 +62,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layer: 3
   isEntity: 0
---- !u!70 &3455461034609544854
-CapsuleCollider2D:
+--- !u!58 &416920223370274010
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -75,9 +75,9 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.04263226, y: -0.47415835}
-  m_Size: {x: 0.5214476, y: 0.30778983}
-  m_Direction: 1
+  m_Offset: {x: 0.06664422, y: -0.47163558}
+  serializedVersion: 2
+  m_Radius: 0.19753802
 --- !u!1 &3075290768165657279
 GameObject:
   m_ObjectHideFlags: 0
@@ -147,7 +147,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -3
-  m_Sprite: {fileID: -1174358944772925716, guid: 93be1ebafcdf70646934f3312d3693c1,
+  m_Sprite: {fileID: 7197046509092255931, guid: 93be1ebafcdf70646934f3312d3693c1,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
