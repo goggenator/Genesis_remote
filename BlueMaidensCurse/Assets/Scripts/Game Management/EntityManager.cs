@@ -63,10 +63,12 @@ public class EntityManager : MonoBehaviour
             }
             if (spawnedItems[i].GetPickedUp())
             {
-                GetComponent<ItemManager>().OnPickUp(spawnedItems[i].GetItem());
-                Destroy(spawnedItems[i].gameObject);
-                spawnedItems.Remove(spawnedItems[i]);
-                i++;
+                if(GetComponent<ItemManager>().OnPickUp(spawnedItems[i].GetItem()))
+                {
+                    Destroy(spawnedItems[i].gameObject);
+                    spawnedItems.Remove(spawnedItems[i]);
+                    i++;
+                }
             }
         }
     }

@@ -20,4 +20,21 @@ public class Shoot : MonoBehaviour
             Physics2D.IgnoreCollision(transform.parent.GetComponent<Entity>().positionCollider, newProjectile.GetComponentInChildren<ProjectileShadow>().GetComponent<BoxCollider2D>());
         }
     }
+    public void OnShoot(float speed, Projectile projectile, Vector2 direction, Vector2 origin, string identity, int damage)
+    {
+        Projectile newProjectile = Instantiate(projectile);
+        newProjectile.SetSpeed(speed);
+        newProjectile.SetDirection(direction);
+        newProjectile.SetIdentity(identity);
+        newProjectile.SetDamage(damage);
+        newProjectile.transform.position = origin;
+        if (transform.parent.transform.parent.GetComponent<Entity>())
+        {
+            Physics2D.IgnoreCollision(transform.parent.transform.parent.GetComponent<Entity>().positionCollider, newProjectile.GetComponentInChildren<ProjectileShadow>().GetComponent<BoxCollider2D>());
+        }
+        else
+        {
+            Physics2D.IgnoreCollision(transform.parent.GetComponent<Entity>().positionCollider, newProjectile.GetComponentInChildren<ProjectileShadow>().GetComponent<BoxCollider2D>());
+        }
+    }
 }

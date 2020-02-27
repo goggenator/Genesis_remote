@@ -32,6 +32,10 @@ public class Projectile : MonoBehaviour
     {
         identity = casterIdentity;
     }
+    public void SetDamage(int newDamage)
+    {
+        damage = newDamage;
+    }
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.GetComponent<HealthManager>())

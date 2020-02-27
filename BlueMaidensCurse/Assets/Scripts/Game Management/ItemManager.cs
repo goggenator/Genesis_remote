@@ -7,7 +7,7 @@ public class ItemManager : MonoBehaviour
     [SerializeField] Curse curse;
     [SerializeField] HealthManager HP;
     [SerializeField] uint amountOfMeatEaten = 0;
-    public void OnPickUp(ItemType type)
+    public bool OnPickUp(ItemType type)
     {
         switch(type)
         {
@@ -19,14 +19,21 @@ public class ItemManager : MonoBehaviour
                 }
                 else
                 {
-                    curse.IncreaseCurse();
-                    HP.OnHeal(3);
+                    if(HP.GetHP() < 9)
+                    {
+                        curse.IncreaseCurse();
+                        HP.OnHeal(3);
+                    }
+                    else
+                    {
+                        return false;
+                    }
                 }
                 amountOfMeatEaten++;
-                break;
+                return true;
             case ItemType.potion: curse.ResetCurse();
-                break;
-            default: break;
+                return true;
+            default: return false;
         }
     }
 

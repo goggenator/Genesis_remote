@@ -9,6 +9,7 @@ public class ShotGun : Weapon
     [SerializeField] float shootingSpeed;
     [SerializeField] int amountOfShots;
     [SerializeField] float spreadAngle;
+    [SerializeField] int criticalDamage;
     public void Awake()
     {
         shoot = GetComponent<Shoot>();
@@ -19,8 +20,15 @@ public class ShotGun : Weapon
         separatedAngle -= (spreadAngle / 2);
         for(int i = 0; i < amountOfShots; i++)
         {
-            Vector2 newDirection = new Vector2(direction.x * Mathf.Cos(separatedAngle*Mathf.Deg2Rad) - direction.y * Mathf.Sin(separatedAngle * Mathf.Deg2Rad), direction.x * Mathf.Sin(separatedAngle * Mathf.Deg2Rad) + direction.y * Mathf.Cos(separatedAngle * Mathf.Deg2Rad));
-            shoot.OnShoot(shootingSpeed, projectile, newDirection, origin, identity);
+            Vector2 newDirection = new Vector2(direction.x * Mathf.Cos(separatedAngle * Mathf.Deg2Rad) - direction.y * Mathf.Sin(separatedAngle * Mathf.Deg2Rad), direction.x * Mathf.Sin(separatedAngle * Mathf.Deg2Rad) + direction.y * Mathf.Cos(separatedAngle * Mathf.Deg2Rad));
+            if (i == amountOfShots/2)
+            {
+                shoot.OnShoot(shootingSpeed, projectile, newDirection, origin, identity, criticalDamage);
+            }
+            else
+            {
+                shoot.OnShoot(shootingSpeed, projectile, newDirection, origin, identity);
+            }
             separatedAngle += spreadAngle / amountOfShots;
         }
     }

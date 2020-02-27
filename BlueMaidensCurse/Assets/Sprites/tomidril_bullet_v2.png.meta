@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 50
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -133,8 +133,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 4
-        height: 4
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,7 +142,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 22e2da4f0d1c03547a7dbb397fe514f7
+      spriteID: c240213336c876d4aadec4258890275f
       internalID: -4303161146038745738
       vertices: []
       indices: 
@@ -152,10 +152,10 @@ TextureImporter:
       name: tomidril_bullet_v2_1
       rect:
         serializedVersion: 2
-        x: 4
+        x: 8
         y: 0
-        width: 4
-        height: 4
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,7 +163,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f169c62cfb02e5344a7ca416ae17c6be
+      spriteID: 8cf064b0128db3b4cae04955a277a01b
       internalID: 6663373183569330
       vertices: []
       indices: 
