@@ -32,7 +32,14 @@ public class PlayerController : EntityController
         if(movement.CanAttack())
         {
             equippedWeapon.OnAttack(movement.GetFacingDirection(), transform.position, "Player");
-            StartCoroutine(movement.WaitUntilCanAttack(equippedWeapon.GetReloadTime() * HP.GetHPPercentage()));
+            if(equippedWeapon.GetReloadTime() * HP.GetHPPercentage() <= 0.2f)
+            {
+                StartCoroutine(movement.WaitUntilCanAttack(0.2f));
+            }
+            else
+            {
+                StartCoroutine(movement.WaitUntilCanAttack(equippedWeapon.GetReloadTime() * HP.GetHPPercentage()));
+            }
         }
     }
     public void LockPosition()

@@ -70,7 +70,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba1d3de8a520a184a8d2b7df1976f18c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHP: 10
+  MaxHP: 3
   HP: 0
 --- !u!1 &7734950603754878054
 GameObject:
@@ -158,8 +158,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9159c89052a589948ae1f3aa4eec060e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 50
+  speed: 100
   resilience: 0
+  facingDirection: {x: 0, y: 0}
   canAttack: 0
 --- !u!114 &44915230
 MonoBehaviour:

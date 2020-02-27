@@ -60,5 +60,5 @@ MonoBehaviour:
   projectile: {fileID: 8837730764019656142, guid: 1006ae5b9c8361147ba4af5b484a7e08,
     type: 3}
   shootingSpeed: 500
-  amountOfShots: 6
-  spreadAngle: 25
+  amountOfShots: 7
+  spreadAngle: 12

@@ -27,6 +27,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rando
       objectReference: {fileID: 0}
+    - target: {fileID: 7734950603754878054, guid: 2ba14a91de8665e4fad50078bb501165,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7734950603754878050, guid: 2ba14a91de8665e4fad50078bb501165,
         type: 3}
       propertyPath: m_LocalPosition.x

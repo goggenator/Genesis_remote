@@ -31,6 +31,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 7734950603754878054, guid: 2ba14a91de8665e4fad50078bb501165,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7734950603754878050, guid: 2ba14a91de8665e4fad50078bb501165,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -86,15 +91,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7734950603754878052, guid: 2ba14a91de8665e4fad50078bb501165,
-        type: 3}
-      propertyPath: speed
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 44915230, guid: 2ba14a91de8665e4fad50078bb501165, type: 3}
-      propertyPath: layer
-      value: -6
-      objectReference: {fileID: 0}
     - target: {fileID: 7801839441795160438, guid: 2ba14a91de8665e4fad50078bb501165,
         type: 3}
       propertyPath: m_TagString
@@ -119,6 +115,15 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.b
       value: 0.10679956
+      objectReference: {fileID: 0}
+    - target: {fileID: 7734950603754878052, guid: 2ba14a91de8665e4fad50078bb501165,
+        type: 3}
+      propertyPath: speed
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 44915230, guid: 2ba14a91de8665e4fad50078bb501165, type: 3}
+      propertyPath: layer
+      value: -6
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5920139581065336860, guid: 2ba14a91de8665e4fad50078bb501165, type: 3}

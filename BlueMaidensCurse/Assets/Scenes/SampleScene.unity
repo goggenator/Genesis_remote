@@ -11485,11 +11485,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8570589569112043586, guid: 6a827426fb24dd74cbfcc87a0c556f84,
-        type: 3}
-      propertyPath: m_Name
-      value: Visuals
-      objectReference: {fileID: 0}
     - target: {fileID: 6833083204881322496, guid: 6a827426fb24dd74cbfcc87a0c556f84,
         type: 3}
       propertyPath: m_SortingOrder
@@ -11504,6 +11499,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.0000024
+      objectReference: {fileID: 0}
+    - target: {fileID: 8570589569112043586, guid: 6a827426fb24dd74cbfcc87a0c556f84,
+        type: 3}
+      propertyPath: m_Name
+      value: Visuals
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a827426fb24dd74cbfcc87a0c556f84, type: 3}
@@ -11749,11 +11749,6 @@ PrefabInstance:
     - target: {fileID: 315859233518772, guid: 1288ceb6f7a8c794192dc8577e2b2ec2, type: 3}
       propertyPath: m_Name
       value: ShotGun
-      objectReference: {fileID: 0}
-    - target: {fileID: 6068523412827656254, guid: 1288ceb6f7a8c794192dc8577e2b2ec2,
-        type: 3}
-      propertyPath: amountOfShots
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 315859233518779, guid: 1288ceb6f7a8c794192dc8577e2b2ec2, type: 3}
       propertyPath: m_LocalPosition.x

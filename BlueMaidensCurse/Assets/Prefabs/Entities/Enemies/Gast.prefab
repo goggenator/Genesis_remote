@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 7173430509989559749}
   - component: {fileID: 65477682159557598}
   m_Layer: 0
-  m_Name: Super-Zoomer
+  m_Name: Gast
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -88,8 +88,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9159c89052a589948ae1f3aa4eec060e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 150
+  speed: 175
   resilience: 0
+  facingDirection: {x: 0, y: 0}
   canAttack: 0
 --- !u!114 &3481912549849658028
 MonoBehaviour:
@@ -151,7 +152,7 @@ MonoBehaviour:
   shootingDelay: 0.1
   cooldown: 2
   amountOfSpins: 3
-  amountOfProjectiles: 20
+  amountOfProjectiles: 9
 --- !u!1 &3748656408167822585
 GameObject:
   m_ObjectHideFlags: 0
@@ -222,7 +223,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba1d3de8a520a184a8d2b7df1976f18c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHP: 10
+  MaxHP: 1
   HP: 0
 --- !u!1 &4200830201112515399
 GameObject:
