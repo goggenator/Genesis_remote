@@ -2,17 +2,21 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - AltEnemyController
+    - BasicMovement
     - CameraController
     - ControlManager
     - Curse
     - CustomCanvasScaler
     - DraugController
     - DropItem
+    - Entity
     - EntityManager
     - Environment_Tree
+    - FogManager
     - Game
     - HPBar
     - HealthManager
+    - HighScoreManager
     - Item
     - ItemManager
     - LayerManager
@@ -21,12 +25,13 @@ ScriptsOnlyBuild:
     - PauseMenu
     - PlayerController
     - Projectile
+    - ProjectileShadow
     - PushAttack
-    - RandomEnemyController
     - Shoot
     - ShotGun
     - Spawner
     - SpawnerManager
+    - SpiralShooting
     - SpriteLibrary
     - Wall
     - WallSegment
@@ -56,9 +61,17 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
     - Class: 28
       Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
     - Class: 48
+      Script: {instanceID: 0}
+    - Class: 64
       Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
@@ -73,22 +86,22 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9694}
     - Class: 114
-      Script: {instanceID: 9878}
-    - Class: 114
       Script: {instanceID: 9922}
     - Class: 114
-      Script: {instanceID: 10360}
+      Script: {instanceID: 9940}
     - Class: 114
-      Script: {instanceID: 10786}
+      Script: {instanceID: 10362}
     - Class: 114
-      Script: {instanceID: 10836}
+      Script: {instanceID: 10438}
     - Class: 114
-      Script: {instanceID: 11328}
+      Script: {instanceID: 10792}
     - Class: 114
-      Script: {instanceID: 11758}
+      Script: {instanceID: 10842}
+    - Class: 114
+      Script: {instanceID: 11338}
+    - Class: 114
+      Script: {instanceID: 11770}
     - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -131,9 +144,15 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
+    - Class: 70
+      Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
       Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
@@ -170,53 +189,63 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10360}
     - Class: 114
-      Script: {instanceID: 10380}
+      Script: {instanceID: 10362}
     - Class: 114
       Script: {instanceID: 10382}
     - Class: 114
-      Script: {instanceID: 10436}
+      Script: {instanceID: 10384}
     - Class: 114
-      Script: {instanceID: 10544}
+      Script: {instanceID: 10438}
     - Class: 114
-      Script: {instanceID: 10672}
+      Script: {instanceID: 10470}
     - Class: 114
-      Script: {instanceID: 10692}
+      Script: {instanceID: 10488}
     - Class: 114
-      Script: {instanceID: 10742}
+      Script: {instanceID: 10550}
     - Class: 114
-      Script: {instanceID: 10786}
+      Script: {instanceID: 10678}
     - Class: 114
-      Script: {instanceID: 10842}
+      Script: {instanceID: 10698}
     - Class: 114
-      Script: {instanceID: 10888}
+      Script: {instanceID: 10748}
     - Class: 114
-      Script: {instanceID: 11220}
+      Script: {instanceID: 10792}
     - Class: 114
-      Script: {instanceID: 11250}
+      Script: {instanceID: 10848}
     - Class: 114
-      Script: {instanceID: 11314}
+      Script: {instanceID: 10884}
+    - Class: 114
+      Script: {instanceID: 10896}
+    - Class: 114
+      Script: {instanceID: 11228}
+    - Class: 114
+      Script: {instanceID: 11238}
+    - Class: 114
+      Script: {instanceID: 11260}
     - Class: 114
       Script: {instanceID: 11324}
     - Class: 114
-      Script: {instanceID: 11328}
+      Script: {instanceID: 11334}
     - Class: 114
-      Script: {instanceID: 11506}
+      Script: {instanceID: 11338}
     - Class: 114
-      Script: {instanceID: 11512}
+      Script: {instanceID: 11514}
     - Class: 114
-      Script: {instanceID: 11624}
+      Script: {instanceID: 11518}
     - Class: 114
-      Script: {instanceID: 11640}
+      Script: {instanceID: 11524}
     - Class: 114
-      Script: {instanceID: 11680}
+      Script: {instanceID: 11636}
     - Class: 114
-      Script: {instanceID: 11704}
+      Script: {instanceID: 11652}
     - Class: 114
-      Script: {instanceID: 11758}
+      Script: {instanceID: 11692}
     - Class: 114
-      Script: {instanceID: 11764}
+      Script: {instanceID: 11716}
     - Class: 114
-      Script: {instanceID: 11794}
+      Script: {instanceID: 11770}
+    - Class: 114
+      Script: {instanceID: 11806}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -260,7 +289,7 @@ ScriptsOnlyBuild:
     className: TMP_Dropdown
   - hash:
       serializedVersion: 2
-      Hash: 59685ede6498937bc5c9d5a9ae1c5a55
+      Hash: a7e9aa5c1bb79a7bd0fb9cdffd64a71e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MovementManager
@@ -380,13 +409,13 @@ ScriptsOnlyBuild:
     className: PhysicsRaycaster
   - hash:
       serializedVersion: 2
-      Hash: 5a9a470a358a5efb29986d4a7f39ea20
+      Hash: 2b4cd52ecbfd067611ecc76dffadb3f4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemyController
   - hash:
       serializedVersion: 2
-      Hash: 5a9a470a358a5efb29986d4a7f39ea20
+      Hash: 2b4cd52ecbfd067611ecc76dffadb3f4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DraugController
@@ -440,7 +469,7 @@ ScriptsOnlyBuild:
     className: DropItem
   - hash:
       serializedVersion: 2
-      Hash: 03c3bf225af44e1bf3d3d61ff1eb4d30
+      Hash: bf6cf216b31634ebd8425f17983a6ae2
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Game
@@ -456,6 +485,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PauseMenu
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ProjectileShadow
   - hash:
       serializedVersion: 2
       Hash: cc4274b586df3c02688bac01b88bd16c
@@ -476,7 +511,7 @@ ScriptsOnlyBuild:
     className: Projectile
   - hash:
       serializedVersion: 2
-      Hash: d17a80df2f2604f6ea3f815c804d3e16
+      Hash: d8ecbdf20d1e1887cf31cda7f7865f0b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
@@ -504,6 +539,18 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Water2DScript
+  - hash:
+      serializedVersion: 2
+      Hash: 96a1462f1f77611db3405992511c9e32
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HighScoreManager
+  - hash:
+      serializedVersion: 2
+      Hash: 10db0a5b694954951d4c4cf535ea053c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Entity
   - hash:
       serializedVersion: 2
       Hash: ad8fae1839c4bf6a6b5c54c9195b6f42
@@ -596,6 +643,12 @@ ScriptsOnlyBuild:
     className: HealthManager
   - hash:
       serializedVersion: 2
+      Hash: 029c643639a50c22710adc25d46659e9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FogManager
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -614,7 +667,7 @@ ScriptsOnlyBuild:
     className: Weapon
   - hash:
       serializedVersion: 2
-      Hash: 5a9a470a358a5efb29986d4a7f39ea20
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EntityController
@@ -680,7 +733,13 @@ ScriptsOnlyBuild:
     className: Shoot
   - hash:
       serializedVersion: 2
-      Hash: c69dd449ff69987004535ed1674e1e8a
+      Hash: 30f3213a6e218a461fa00e428f22d3eb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BasicMovement
+  - hash:
+      serializedVersion: 2
+      Hash: c59af9ae193925edf50f9d611cf1cfba
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AltEnemyController
@@ -728,6 +787,12 @@ ScriptsOnlyBuild:
     className: MarkerTrack
   - hash:
       serializedVersion: 2
+      Hash: f9e5b024a8a3fd5b2eb2b165e95f6553
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SpiralShooting
+  - hash:
+      serializedVersion: 2
       Hash: 1ea9a7cb370acf8b38f968f966134741
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -746,7 +811,7 @@ ScriptsOnlyBuild:
     className: TMP_StyleSheet
   - hash:
       serializedVersion: 2
-      Hash: c9c0c682369c2cc7bab8bc413ade3106
+      Hash: 870622bec6345c060e1fb551e5289baf
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EntityManager
@@ -776,7 +841,7 @@ ScriptsOnlyBuild:
     className: PlayModeRunnerCallback
   - hash:
       serializedVersion: 2
-      Hash: 89b383c68c5541aa709142268e8687ed
+      Hash: 7d5bc5625c3b4a5bdaaca79496121444
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ShotGun
@@ -830,7 +895,7 @@ ScriptsOnlyBuild:
     className: StandaloneInputModule
   - hash:
       serializedVersion: 2
-      Hash: b59512397b69e8154aae9324cd627bd6
+      Hash: 5d8ddb5821d49e0f3b2b53b1c493d6bf
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: RandomEnemyController
@@ -848,7 +913,7 @@ ScriptsOnlyBuild:
     className: SignalEmitter
   - hash:
       serializedVersion: 2
-      Hash: b869070f3d1361e8a434740a9ec5809a
+      Hash: 1e89b7138ad0d069d8081adcb0b06daf
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ItemManager
