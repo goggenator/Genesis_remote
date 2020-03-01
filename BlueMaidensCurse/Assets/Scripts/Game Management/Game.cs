@@ -34,6 +34,7 @@ public class Game : MonoBehaviour
                 if (Player.GetComponentInChildren<HealthManager>().GetHP() <= 0)
                 {
                     Player.GetComponent<MovementManager>().OnDeath();
+                    DeathScreen.SetActive(true);
                 }
             }
         }
