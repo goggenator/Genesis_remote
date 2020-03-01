@@ -3,7 +3,13 @@ guid: 388a3134989f5324aa0aeea7935a22d6
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - pauseMenu: {instanceID: 0}
+  - DeathScreen: {fileID: 4111467400077639737, guid: 833523251b79a9646b2dd1e923c9fbee,
+      type: 3}
+  - Player: {instanceID: 0}
+  - spawnerManager: {instanceID: 0}
+  - itemManager: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

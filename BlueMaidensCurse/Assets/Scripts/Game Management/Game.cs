@@ -8,6 +8,8 @@ public class Game : MonoBehaviour
 
     [SerializeField] PauseMenu pauseMenu;
 
+    [SerializeField] GameObject DeathScreen;
+
     [SerializeField] GameObject Player;
 
     [SerializeField] SpawnerManager spawnerManager;
