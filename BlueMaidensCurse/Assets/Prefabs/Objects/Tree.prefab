@@ -60,7 +60,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce08bf016245fcb4fbadcc9f31a97051, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  layer: 3
+  layer: 13
   isEntity: 0
 --- !u!58 &416920223370274010
 CircleCollider2D:
@@ -126,7 +126,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -146,8 +146,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -3
-  m_Sprite: {fileID: 7197046509092255931, guid: 93be1ebafcdf70646934f3312d3693c1,
+  m_SortingOrder: -13
+  m_Sprite: {fileID: 8168982373474145382, guid: 93be1ebafcdf70646934f3312d3693c1,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

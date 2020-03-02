@@ -174,7 +174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce08bf016245fcb4fbadcc9f31a97051, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  layer: 18
+  layer: 10
   isEntity: 1
 --- !u!114 &8294691189918417101
 MonoBehaviour:
@@ -250,7 +250,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -270,7 +270,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -18
+  m_SortingOrder: -10
   m_Sprite: {fileID: 21300000, guid: dcc951c2cf971d1479b28df50d81ce56, type: 3}
   m_Color: {r: 0.35715577, g: 0.21026166, b: 0.4245283, a: 1}
   m_FlipX: 0
