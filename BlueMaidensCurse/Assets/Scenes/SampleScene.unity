@@ -19758,7 +19758,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1466397881
 Transform:
   m_ObjectHideFlags: 0
@@ -31653,6 +31653,60 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1311915257}
+    - target: {fileID: 4111467401034097058, guid: 833523251b79a9646b2dd1e923c9fbee,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 54
+      objectReference: {fileID: 0}
+    - target: {fileID: 4111467401034097058, guid: 833523251b79a9646b2dd1e923c9fbee,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4111467401034097058, guid: 833523251b79a9646b2dd1e923c9fbee,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4111467401034097058, guid: 833523251b79a9646b2dd1e923c9fbee,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4111467401034097068, guid: 833523251b79a9646b2dd1e923c9fbee,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 3023618821338674678, guid: 44d8ba3d0e45cc0469c02fd7546b00dc,
+        type: 3}
+    - target: {fileID: 4111467401034097068, guid: 833523251b79a9646b2dd1e923c9fbee,
+        type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4111467401034097069, guid: 833523251b79a9646b2dd1e923c9fbee,
+        type: 3}
+      propertyPath: m_Transition
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4111467401034097069, guid: 833523251b79a9646b2dd1e923c9fbee,
+        type: 3}
+      propertyPath: m_SpriteState.m_HighlightedSprite
+      value: 
+      objectReference: {fileID: -3316683077445829033, guid: 44d8ba3d0e45cc0469c02fd7546b00dc,
+        type: 3}
+    - target: {fileID: 4111467401034097069, guid: 833523251b79a9646b2dd1e923c9fbee,
+        type: 3}
+      propertyPath: m_SpriteState.m_PressedSprite
+      value: 
+      objectReference: {fileID: -7827965350281864090, guid: 44d8ba3d0e45cc0469c02fd7546b00dc,
+        type: 3}
+    - target: {fileID: 4111467401034097069, guid: 833523251b79a9646b2dd1e923c9fbee,
+        type: 3}
+      propertyPath: m_SpriteState.m_SelectedSprite
+      value: 
+      objectReference: {fileID: 3023618821338674678, guid: 44d8ba3d0e45cc0469c02fd7546b00dc,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 833523251b79a9646b2dd1e923c9fbee, type: 3}
 --- !u!1001 &4185011486353493868
