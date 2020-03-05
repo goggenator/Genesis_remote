@@ -6,6 +6,8 @@ public class SpawnerManager : MonoBehaviour
 {
     [SerializeField] EntityManager entityManager;
     [SerializeField] List<Spawner> spawners;
+    [SerializeField] List<Spawner> gastSpawners;
+    [SerializeField] Spawner bossSpawners;
     [SerializeField] float spawnRate;
     [SerializeField] bool spawning = false;
 
@@ -31,7 +33,7 @@ public class SpawnerManager : MonoBehaviour
     public List<int> ChooseSpawners()
     {
         List<int> newList = new List<int> { };
-        int amountOfSpawners = Random.Range(0, spawners.Count);
+        int amountOfSpawners = Random.Range(0, 4);
         for(int i = 0; i < amountOfSpawners; i++)
         {
             int spawnerID = Random.Range(0, spawners.Count);

@@ -12,26 +12,23 @@ public class ItemManager : MonoBehaviour
         switch(type)
         {
             case ItemType.meat:
-                if(amountOfMeatEaten == 0)
+                if(HP.GetHP() < 9)
                 {
-                    HP.OnRestoreHP();
-                    curse.ResetCurse();
+                    curse.IncreaseCurse();
+                    HP.OnHeal(3);
                 }
                 else
                 {
-                    if(HP.GetHP() < 9)
-                    {
-                        curse.IncreaseCurse();
-                        HP.OnHeal(3);
-                    }
-                    else
-                    {
-                        return false;
-                    }
+                    return false;
                 }
                 amountOfMeatEaten++;
                 return true;
             case ItemType.potion: curse.ResetCurse();
+                return true;
+            case ItemType.bigMeat:
+                HP.OnRestoreHP();
+                curse.ResetCurse();
+                amountOfMeatEaten++;
                 return true;
             default: return false;
         }

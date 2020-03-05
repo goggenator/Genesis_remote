@@ -45,7 +45,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.2}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -72,6 +72,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHP: 3
   HP: 0
+  invulnerabilityTime: 0
 --- !u!1 &7734950603754878054
 GameObject:
   m_ObjectHideFlags: 0
@@ -174,7 +175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce08bf016245fcb4fbadcc9f31a97051, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  layer: 10
+  layer: 18
   isEntity: 1
 --- !u!114 &8294691189918417101
 MonoBehaviour:
@@ -188,7 +189,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69f5bc2473f25c34484afeba1fd39b6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemToDrop: 0
 --- !u!114 &5920139581065336860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -270,7 +270,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -10
+  m_SortingOrder: -18
   m_Sprite: {fileID: 21300000, guid: dcc951c2cf971d1479b28df50d81ce56, type: 3}
   m_Color: {r: 0.35715577, g: 0.21026166, b: 0.4245283, a: 1}
   m_FlipX: 0

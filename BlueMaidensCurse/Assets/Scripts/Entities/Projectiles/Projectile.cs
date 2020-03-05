@@ -44,6 +44,7 @@ public class Projectile : MonoBehaviour
             {
                 if (collision.gameObject.GetComponentInParent<EntityController>())
                 {
+                    Debug.Log("Hit enemy, destroying myself");
                     collision.gameObject.GetComponentInParent<EntityController>().OnHit(damage);
                     Destroy(gameObject);
                 }

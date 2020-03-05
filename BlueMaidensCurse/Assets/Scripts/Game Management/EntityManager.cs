@@ -77,13 +77,21 @@ public class EntityManager : MonoBehaviour
     {
         foreach(Item item in items)
         {
-            if(item.GetItem() == itemType)
+            Debug.Log(EnemiesKilled);
+            if(EnemiesKilled == 0)
             {
-                if(itemType == ItemType.potion)
+                Debug.Log("Looking for big meat");
+                if(item.GetItem() == ItemType.bigMeat)
                 {
-                    Debug.Log("Potion spawning!");
+                    spawnedItems.Add(Instantiate(item, trans.position, Quaternion.identity));
                 }
-                spawnedItems.Add(Instantiate(item, trans.position, Quaternion.identity));
+            }
+            else
+            {
+                if (item.GetItem() == itemType)
+                {
+                    spawnedItems.Add(Instantiate(item, trans.position, Quaternion.identity));
+                }
             }
         }
     }

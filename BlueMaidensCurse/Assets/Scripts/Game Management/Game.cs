@@ -31,11 +31,11 @@ public class Game : MonoBehaviour
                 {
                     StartCoroutine(spawnerManager.Spawn(spawnerManager.ChooseSpawners(), spawnerManager.ChooseWaveAmount()));
                 }
-                if (Player.GetComponentInChildren<HealthManager>().GetHP() <= 0)
-                {
-                    Player.GetComponent<MovementManager>().OnDeath();
-                    DeathScreen.SetActive(true);
-                }
+            }
+            if (Player.GetComponentInChildren<HealthManager>().GetHP() <= 0)
+            {
+                Player.GetComponent<MovementManager>().OnDeath();
+                DeathScreen.SetActive(true);
             }
         }
     }

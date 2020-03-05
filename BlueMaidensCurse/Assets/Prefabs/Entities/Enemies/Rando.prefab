@@ -116,7 +116,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69f5bc2473f25c34484afeba1fd39b6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemToDrop: 0
 --- !u!114 &6558567463000575693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -178,7 +177,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.2}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -205,6 +204,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHP: 3
   HP: 0
+  invulnerabilityTime: 0
 --- !u!1 &2366188650244219903
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class Curse : MonoBehaviour
 {
-    [SerializeField] float curseDamage = 0;
+    [SerializeField] float curseDamage;
+    [SerializeField] float curseIncrease;
+    [SerializeField] float curseMaxValue;
+    [SerializeField] float curseResetValue;
     HealthManager HP;
 
     public void Awake()
@@ -18,14 +21,14 @@ public class Curse : MonoBehaviour
     }
     public void IncreaseCurse()
     {
-        if(curseDamage <= 3)
+        if(curseDamage <= curseMaxValue)
         {
-            curseDamage *= 1.25f;
+            curseDamage *= curseIncrease;
         }
     }
     public void ResetCurse()
     {
-        curseDamage = 0.01f;
+        curseDamage = curseResetValue;
         HP.OnRestoreHP();
     }
 }

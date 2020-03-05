@@ -5,7 +5,9 @@ using UnityEngine;
 public enum ItemType
 {
     meat = 0,
-    potion = 1
+    potion = 1,
+    bigMeat = 2,
+    none = 3
 }
 
 public class Item : MonoBehaviour

@@ -6,6 +6,8 @@ public class HealthManager : MonoBehaviour
 {
     [SerializeField] int MaxHP;
     [SerializeField] float HP;
+    [SerializeField] float invulnerabilityTime;
+    bool vulnerable = true;
 
     public void InitializeHealth(float givenHP)
     {
@@ -13,9 +15,10 @@ public class HealthManager : MonoBehaviour
     }
     public void OnHit(int damage)
     {
-        if(HP > 0)
+        if(HP > 0 && vulnerable)
         {
             HP -= damage;
+            StartCoroutine(OnBeingInvulnerable());
         }
     }
     public void OnHit(float damage)
@@ -51,5 +54,11 @@ public class HealthManager : MonoBehaviour
     public float GetHPPercentage()
     {
         return HP / MaxHP;
+    }
+    IEnumerator OnBeingInvulnerable()
+    {
+        vulnerable = false;
+        yield return new WaitForSeconds(invulnerabilityTime);
+        vulnerable = true;
     }
 }
