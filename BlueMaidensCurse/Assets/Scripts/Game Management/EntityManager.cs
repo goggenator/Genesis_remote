@@ -79,6 +79,10 @@ public class EntityManager : MonoBehaviour
         {
             if(item.GetItem() == itemType)
             {
+                if(itemType == ItemType.potion)
+                {
+                    Debug.Log("Potion spawning!");
+                }
                 spawnedItems.Add(Instantiate(item, trans.position, Quaternion.identity));
             }
         }
