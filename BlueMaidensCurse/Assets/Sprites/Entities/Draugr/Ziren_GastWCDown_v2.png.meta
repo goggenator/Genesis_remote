@@ -1,28 +1,28 @@
 fileFormatVersion: 2
-guid: 94a9c9444fc4937468fd3cb988c9cd45
+guid: fc087dce8537a5542b96b472b7c1b7a7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -728473555795331183
-    second: Ziren_GastWCDown_v1_0
+      213: 2914574145314183103
+    second: Ziren_GastWCDown_v2_0
   - first:
-      213: 8541850946812597773
-    second: Ziren_GastWCDown_v1_1
+      213: 6817478559350108783
+    second: Ziren_GastWCDown_v2_1
   - first:
-      213: 7669501299501574725
-    second: Ziren_GastWCDown_v1_2
+      213: -7546551240784957946
+    second: Ziren_GastWCDown_v2_2
   - first:
-      213: -7299602015261159249
-    second: Ziren_GastWCDown_v1_3
+      213: 5845599182325904840
+    second: Ziren_GastWCDown_v2_3
   - first:
-      213: -1758408063889608221
-    second: Ziren_GastWCDown_v1_4
+      213: -3603925214622785826
+    second: Ziren_GastWCDown_v2_4
   - first:
-      213: 1024830390964969292
-    second: Ziren_GastWCDown_v1_5
+      213: 7978332433712116052
+    second: Ziren_GastWCDown_v2_5
   - first:
-      213: -7163424850335779009
-    second: Ziren_GastWCDown_v1_6
+      213: 4444463543681947176
+    second: Ziren_GastWCDown_v2_6
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -107,7 +107,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ziren_GastWCDown_v1_0
+      name: Ziren_GastWCDown_v2_0
       rect:
         serializedVersion: 2
         x: 0
@@ -121,14 +121,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca0ba5c9f48aea74ba8463347f0229ef
-      internalID: -728473555795331183
+      spriteID: e47bcf426e40c544b8cc0adebea54bc9
+      internalID: 2914574145314183103
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ziren_GastWCDown_v1_1
+      name: Ziren_GastWCDown_v2_1
       rect:
         serializedVersion: 2
         x: 64
@@ -142,14 +142,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0803686f808ba884c8dc54896efedfe1
-      internalID: 8541850946812597773
+      spriteID: cd303efb8447da146b886ad567b09775
+      internalID: 6817478559350108783
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ziren_GastWCDown_v1_2
+      name: Ziren_GastWCDown_v2_2
       rect:
         serializedVersion: 2
         x: 128
@@ -163,14 +163,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0df7fddc0a2070945acc74ae90783405
-      internalID: 7669501299501574725
+      spriteID: 027626c20fb850a4fb4b44602cb71299
+      internalID: -7546551240784957946
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ziren_GastWCDown_v1_3
+      name: Ziren_GastWCDown_v2_3
       rect:
         serializedVersion: 2
         x: 192
@@ -184,14 +184,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bcda5aea8c851cb4a92a32b1e19da44a
-      internalID: -7299602015261159249
+      spriteID: 344eadb108a885e4aa15e5d2313acfe7
+      internalID: 5845599182325904840
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ziren_GastWCDown_v1_4
+      name: Ziren_GastWCDown_v2_4
       rect:
         serializedVersion: 2
         x: 0
@@ -205,14 +205,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e0cd8d9cc18a7d48a9e0499b5404a40
-      internalID: -1758408063889608221
+      spriteID: 649d4c7a0bc7c4541bad8c5dee000a6a
+      internalID: -3603925214622785826
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ziren_GastWCDown_v1_5
+      name: Ziren_GastWCDown_v2_5
       rect:
         serializedVersion: 2
         x: 64
@@ -226,14 +226,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54874d38a9b1ef64593ac3306b1df0b7
-      internalID: 1024830390964969292
+      spriteID: 996384e638423274b8767ac0c6f2551a
+      internalID: 7978332433712116052
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ziren_GastWCDown_v1_6
+      name: Ziren_GastWCDown_v2_6
       rect:
         serializedVersion: 2
         x: 128
@@ -247,8 +247,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef85f5f1129f7054681cb36520e605d5
-      internalID: -7163424850335779009
+      spriteID: fdb5baecd5bdf5c4d9a03947de3d7ce8
+      internalID: 4444463543681947176
       vertices: []
       indices: 
       edges: []
