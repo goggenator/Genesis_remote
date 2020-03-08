@@ -24,10 +24,12 @@ public class ShotGun : Weapon
             if (i == amountOfShots/2)
             {
                 shoot.OnShoot(shootingSpeed, projectile, newDirection, origin, identity, criticalDamage);
+                FindObjectOfType<AudioManager>().Play("Gunshot");
             }
             else
             {
                 shoot.OnShoot(shootingSpeed, projectile, newDirection, origin, identity);
+                FindObjectOfType<AudioManager>().Play("Gunshot");
             }
             separatedAngle += spreadAngle / amountOfShots;
         }
