@@ -6,10 +6,10 @@ public class SpawnerManager : MonoBehaviour
 {
     [SerializeField] EntityManager entityManager;
     [SerializeField] List<Spawner> spawners;
-    [SerializeField] List<Spawner> gastSpawners;
-    [SerializeField] Spawner bossSpawners;
+    [SerializeField] Spawner bossSpawner;
     [SerializeField] float spawnRate;
     [SerializeField] bool spawning = false;
+    int AmountOfEnemiesSpawnedThisRound = 0;
 
     public IEnumerator Spawn(List<int> activeSpawners, int amountOfWaves)
     {
@@ -22,6 +22,7 @@ public class SpawnerManager : MonoBehaviour
             {
                 if(j <= spawners.Count && spawners[j] != null)
                 {
+                    AmountOfEnemiesSpawnedThisRound += spawners[j].GetSpawnAmount();
                     spawners[j].Spawn(entityManager);
                 }
             }
@@ -49,6 +50,12 @@ public class SpawnerManager : MonoBehaviour
         return newList;
     }
 
+    public void SpawnBoss()
+    {
+        Debug.Log("Spawning Boss!!");
+        bossSpawner.Spawn(entityManager);
+    }
+
     public int ChooseWaveAmount()
     {
         return 3;
@@ -57,5 +64,10 @@ public class SpawnerManager : MonoBehaviour
     public bool GetSpawning()
     {
         return spawning;
+    }
+
+    public int GetAmountOfEnemiesSpawnedThisRound()
+    {
+        return AmountOfEnemiesSpawnedThisRound;
     }
 }

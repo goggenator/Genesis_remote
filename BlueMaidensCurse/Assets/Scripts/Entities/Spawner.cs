@@ -14,4 +14,8 @@ public class Spawner : MonoBehaviour
             entityManager.AddEnemyToList(Instantiate(enemyToSpawn, transform.position, Quaternion.identity, entityParent));
         }
     }
+    public int GetSpawnAmount()
+    {
+        return amountToSpawn;
+    }
 }
