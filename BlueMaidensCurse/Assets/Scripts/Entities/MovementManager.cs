@@ -18,6 +18,8 @@ public class MovementManager : MonoBehaviour //This is the script that should be
     [SerializeField] Vector2 facingDirection;
     bool canMove = true;
 
+    int timeSinceMoved = 10;
+
     Vector2 constantDirection;
 
     [SerializeField] bool canAttack;
@@ -79,6 +81,7 @@ public class MovementManager : MonoBehaviour //This is the script that should be
     }
     public void SetDirection(Vector2 direction)
     {
+        timeSinceMoved = 0;
         directionToMove += direction;
         directionToMove.Normalize();
 
@@ -91,7 +94,11 @@ public class MovementManager : MonoBehaviour //This is the script that should be
     }
     public bool GetWalking()
     {
-        return !(GetDirection() == Vector2.zero);
+        if(myBody.velocity == Vector2.zero)
+        {
+            timeSinceMoved++;
+        }
+        return (timeSinceMoved < 10);
     }
     public void SetConstantDirection(Vector2 direction)
     {

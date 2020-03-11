@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -815,6 +815,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Draug
       objectReference: {fileID: 0}
+    - target: {fileID: 7734950603754878054, guid: 2ba14a91de8665e4fad50078bb501165,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7734950603754878050, guid: 2ba14a91de8665e4fad50078bb501165,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -869,6 +874,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7734950604017450271, guid: 2ba14a91de8665e4fad50078bb501165,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: -10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ba14a91de8665e4fad50078bb501165, type: 3}
@@ -988,6 +998,7 @@ MonoBehaviour:
   - {fileID: 649131530}
   - {fileID: 1132902875}
   - {fileID: 1407435618}
+  bossSpawner: {fileID: 0}
   spawnRate: 2
   spawning: 0
 --- !u!1 &557649449
