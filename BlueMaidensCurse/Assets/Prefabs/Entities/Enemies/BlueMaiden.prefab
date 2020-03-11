@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 7173430509989559749}
   - component: {fileID: 65477682159557598}
   m_Layer: 0
-  m_Name: Gast
+  m_Name: BlueMaiden
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -104,7 +104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce08bf016245fcb4fbadcc9f31a97051, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  layer: -6
+  layer: -12
   isEntity: 1
 --- !u!114 &5168478531756657217
 MonoBehaviour:
@@ -198,7 +198,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.2}
+  m_Offset: {x: -0.08397686, y: 0.1624264}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -209,7 +209,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.25, y: 0.25}
+  m_Size: {x: 0.2765191, y: 0.7185023}
   m_EdgeRadius: 0
 --- !u!114 &7023583765902998348
 MonoBehaviour:
@@ -279,6 +279,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3723929143524147254}
   - component: {fileID: 4302659878995129997}
+  - component: {fileID: 8236738418674348585}
   m_Layer: 0
   m_Name: Visuals
   m_TagString: Untagged
@@ -337,9 +338,10 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 6
-  m_Sprite: {fileID: 21300000, guid: dcc951c2cf971d1479b28df50d81ce56, type: 3}
-  m_Color: {r: 0.9433962, g: 0, b: 0.30566072, a: 1}
+  m_SortingOrder: 12
+  m_Sprite: {fileID: -3390552413620068120, guid: cca6099cfd43e1040ad4f59ee8bf7dfb,
+    type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -349,6 +351,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &8236738418674348585
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5743080911688293020}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 30ca87b6f780dc34a8c897934a6bae67, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5753104782376022381
 GameObject:
   m_ObjectHideFlags: 0
@@ -394,7 +415,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.2}
+  m_Offset: {x: -0.083976865, y: 0.16242644}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -405,7 +426,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.25, y: 0.25}
+  m_Size: {x: 0.27651906, y: 0.71850234}
   m_EdgeRadius: 0
 --- !u!114 &6448523561679301388
 MonoBehaviour:

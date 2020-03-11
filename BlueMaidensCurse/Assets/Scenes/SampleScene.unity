@@ -798,7 +798,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amountToSpawn: 1
-  enemyToSpawn: {fileID: 4206084204309702374, guid: 97b698496f03f814c91cef04b4aa0c12,
+  enemyToSpawn: {fileID: 7173430509989559749, guid: 9ed3249c2702635478bc24f7362a6aaf,
     type: 3}
   entityParent: {fileID: 486182824}
 --- !u!1 &226573628
