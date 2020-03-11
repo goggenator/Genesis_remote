@@ -993,7 +993,7 @@ ScriptsOnlyBuild:
     className: Item
   - hash:
       serializedVersion: 2
-      Hash: 3e5d008de29d2e04cc77e9113315ee10
+      Hash: 5e3e18ccbb6940f330dfa0f889ae0e9f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SpawnerManager
@@ -1163,4 +1163,5 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/Bluemaidenscurse main menu.unity
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/eriks/Desktop/Skola/Genesis/Builds/New Unity Project (1).exe
+  playerPath: "C:/Users/Tinyb/OneDrive/Dokument/Skolb\xF6cker/Year 1/Game Design 2/New
+    Unity Project (1).exe"

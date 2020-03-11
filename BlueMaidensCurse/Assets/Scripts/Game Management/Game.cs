@@ -16,6 +16,9 @@ public class Game : MonoBehaviour
 
     [SerializeField] ItemManager itemManager;
 
+    bool timeToSpawnBoss = false;
+    bool spawningPaused = false;
+
     private void Awake()
     {
         I = this;
@@ -25,12 +28,22 @@ public class Game : MonoBehaviour
     {
         if(Player != null)
         {
-            if(spawnerManager != null && itemManager.GetAmountOfMeatEaten() > 0)
+            if(spawnerManager != null && itemManager.GetAmountOfMeatEaten() > 0 && !timeToSpawnBoss && !spawningPaused)
             {
                 if (!spawnerManager.GetSpawning())
                 {
                     StartCoroutine(spawnerManager.Spawn(spawnerManager.ChooseSpawners(), spawnerManager.ChooseWaveAmount()));
                 }
+                if(spawnerManager.GetAmountOfEnemiesSpawnedThisRound() > 50)
+                {
+                    spawningPaused = true;
+                    timeToSpawnBoss = true;
+                }
+            }
+            else if(timeToSpawnBoss)
+            {
+                spawnerManager.SpawnBoss();
+                timeToSpawnBoss = false;
             }
             if (Player.GetComponentInChildren<HealthManager>().GetHP() <= 0)
             {

@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 0.16522783, g: 0.40248334, b: 0.4433962, a: 1}
-  m_Intensity: 0.5
+  m_Intensity: 0.25
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: e38ec7d00000000057c85e7295c75c7a117dfc18a70b222b756ba134c5767720cbc31955
   m_LightCookieSprite: {fileID: 0}
@@ -197,11 +197,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1259210744}
     m_Modifications:
-    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
-        type: 3}
-      propertyPath: m_Name
-      value: Tree (13)
-      objectReference: {fileID: 0}
     - target: {fileID: 3075290766836957100, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -257,10 +252,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3075290766836957101, guid: a41164bae9f3585408252850a7d2d58f,
+    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
-      propertyPath: myType
-      value: 5
+      propertyPath: m_Name
+      value: Tree (13)
       objectReference: {fileID: 0}
     - target: {fileID: 3075290768165657278, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
@@ -273,55 +268,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -2898240650649044827, guid: 93be1ebafcdf70646934f3312d3693c1,
         type: 3}
+    - target: {fileID: 3075290766836957101, guid: a41164bae9f3585408252850a7d2d58f,
+        type: 3}
+      propertyPath: myType
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a41164bae9f3585408252850a7d2d58f, type: 3}
---- !u!1 &128608226
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 128608227}
-  - component: {fileID: 128608228}
-  m_Layer: 0
-  m_Name: Gast Spawner 1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &128608227
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 128608226}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3, y: -2, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 527560458}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &128608228
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 128608226}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6eb39c76b7aabd24699dbd9f68cd46d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  amountToSpawn: 1
-  enemyToSpawn: {fileID: 7173430509989559749, guid: 9ed3249c2702635478bc24f7362a6aaf,
-    type: 3}
-  entityParent: {fileID: 486182824}
 --- !u!1001 &137426513
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -329,11 +282,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1259210744}
     m_Modifications:
-    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
-        type: 3}
-      propertyPath: m_Name
-      value: Tree (17)
-      objectReference: {fileID: 0}
     - target: {fileID: 3075290766836957100, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -389,10 +337,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3075290766836957101, guid: a41164bae9f3585408252850a7d2d58f,
+    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
-      propertyPath: myType
-      value: 5
+      propertyPath: m_Name
+      value: Tree (17)
       objectReference: {fileID: 0}
     - target: {fileID: 3075290768165657278, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
@@ -405,14 +353,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -2898240650649044827, guid: 93be1ebafcdf70646934f3312d3693c1,
         type: 3}
+    - target: {fileID: 3075290766836957101, guid: a41164bae9f3585408252850a7d2d58f,
+        type: 3}
+      propertyPath: myType
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a41164bae9f3585408252850a7d2d58f, type: 3}
---- !u!4 &141833815 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1542499446065160186, guid: b2be10595aebbce4d87118d1ccedc8dd,
-    type: 3}
-  m_PrefabInstance: {fileID: 1542499445923867053}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &143959970
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -420,11 +367,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 166917378}
     m_Modifications:
-    - target: {fileID: 4602878765467084347, guid: 8ed18b3775068a24d93c4b3de4a401ec,
-        type: 3}
-      propertyPath: m_Name
-      value: GrassPatch2 (7)
-      objectReference: {fileID: 0}
     - target: {fileID: 5820096951698216952, guid: 8ed18b3775068a24d93c4b3de4a401ec,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -480,6 +422,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4602878765467084347, guid: 8ed18b3775068a24d93c4b3de4a401ec,
+        type: 3}
+      propertyPath: m_Name
+      value: GrassPatch2 (7)
+      objectReference: {fileID: 0}
     - target: {fileID: 494690620543245553, guid: 8ed18b3775068a24d93c4b3de4a401ec,
         type: 3}
       propertyPath: m_SortingOrder
@@ -500,11 +447,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1259210744}
     m_Modifications:
-    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
-        type: 3}
-      propertyPath: m_Name
-      value: Tree (24)
-      objectReference: {fileID: 0}
     - target: {fileID: 3075290766836957100, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -560,10 +502,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3075290766836957101, guid: a41164bae9f3585408252850a7d2d58f,
+    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
-      propertyPath: myType
-      value: 4
+      propertyPath: m_Name
+      value: Tree (24)
       objectReference: {fileID: 0}
     - target: {fileID: 3075290768165657278, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
@@ -576,6 +518,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2089725538367821565, guid: 93be1ebafcdf70646934f3312d3693c1,
         type: 3}
+    - target: {fileID: 3075290766836957101, guid: a41164bae9f3585408252850a7d2d58f,
+        type: 3}
+      propertyPath: myType
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a41164bae9f3585408252850a7d2d58f, type: 3}
 --- !u!4 &209575465 stripped
@@ -591,11 +538,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1259210744}
     m_Modifications:
-    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
-        type: 3}
-      propertyPath: m_Name
-      value: Tree
-      objectReference: {fileID: 0}
     - target: {fileID: 3075290766836957100, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -651,10 +593,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3075290766836957101, guid: a41164bae9f3585408252850a7d2d58f,
+    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
-      propertyPath: myType
-      value: 2
+      propertyPath: m_Name
+      value: Tree
       objectReference: {fileID: 0}
     - target: {fileID: 3075290768165657278, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
@@ -667,6 +609,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7197046509092255931, guid: 93be1ebafcdf70646934f3312d3693c1,
         type: 3}
+    - target: {fileID: 3075290766836957101, guid: a41164bae9f3585408252850a7d2d58f,
+        type: 3}
+      propertyPath: myType
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a41164bae9f3585408252850a7d2d58f, type: 3}
 --- !u!1001 &212908757
@@ -676,11 +623,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1259210744}
     m_Modifications:
-    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
-        type: 3}
-      propertyPath: m_Name
-      value: Tree (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 3075290766836957100, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -736,10 +678,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3075290766836957101, guid: a41164bae9f3585408252850a7d2d58f,
+    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
-      propertyPath: myType
-      value: 0
+      propertyPath: m_Name
+      value: Tree (3)
       objectReference: {fileID: 0}
     - target: {fileID: 3075290768165657278, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
@@ -752,6 +694,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -1291166620946821049, guid: 93be1ebafcdf70646934f3312d3693c1,
         type: 3}
+    - target: {fileID: 3075290766836957101, guid: a41164bae9f3585408252850a7d2d58f,
+        type: 3}
+      propertyPath: myType
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a41164bae9f3585408252850a7d2d58f, type: 3}
 --- !u!1 &223569223
@@ -783,7 +730,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 527560458}
-  m_RootOrder: 11
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &223569225
 MonoBehaviour:
@@ -904,11 +851,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1259210744}
     m_Modifications:
-    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
-        type: 3}
-      propertyPath: m_Name
-      value: Tree (11)
-      objectReference: {fileID: 0}
     - target: {fileID: 3075290766836957100, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -963,6 +905,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
+        type: 3}
+      propertyPath: m_Name
+      value: Tree (11)
       objectReference: {fileID: 0}
     - target: {fileID: 3075290768165657278, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
@@ -1025,11 +972,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 166917378}
     m_Modifications:
-    - target: {fileID: 2395042406182035230, guid: 10ed4b5bf14088949ad7cee8da082349,
-        type: 3}
-      propertyPath: m_Name
-      value: GrassPatch (7)
-      objectReference: {fileID: 0}
     - target: {fileID: 2395042406182035231, guid: 10ed4b5bf14088949ad7cee8da082349,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1084,6 +1026,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2395042406182035230, guid: 10ed4b5bf14088949ad7cee8da082349,
+        type: 3}
+      propertyPath: m_Name
+      value: GrassPatch (7)
       objectReference: {fileID: 0}
     - target: {fileID: 2395042407572142032, guid: 10ed4b5bf14088949ad7cee8da082349,
         type: 3}
@@ -1610,11 +1557,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1259210744}
     m_Modifications:
-    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
-        type: 3}
-      propertyPath: m_Name
-      value: Tree (28)
-      objectReference: {fileID: 0}
     - target: {fileID: 3075290766836957100, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1669,6 +1611,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
+        type: 3}
+      propertyPath: m_Name
+      value: Tree (28)
       objectReference: {fileID: 0}
     - target: {fileID: 3075290768165657278, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
@@ -1779,11 +1726,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1259210744}
     m_Modifications:
-    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
-        type: 3}
-      propertyPath: m_Name
-      value: Tree (19)
-      objectReference: {fileID: 0}
     - target: {fileID: 3075290766836957100, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1839,10 +1781,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3075290766836957101, guid: a41164bae9f3585408252850a7d2d58f,
+    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
-      propertyPath: myType
-      value: 5
+      propertyPath: m_Name
+      value: Tree (19)
       objectReference: {fileID: 0}
     - target: {fileID: 3075290768165657278, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
@@ -1855,6 +1797,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -2898240650649044827, guid: 93be1ebafcdf70646934f3312d3693c1,
         type: 3}
+    - target: {fileID: 3075290766836957101, guid: a41164bae9f3585408252850a7d2d58f,
+        type: 3}
+      propertyPath: myType
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a41164bae9f3585408252850a7d2d58f, type: 3}
 --- !u!1001 &481706967
@@ -1864,11 +1811,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 166917378}
     m_Modifications:
-    - target: {fileID: 4602878765467084347, guid: 8ed18b3775068a24d93c4b3de4a401ec,
-        type: 3}
-      propertyPath: m_Name
-      value: GrassPatch2 (6)
-      objectReference: {fileID: 0}
     - target: {fileID: 5820096951698216952, guid: 8ed18b3775068a24d93c4b3de4a401ec,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1924,6 +1866,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4602878765467084347, guid: 8ed18b3775068a24d93c4b3de4a401ec,
+        type: 3}
+      propertyPath: m_Name
+      value: GrassPatch2 (6)
+      objectReference: {fileID: 0}
     - target: {fileID: 494690620543245553, guid: 8ed18b3775068a24d93c4b3de4a401ec,
         type: 3}
       propertyPath: m_SortingOrder
@@ -1962,7 +1909,6 @@ Transform:
   m_Children:
   - {fileID: 1015642542}
   - {fileID: 1328446903}
-  - {fileID: 141833815}
   m_Father: {fileID: 2020318237}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2006,11 +1952,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 166917378}
     m_Modifications:
-    - target: {fileID: 2395042406182035230, guid: 10ed4b5bf14088949ad7cee8da082349,
-        type: 3}
-      propertyPath: m_Name
-      value: GrassPatch (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 2395042406182035231, guid: 10ed4b5bf14088949ad7cee8da082349,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2066,6 +2007,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2395042406182035230, guid: 10ed4b5bf14088949ad7cee8da082349,
+        type: 3}
+      propertyPath: m_Name
+      value: GrassPatch (3)
+      objectReference: {fileID: 0}
     - target: {fileID: 2395042407572142032, guid: 10ed4b5bf14088949ad7cee8da082349,
         type: 3}
       propertyPath: m_SortingOrder
@@ -2080,11 +2026,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 166917378}
     m_Modifications:
-    - target: {fileID: 2395042406182035230, guid: 10ed4b5bf14088949ad7cee8da082349,
-        type: 3}
-      propertyPath: m_Name
-      value: GrassPatch
-      objectReference: {fileID: 0}
     - target: {fileID: 2395042406182035231, guid: 10ed4b5bf14088949ad7cee8da082349,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2140,6 +2081,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2395042406182035230, guid: 10ed4b5bf14088949ad7cee8da082349,
+        type: 3}
+      propertyPath: m_Name
+      value: GrassPatch
+      objectReference: {fileID: 0}
     - target: {fileID: 2395042407572142032, guid: 10ed4b5bf14088949ad7cee8da082349,
         type: 3}
       propertyPath: m_SortingOrder
@@ -2154,11 +2100,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 166917378}
     m_Modifications:
-    - target: {fileID: 4602878765467084347, guid: 8ed18b3775068a24d93c4b3de4a401ec,
-        type: 3}
-      propertyPath: m_Name
-      value: GrassPatch2 (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 5820096951698216952, guid: 8ed18b3775068a24d93c4b3de4a401ec,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2214,6 +2155,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4602878765467084347, guid: 8ed18b3775068a24d93c4b3de4a401ec,
+        type: 3}
+      propertyPath: m_Name
+      value: GrassPatch2 (4)
+      objectReference: {fileID: 0}
     - target: {fileID: 494690620543245553, guid: 8ed18b3775068a24d93c4b3de4a401ec,
         type: 3}
       propertyPath: m_SortingOrder
@@ -2257,9 +2203,6 @@ Transform:
   - {fileID: 347900997}
   - {fileID: 1055872907}
   - {fileID: 1747687722}
-  - {fileID: 128608227}
-  - {fileID: 932442486}
-  - {fileID: 1393757562}
   - {fileID: 223569224}
   m_Father: {fileID: 2020318237}
   m_RootOrder: 2
@@ -2286,11 +2229,7 @@ MonoBehaviour:
   - {fileID: 347900998}
   - {fileID: 1055872908}
   - {fileID: 1747687723}
-  gastSpawners:
-  - {fileID: 128608228}
-  - {fileID: 932442487}
-  - {fileID: 1393757563}
-  bossSpawners: {fileID: 223569225}
+  bossSpawner: {fileID: 223569225}
   spawnRate: 2
   spawning: 0
 --- !u!1001 &561278746
@@ -2300,11 +2239,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1259210744}
     m_Modifications:
-    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
-        type: 3}
-      propertyPath: m_Name
-      value: Tree (10)
-      objectReference: {fileID: 0}
     - target: {fileID: 3075290766836957100, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2360,10 +2294,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3075290766836957101, guid: a41164bae9f3585408252850a7d2d58f,
+    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
-      propertyPath: myType
-      value: 2
+      propertyPath: m_Name
+      value: Tree (10)
       objectReference: {fileID: 0}
     - target: {fileID: 3075290768165657278, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
@@ -2376,6 +2310,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7197046509092255931, guid: 93be1ebafcdf70646934f3312d3693c1,
         type: 3}
+    - target: {fileID: 3075290766836957101, guid: a41164bae9f3585408252850a7d2d58f,
+        type: 3}
+      propertyPath: myType
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a41164bae9f3585408252850a7d2d58f, type: 3}
 --- !u!1001 &577568520
@@ -2385,11 +2324,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1259210744}
     m_Modifications:
-    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
-        type: 3}
-      propertyPath: m_Name
-      value: Tree (18)
-      objectReference: {fileID: 0}
     - target: {fileID: 3075290766836957100, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2445,10 +2379,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3075290766836957101, guid: a41164bae9f3585408252850a7d2d58f,
+    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
-      propertyPath: myType
-      value: 6
+      propertyPath: m_Name
+      value: Tree (18)
       objectReference: {fileID: 0}
     - target: {fileID: 3075290768165657278, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
@@ -2461,6 +2395,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -1174358944772925716, guid: 93be1ebafcdf70646934f3312d3693c1,
         type: 3}
+    - target: {fileID: 3075290766836957101, guid: a41164bae9f3585408252850a7d2d58f,
+        type: 3}
+      propertyPath: myType
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a41164bae9f3585408252850a7d2d58f, type: 3}
 --- !u!1 &580696225
@@ -2514,11 +2453,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 166917378}
     m_Modifications:
-    - target: {fileID: 2395042406182035230, guid: 10ed4b5bf14088949ad7cee8da082349,
-        type: 3}
-      propertyPath: m_Name
-      value: GrassPatch (13)
-      objectReference: {fileID: 0}
     - target: {fileID: 2395042406182035231, guid: 10ed4b5bf14088949ad7cee8da082349,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2573,6 +2507,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2395042406182035230, guid: 10ed4b5bf14088949ad7cee8da082349,
+        type: 3}
+      propertyPath: m_Name
+      value: GrassPatch (13)
       objectReference: {fileID: 0}
     - target: {fileID: 2395042407572142032, guid: 10ed4b5bf14088949ad7cee8da082349,
         type: 3}
@@ -2635,11 +2574,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1259210744}
     m_Modifications:
-    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
-        type: 3}
-      propertyPath: m_Name
-      value: Tree (6)
-      objectReference: {fileID: 0}
     - target: {fileID: 3075290766836957100, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2695,6 +2629,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
+        type: 3}
+      propertyPath: m_Name
+      value: Tree (6)
+      objectReference: {fileID: 0}
     - target: {fileID: 3075290768165657278, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
       propertyPath: m_SortingOrder
@@ -2709,11 +2648,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1259210744}
     m_Modifications:
-    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
-        type: 3}
-      propertyPath: m_Name
-      value: Tree (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 3075290766836957100, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2769,10 +2703,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3075290766836957101, guid: a41164bae9f3585408252850a7d2d58f,
+    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
-      propertyPath: myType
-      value: 6
+      propertyPath: m_Name
+      value: Tree (4)
       objectReference: {fileID: 0}
     - target: {fileID: 3075290768165657278, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
@@ -2785,6 +2719,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -1174358944772925716, guid: 93be1ebafcdf70646934f3312d3693c1,
         type: 3}
+    - target: {fileID: 3075290766836957101, guid: a41164bae9f3585408252850a7d2d58f,
+        type: 3}
+      propertyPath: myType
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a41164bae9f3585408252850a7d2d58f, type: 3}
 --- !u!114 &686532657 stripped
@@ -2806,11 +2745,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 166917378}
     m_Modifications:
-    - target: {fileID: 4602878765467084347, guid: 8ed18b3775068a24d93c4b3de4a401ec,
-        type: 3}
-      propertyPath: m_Name
-      value: GrassPatch2 (11)
-      objectReference: {fileID: 0}
     - target: {fileID: 5820096951698216952, guid: 8ed18b3775068a24d93c4b3de4a401ec,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2866,6 +2800,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4602878765467084347, guid: 8ed18b3775068a24d93c4b3de4a401ec,
+        type: 3}
+      propertyPath: m_Name
+      value: GrassPatch2 (11)
+      objectReference: {fileID: 0}
     - target: {fileID: 494690620543245553, guid: 8ed18b3775068a24d93c4b3de4a401ec,
         type: 3}
       propertyPath: m_SortingOrder
@@ -2880,11 +2819,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1259210744}
     m_Modifications:
-    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
-        type: 3}
-      propertyPath: m_Name
-      value: Tree (21)
-      objectReference: {fileID: 0}
     - target: {fileID: 3075290766836957100, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2940,6 +2874,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
+        type: 3}
+      propertyPath: m_Name
+      value: Tree (21)
+      objectReference: {fileID: 0}
     - target: {fileID: 3075290768165657278, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
       propertyPath: m_SortingOrder
@@ -2954,11 +2893,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1259210744}
     m_Modifications:
-    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
-        type: 3}
-      propertyPath: m_Name
-      value: Tree (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 3075290766836957100, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3014,10 +2948,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3075290766836957101, guid: a41164bae9f3585408252850a7d2d58f,
+    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
-      propertyPath: myType
-      value: 4
+      propertyPath: m_Name
+      value: Tree (1)
       objectReference: {fileID: 0}
     - target: {fileID: 3075290768165657278, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
@@ -3030,6 +2964,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2089725538367821565, guid: 93be1ebafcdf70646934f3312d3693c1,
         type: 3}
+    - target: {fileID: 3075290766836957101, guid: a41164bae9f3585408252850a7d2d58f,
+        type: 3}
+      propertyPath: myType
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a41164bae9f3585408252850a7d2d58f, type: 3}
 --- !u!1001 &814703633
@@ -3039,11 +2978,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1259210744}
     m_Modifications:
-    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
-        type: 3}
-      propertyPath: m_Name
-      value: Tree (5)
-      objectReference: {fileID: 0}
     - target: {fileID: 3075290766836957100, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3099,10 +3033,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3075290766836957101, guid: a41164bae9f3585408252850a7d2d58f,
+    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
-      propertyPath: myType
-      value: 1
+      propertyPath: m_Name
+      value: Tree (5)
       objectReference: {fileID: 0}
     - target: {fileID: 3075290768165657278, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
@@ -3115,6 +3049,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 9174307616922729892, guid: 93be1ebafcdf70646934f3312d3693c1,
         type: 3}
+    - target: {fileID: 3075290766836957101, guid: a41164bae9f3585408252850a7d2d58f,
+        type: 3}
+      propertyPath: myType
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a41164bae9f3585408252850a7d2d58f, type: 3}
 --- !u!1001 &872854358
@@ -3124,11 +3063,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 166917378}
     m_Modifications:
-    - target: {fileID: 2395042406182035230, guid: 10ed4b5bf14088949ad7cee8da082349,
-        type: 3}
-      propertyPath: m_Name
-      value: GrassPatch
-      objectReference: {fileID: 0}
     - target: {fileID: 2395042406182035231, guid: 10ed4b5bf14088949ad7cee8da082349,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3184,6 +3118,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2395042406182035230, guid: 10ed4b5bf14088949ad7cee8da082349,
+        type: 3}
+      propertyPath: m_Name
+      value: GrassPatch
+      objectReference: {fileID: 0}
     - target: {fileID: 2395042407572142032, guid: 10ed4b5bf14088949ad7cee8da082349,
         type: 3}
       propertyPath: m_SortingOrder
@@ -3222,11 +3161,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1259210744}
     m_Modifications:
-    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
-        type: 3}
-      propertyPath: m_Name
-      value: Tree (8)
-      objectReference: {fileID: 0}
     - target: {fileID: 3075290766836957100, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3282,10 +3216,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3075290766836957101, guid: a41164bae9f3585408252850a7d2d58f,
+    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
-      propertyPath: myType
-      value: 4
+      propertyPath: m_Name
+      value: Tree (8)
       objectReference: {fileID: 0}
     - target: {fileID: 3075290768165657278, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
@@ -3298,6 +3232,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2089725538367821565, guid: 93be1ebafcdf70646934f3312d3693c1,
         type: 3}
+    - target: {fileID: 3075290766836957101, guid: a41164bae9f3585408252850a7d2d58f,
+        type: 3}
+      propertyPath: myType
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a41164bae9f3585408252850a7d2d58f, type: 3}
 --- !u!1001 &903127084
@@ -3307,11 +3246,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1259210744}
     m_Modifications:
-    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
-        type: 3}
-      propertyPath: m_Name
-      value: Tree (31)
-      objectReference: {fileID: 0}
     - target: {fileID: 3075290766836957100, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3367,10 +3301,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3075290766836957101, guid: a41164bae9f3585408252850a7d2d58f,
+    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
-      propertyPath: myType
-      value: 5
+      propertyPath: m_Name
+      value: Tree (31)
       objectReference: {fileID: 0}
     - target: {fileID: 3075290768165657278, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
@@ -3383,55 +3317,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -2898240650649044827, guid: 93be1ebafcdf70646934f3312d3693c1,
         type: 3}
+    - target: {fileID: 3075290766836957101, guid: a41164bae9f3585408252850a7d2d58f,
+        type: 3}
+      propertyPath: myType
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a41164bae9f3585408252850a7d2d58f, type: 3}
---- !u!1 &932442485
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 932442486}
-  - component: {fileID: 932442487}
-  m_Layer: 0
-  m_Name: Gast Spawner 2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &932442486
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932442485}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6, y: 2, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 527560458}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &932442487
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932442485}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6eb39c76b7aabd24699dbd9f68cd46d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  amountToSpawn: 1
-  enemyToSpawn: {fileID: 7173430509989559749, guid: 9ed3249c2702635478bc24f7362a6aaf,
-    type: 3}
-  entityParent: {fileID: 486182824}
 --- !u!1001 &955781563
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3588,11 +3480,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 166917378}
     m_Modifications:
-    - target: {fileID: 4602878765467084347, guid: 8ed18b3775068a24d93c4b3de4a401ec,
-        type: 3}
-      propertyPath: m_Name
-      value: GrassPatch2 (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 5820096951698216952, guid: 8ed18b3775068a24d93c4b3de4a401ec,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3648,6 +3535,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4602878765467084347, guid: 8ed18b3775068a24d93c4b3de4a401ec,
+        type: 3}
+      propertyPath: m_Name
+      value: GrassPatch2 (4)
+      objectReference: {fileID: 0}
     - target: {fileID: 494690620543245553, guid: 8ed18b3775068a24d93c4b3de4a401ec,
         type: 3}
       propertyPath: m_SortingOrder
@@ -3662,11 +3554,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1259210744}
     m_Modifications:
-    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
-        type: 3}
-      propertyPath: m_Name
-      value: Tree (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 3075290766836957100, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3722,10 +3609,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3075290766836957101, guid: a41164bae9f3585408252850a7d2d58f,
+    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
-      propertyPath: myType
-      value: 5
+      propertyPath: m_Name
+      value: Tree (2)
       objectReference: {fileID: 0}
     - target: {fileID: 3075290768165657278, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
@@ -3738,6 +3625,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -2898240650649044827, guid: 93be1ebafcdf70646934f3312d3693c1,
         type: 3}
+    - target: {fileID: 3075290766836957101, guid: a41164bae9f3585408252850a7d2d58f,
+        type: 3}
+      propertyPath: myType
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a41164bae9f3585408252850a7d2d58f, type: 3}
 --- !u!1 &1047188587
@@ -3860,11 +3752,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 166917378}
     m_Modifications:
-    - target: {fileID: 2395042406182035230, guid: 10ed4b5bf14088949ad7cee8da082349,
-        type: 3}
-      propertyPath: m_Name
-      value: GrassPatch (5)
-      objectReference: {fileID: 0}
     - target: {fileID: 2395042406182035231, guid: 10ed4b5bf14088949ad7cee8da082349,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3920,6 +3807,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2395042406182035230, guid: 10ed4b5bf14088949ad7cee8da082349,
+        type: 3}
+      propertyPath: m_Name
+      value: GrassPatch (5)
+      objectReference: {fileID: 0}
     - target: {fileID: 2395042407572142032, guid: 10ed4b5bf14088949ad7cee8da082349,
         type: 3}
       propertyPath: m_SortingOrder
@@ -3934,11 +3826,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 166917378}
     m_Modifications:
-    - target: {fileID: 2395042406182035230, guid: 10ed4b5bf14088949ad7cee8da082349,
-        type: 3}
-      propertyPath: m_Name
-      value: GrassPatch (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 2395042406182035231, guid: 10ed4b5bf14088949ad7cee8da082349,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3994,6 +3881,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2395042406182035230, guid: 10ed4b5bf14088949ad7cee8da082349,
+        type: 3}
+      propertyPath: m_Name
+      value: GrassPatch (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 2395042407572142032, guid: 10ed4b5bf14088949ad7cee8da082349,
         type: 3}
       propertyPath: m_SortingOrder
@@ -4008,11 +3900,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 166917378}
     m_Modifications:
-    - target: {fileID: 4602878765467084347, guid: 8ed18b3775068a24d93c4b3de4a401ec,
-        type: 3}
-      propertyPath: m_Name
-      value: GrassPatch2
-      objectReference: {fileID: 0}
     - target: {fileID: 5820096951698216952, guid: 8ed18b3775068a24d93c4b3de4a401ec,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4068,6 +3955,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4602878765467084347, guid: 8ed18b3775068a24d93c4b3de4a401ec,
+        type: 3}
+      propertyPath: m_Name
+      value: GrassPatch2
+      objectReference: {fileID: 0}
     - target: {fileID: 494690620543245553, guid: 8ed18b3775068a24d93c4b3de4a401ec,
         type: 3}
       propertyPath: m_SortingOrder
@@ -4082,11 +3974,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 166917378}
     m_Modifications:
-    - target: {fileID: 4602878765467084347, guid: 8ed18b3775068a24d93c4b3de4a401ec,
-        type: 3}
-      propertyPath: m_Name
-      value: GrassPatch2 (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 5820096951698216952, guid: 8ed18b3775068a24d93c4b3de4a401ec,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4141,6 +4028,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4602878765467084347, guid: 8ed18b3775068a24d93c4b3de4a401ec,
+        type: 3}
+      propertyPath: m_Name
+      value: GrassPatch2 (3)
       objectReference: {fileID: 0}
     - target: {fileID: 494690620543245553, guid: 8ed18b3775068a24d93c4b3de4a401ec,
         type: 3}
@@ -4203,11 +4095,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 166917378}
     m_Modifications:
-    - target: {fileID: 4602878765467084347, guid: 8ed18b3775068a24d93c4b3de4a401ec,
-        type: 3}
-      propertyPath: m_Name
-      value: GrassPatch2 (8)
-      objectReference: {fileID: 0}
     - target: {fileID: 5820096951698216952, guid: 8ed18b3775068a24d93c4b3de4a401ec,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4263,6 +4150,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4602878765467084347, guid: 8ed18b3775068a24d93c4b3de4a401ec,
+        type: 3}
+      propertyPath: m_Name
+      value: GrassPatch2 (8)
+      objectReference: {fileID: 0}
     - target: {fileID: 494690620543245553, guid: 8ed18b3775068a24d93c4b3de4a401ec,
         type: 3}
       propertyPath: m_SortingOrder
@@ -4277,11 +4169,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 166917378}
     m_Modifications:
-    - target: {fileID: 4602878765467084347, guid: 8ed18b3775068a24d93c4b3de4a401ec,
-        type: 3}
-      propertyPath: m_Name
-      value: GrassPatch2 (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 5820096951698216952, guid: 8ed18b3775068a24d93c4b3de4a401ec,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4336,6 +4223,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4602878765467084347, guid: 8ed18b3775068a24d93c4b3de4a401ec,
+        type: 3}
+      propertyPath: m_Name
+      value: GrassPatch2 (2)
       objectReference: {fileID: 0}
     - target: {fileID: 494690620543245553, guid: 8ed18b3775068a24d93c4b3de4a401ec,
         type: 3}
@@ -4430,11 +4322,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 166917378}
     m_Modifications:
-    - target: {fileID: 4602878765467084347, guid: 8ed18b3775068a24d93c4b3de4a401ec,
-        type: 3}
-      propertyPath: m_Name
-      value: GrassPatch2 (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 5820096951698216952, guid: 8ed18b3775068a24d93c4b3de4a401ec,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4489,6 +4376,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4602878765467084347, guid: 8ed18b3775068a24d93c4b3de4a401ec,
+        type: 3}
+      propertyPath: m_Name
+      value: GrassPatch2 (2)
       objectReference: {fileID: 0}
     - target: {fileID: 494690620543245553, guid: 8ed18b3775068a24d93c4b3de4a401ec,
         type: 3}
@@ -4563,11 +4455,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 166917378}
     m_Modifications:
-    - target: {fileID: 4602878765467084347, guid: 8ed18b3775068a24d93c4b3de4a401ec,
-        type: 3}
-      propertyPath: m_Name
-      value: GrassPatch2 (10)
-      objectReference: {fileID: 0}
     - target: {fileID: 5820096951698216952, guid: 8ed18b3775068a24d93c4b3de4a401ec,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4623,6 +4510,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4602878765467084347, guid: 8ed18b3775068a24d93c4b3de4a401ec,
+        type: 3}
+      propertyPath: m_Name
+      value: GrassPatch2 (10)
+      objectReference: {fileID: 0}
     - target: {fileID: 494690620543245553, guid: 8ed18b3775068a24d93c4b3de4a401ec,
         type: 3}
       propertyPath: m_SortingOrder
@@ -4649,11 +4541,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1259210744}
     m_Modifications:
-    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
-        type: 3}
-      propertyPath: m_Name
-      value: Tree (20)
-      objectReference: {fileID: 0}
     - target: {fileID: 3075290766836957100, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4709,10 +4596,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3075290766836957101, guid: a41164bae9f3585408252850a7d2d58f,
+    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
-      propertyPath: myType
-      value: 1
+      propertyPath: m_Name
+      value: Tree (20)
       objectReference: {fileID: 0}
     - target: {fileID: 3075290768165657278, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
@@ -4725,6 +4612,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 9174307616922729892, guid: 93be1ebafcdf70646934f3312d3693c1,
         type: 3}
+    - target: {fileID: 3075290766836957101, guid: a41164bae9f3585408252850a7d2d58f,
+        type: 3}
+      propertyPath: myType
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a41164bae9f3585408252850a7d2d58f, type: 3}
 --- !u!4 &1328446903 stripped
@@ -4787,11 +4679,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 166917378}
     m_Modifications:
-    - target: {fileID: 2395042406182035230, guid: 10ed4b5bf14088949ad7cee8da082349,
-        type: 3}
-      propertyPath: m_Name
-      value: GrassPatch (11)
-      objectReference: {fileID: 0}
     - target: {fileID: 2395042406182035231, guid: 10ed4b5bf14088949ad7cee8da082349,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4847,6 +4734,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2395042406182035230, guid: 10ed4b5bf14088949ad7cee8da082349,
+        type: 3}
+      propertyPath: m_Name
+      value: GrassPatch (11)
+      objectReference: {fileID: 0}
     - target: {fileID: 2395042407572142032, guid: 10ed4b5bf14088949ad7cee8da082349,
         type: 3}
       propertyPath: m_SortingOrder
@@ -4861,11 +4753,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 166917378}
     m_Modifications:
-    - target: {fileID: 4602878765467084347, guid: 8ed18b3775068a24d93c4b3de4a401ec,
-        type: 3}
-      propertyPath: m_Name
-      value: GrassPatch2 (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 5820096951698216952, guid: 8ed18b3775068a24d93c4b3de4a401ec,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4921,6 +4808,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4602878765467084347, guid: 8ed18b3775068a24d93c4b3de4a401ec,
+        type: 3}
+      propertyPath: m_Name
+      value: GrassPatch2 (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 494690620543245553, guid: 8ed18b3775068a24d93c4b3de4a401ec,
         type: 3}
       propertyPath: m_SortingOrder
@@ -4935,11 +4827,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 166917378}
     m_Modifications:
-    - target: {fileID: 2395042406182035230, guid: 10ed4b5bf14088949ad7cee8da082349,
-        type: 3}
-      propertyPath: m_Name
-      value: GrassPatch (6)
-      objectReference: {fileID: 0}
     - target: {fileID: 2395042406182035231, guid: 10ed4b5bf14088949ad7cee8da082349,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4995,6 +4882,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2395042406182035230, guid: 10ed4b5bf14088949ad7cee8da082349,
+        type: 3}
+      propertyPath: m_Name
+      value: GrassPatch (6)
+      objectReference: {fileID: 0}
     - target: {fileID: 2395042407572142032, guid: 10ed4b5bf14088949ad7cee8da082349,
         type: 3}
       propertyPath: m_SortingOrder
@@ -5009,11 +4901,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1259210744}
     m_Modifications:
-    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
-        type: 3}
-      propertyPath: m_Name
-      value: Tree (25)
-      objectReference: {fileID: 0}
     - target: {fileID: 3075290766836957100, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5069,6 +4956,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
+        type: 3}
+      propertyPath: m_Name
+      value: Tree (25)
+      objectReference: {fileID: 0}
     - target: {fileID: 3075290768165657278, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
       propertyPath: m_SortingOrder
@@ -5076,53 +4968,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a41164bae9f3585408252850a7d2d58f, type: 3}
---- !u!1 &1393757561
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1393757562}
-  - component: {fileID: 1393757563}
-  m_Layer: 0
-  m_Name: Gast Spawner 3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1393757562
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1393757561}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2, y: 4, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 527560458}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1393757563
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1393757561}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6eb39c76b7aabd24699dbd9f68cd46d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  amountToSpawn: 1
-  enemyToSpawn: {fileID: 7173430509989559749, guid: 9ed3249c2702635478bc24f7362a6aaf,
-    type: 3}
-  entityParent: {fileID: 486182824}
 --- !u!1001 &1397497479
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5130,11 +4975,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1259210744}
     m_Modifications:
-    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
-        type: 3}
-      propertyPath: m_Name
-      value: Tree (30)
-      objectReference: {fileID: 0}
     - target: {fileID: 3075290766836957100, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5189,6 +5029,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
+        type: 3}
+      propertyPath: m_Name
+      value: Tree (30)
       objectReference: {fileID: 0}
     - target: {fileID: 3075290768165657278, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
@@ -5251,11 +5096,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1259210744}
     m_Modifications:
-    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
-        type: 3}
-      propertyPath: m_Name
-      value: Tree (12)
-      objectReference: {fileID: 0}
     - target: {fileID: 3075290766836957100, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5311,10 +5151,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3075290766836957101, guid: a41164bae9f3585408252850a7d2d58f,
+    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
-      propertyPath: myType
-      value: 1
+      propertyPath: m_Name
+      value: Tree (12)
       objectReference: {fileID: 0}
     - target: {fileID: 3075290768165657278, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
@@ -5327,6 +5167,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 9174307616922729892, guid: 93be1ebafcdf70646934f3312d3693c1,
         type: 3}
+    - target: {fileID: 3075290766836957101, guid: a41164bae9f3585408252850a7d2d58f,
+        type: 3}
+      propertyPath: myType
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a41164bae9f3585408252850a7d2d58f, type: 3}
 --- !u!1001 &1459907766
@@ -5336,11 +5181,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 166917378}
     m_Modifications:
-    - target: {fileID: 2395042406182035230, guid: 10ed4b5bf14088949ad7cee8da082349,
-        type: 3}
-      propertyPath: m_Name
-      value: GrassPatch (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 2395042406182035231, guid: 10ed4b5bf14088949ad7cee8da082349,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5395,6 +5235,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2395042406182035230, guid: 10ed4b5bf14088949ad7cee8da082349,
+        type: 3}
+      propertyPath: m_Name
+      value: GrassPatch (1)
       objectReference: {fileID: 0}
     - target: {fileID: 2395042407572142032, guid: 10ed4b5bf14088949ad7cee8da082349,
         type: 3}
@@ -5644,11 +5489,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 166917378}
     m_Modifications:
-    - target: {fileID: 2395042406182035230, guid: 10ed4b5bf14088949ad7cee8da082349,
-        type: 3}
-      propertyPath: m_Name
-      value: GrassPatch (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 2395042406182035231, guid: 10ed4b5bf14088949ad7cee8da082349,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5704,6 +5544,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2395042406182035230, guid: 10ed4b5bf14088949ad7cee8da082349,
+        type: 3}
+      propertyPath: m_Name
+      value: GrassPatch (4)
+      objectReference: {fileID: 0}
     - target: {fileID: 2395042407572142032, guid: 10ed4b5bf14088949ad7cee8da082349,
         type: 3}
       propertyPath: m_SortingOrder
@@ -5718,11 +5563,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1259210744}
     m_Modifications:
-    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
-        type: 3}
-      propertyPath: m_Name
-      value: Tree (7)
-      objectReference: {fileID: 0}
     - target: {fileID: 3075290766836957100, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5778,10 +5618,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3075290766836957101, guid: a41164bae9f3585408252850a7d2d58f,
+    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
-      propertyPath: myType
-      value: 1
+      propertyPath: m_Name
+      value: Tree (7)
       objectReference: {fileID: 0}
     - target: {fileID: 3075290768165657278, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
@@ -5794,6 +5634,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 9174307616922729892, guid: 93be1ebafcdf70646934f3312d3693c1,
         type: 3}
+    - target: {fileID: 3075290766836957101, guid: a41164bae9f3585408252850a7d2d58f,
+        type: 3}
+      propertyPath: myType
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a41164bae9f3585408252850a7d2d58f, type: 3}
 --- !u!1 &1526407524
@@ -5834,11 +5679,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1259210744}
     m_Modifications:
-    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
-        type: 3}
-      propertyPath: m_Name
-      value: Tree (9)
-      objectReference: {fileID: 0}
     - target: {fileID: 3075290766836957100, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5894,6 +5734,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
+        type: 3}
+      propertyPath: m_Name
+      value: Tree (9)
+      objectReference: {fileID: 0}
     - target: {fileID: 3075290768165657278, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
       propertyPath: m_SortingOrder
@@ -5940,11 +5785,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 166917378}
     m_Modifications:
-    - target: {fileID: 4602878765467084347, guid: 8ed18b3775068a24d93c4b3de4a401ec,
-        type: 3}
-      propertyPath: m_Name
-      value: GrassPatch2 (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 5820096951698216952, guid: 8ed18b3775068a24d93c4b3de4a401ec,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6000,6 +5840,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4602878765467084347, guid: 8ed18b3775068a24d93c4b3de4a401ec,
+        type: 3}
+      propertyPath: m_Name
+      value: GrassPatch2 (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 494690620543245553, guid: 8ed18b3775068a24d93c4b3de4a401ec,
         type: 3}
       propertyPath: m_SortingOrder
@@ -6014,11 +5859,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1259210744}
     m_Modifications:
-    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
-        type: 3}
-      propertyPath: m_Name
-      value: Tree (22)
-      objectReference: {fileID: 0}
     - target: {fileID: 3075290766836957100, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6074,10 +5914,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3075290766836957101, guid: a41164bae9f3585408252850a7d2d58f,
+    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
-      propertyPath: myType
-      value: 0
+      propertyPath: m_Name
+      value: Tree (22)
       objectReference: {fileID: 0}
     - target: {fileID: 3075290768165657278, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
@@ -6090,6 +5930,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -1291166620946821049, guid: 93be1ebafcdf70646934f3312d3693c1,
         type: 3}
+    - target: {fileID: 3075290766836957101, guid: a41164bae9f3585408252850a7d2d58f,
+        type: 3}
+      propertyPath: myType
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a41164bae9f3585408252850a7d2d58f, type: 3}
 --- !u!1001 &1646680403
@@ -6180,11 +6025,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1259210744}
     m_Modifications:
-    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
-        type: 3}
-      propertyPath: m_Name
-      value: Tree (29)
-      objectReference: {fileID: 0}
     - target: {fileID: 3075290766836957100, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6240,10 +6080,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3075290766836957101, guid: a41164bae9f3585408252850a7d2d58f,
+    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
-      propertyPath: myType
-      value: 1
+      propertyPath: m_Name
+      value: Tree (29)
       objectReference: {fileID: 0}
     - target: {fileID: 3075290768165657278, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
@@ -6256,6 +6096,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 9174307616922729892, guid: 93be1ebafcdf70646934f3312d3693c1,
         type: 3}
+    - target: {fileID: 3075290766836957101, guid: a41164bae9f3585408252850a7d2d58f,
+        type: 3}
+      propertyPath: myType
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a41164bae9f3585408252850a7d2d58f, type: 3}
 --- !u!1 &1674368847
@@ -6297,11 +6142,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1259210744}
     m_Modifications:
-    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
-        type: 3}
-      propertyPath: m_Name
-      value: Tree (27)
-      objectReference: {fileID: 0}
     - target: {fileID: 3075290766836957100, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6357,10 +6197,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3075290766836957101, guid: a41164bae9f3585408252850a7d2d58f,
+    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
-      propertyPath: myType
-      value: 5
+      propertyPath: m_Name
+      value: Tree (27)
       objectReference: {fileID: 0}
     - target: {fileID: 3075290768165657278, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
@@ -6373,6 +6213,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -2898240650649044827, guid: 93be1ebafcdf70646934f3312d3693c1,
         type: 3}
+    - target: {fileID: 3075290766836957101, guid: a41164bae9f3585408252850a7d2d58f,
+        type: 3}
+      propertyPath: myType
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a41164bae9f3585408252850a7d2d58f, type: 3}
 --- !u!1 &1687701279 stripped
@@ -6451,11 +6296,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 166917378}
     m_Modifications:
-    - target: {fileID: 4602878765467084347, guid: 8ed18b3775068a24d93c4b3de4a401ec,
-        type: 3}
-      propertyPath: m_Name
-      value: GrassPatch2 (5)
-      objectReference: {fileID: 0}
     - target: {fileID: 5820096951698216952, guid: 8ed18b3775068a24d93c4b3de4a401ec,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6510,6 +6350,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4602878765467084347, guid: 8ed18b3775068a24d93c4b3de4a401ec,
+        type: 3}
+      propertyPath: m_Name
+      value: GrassPatch2 (5)
       objectReference: {fileID: 0}
     - target: {fileID: 494690620543245553, guid: 8ed18b3775068a24d93c4b3de4a401ec,
         type: 3}
@@ -6646,11 +6491,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 166917378}
     m_Modifications:
-    - target: {fileID: 4602878765467084347, guid: 8ed18b3775068a24d93c4b3de4a401ec,
-        type: 3}
-      propertyPath: m_Name
-      value: GrassPatch2 (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 5820096951698216952, guid: 8ed18b3775068a24d93c4b3de4a401ec,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6706,6 +6546,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4602878765467084347, guid: 8ed18b3775068a24d93c4b3de4a401ec,
+        type: 3}
+      propertyPath: m_Name
+      value: GrassPatch2 (3)
+      objectReference: {fileID: 0}
     - target: {fileID: 494690620543245553, guid: 8ed18b3775068a24d93c4b3de4a401ec,
         type: 3}
       propertyPath: m_SortingOrder
@@ -6720,11 +6565,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1259210744}
     m_Modifications:
-    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
-        type: 3}
-      propertyPath: m_Name
-      value: Tree (23)
-      objectReference: {fileID: 0}
     - target: {fileID: 3075290766836957100, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6780,6 +6620,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
+        type: 3}
+      propertyPath: m_Name
+      value: Tree (23)
+      objectReference: {fileID: 0}
     - target: {fileID: 3075290768165657278, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
       propertyPath: m_SortingOrder
@@ -6800,11 +6645,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 166917378}
     m_Modifications:
-    - target: {fileID: 2395042406182035230, guid: 10ed4b5bf14088949ad7cee8da082349,
-        type: 3}
-      propertyPath: m_Name
-      value: GrassPatch (10)
-      objectReference: {fileID: 0}
     - target: {fileID: 2395042406182035231, guid: 10ed4b5bf14088949ad7cee8da082349,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6860,6 +6700,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2395042406182035230, guid: 10ed4b5bf14088949ad7cee8da082349,
+        type: 3}
+      propertyPath: m_Name
+      value: GrassPatch (10)
+      objectReference: {fileID: 0}
     - target: {fileID: 2395042407572142032, guid: 10ed4b5bf14088949ad7cee8da082349,
         type: 3}
       propertyPath: m_SortingOrder
@@ -6874,11 +6719,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1259210744}
     m_Modifications:
-    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
-        type: 3}
-      propertyPath: m_Name
-      value: Tree (16)
-      objectReference: {fileID: 0}
     - target: {fileID: 3075290766836957100, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6934,6 +6774,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
+        type: 3}
+      propertyPath: m_Name
+      value: Tree (16)
+      objectReference: {fileID: 0}
     - target: {fileID: 3075290768165657278, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
       propertyPath: m_SortingOrder
@@ -6948,11 +6793,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 166917378}
     m_Modifications:
-    - target: {fileID: 2395042406182035230, guid: 10ed4b5bf14088949ad7cee8da082349,
-        type: 3}
-      propertyPath: m_Name
-      value: GrassPatch (8)
-      objectReference: {fileID: 0}
     - target: {fileID: 2395042406182035231, guid: 10ed4b5bf14088949ad7cee8da082349,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7008,6 +6848,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2395042406182035230, guid: 10ed4b5bf14088949ad7cee8da082349,
+        type: 3}
+      propertyPath: m_Name
+      value: GrassPatch (8)
+      objectReference: {fileID: 0}
     - target: {fileID: 2395042407572142032, guid: 10ed4b5bf14088949ad7cee8da082349,
         type: 3}
       propertyPath: m_SortingOrder
@@ -7022,11 +6867,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 166917378}
     m_Modifications:
-    - target: {fileID: 4602878765467084347, guid: 8ed18b3775068a24d93c4b3de4a401ec,
-        type: 3}
-      propertyPath: m_Name
-      value: GrassPatch2
-      objectReference: {fileID: 0}
     - target: {fileID: 5820096951698216952, guid: 8ed18b3775068a24d93c4b3de4a401ec,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7082,6 +6922,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4602878765467084347, guid: 8ed18b3775068a24d93c4b3de4a401ec,
+        type: 3}
+      propertyPath: m_Name
+      value: GrassPatch2
+      objectReference: {fileID: 0}
     - target: {fileID: 494690620543245553, guid: 8ed18b3775068a24d93c4b3de4a401ec,
         type: 3}
       propertyPath: m_SortingOrder
@@ -7096,11 +6941,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 166917378}
     m_Modifications:
-    - target: {fileID: 2395042406182035230, guid: 10ed4b5bf14088949ad7cee8da082349,
-        type: 3}
-      propertyPath: m_Name
-      value: GrassPatch (12)
-      objectReference: {fileID: 0}
     - target: {fileID: 2395042406182035231, guid: 10ed4b5bf14088949ad7cee8da082349,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7156,6 +6996,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2395042406182035230, guid: 10ed4b5bf14088949ad7cee8da082349,
+        type: 3}
+      propertyPath: m_Name
+      value: GrassPatch (12)
+      objectReference: {fileID: 0}
     - target: {fileID: 2395042407572142032, guid: 10ed4b5bf14088949ad7cee8da082349,
         type: 3}
       propertyPath: m_SortingOrder
@@ -7170,11 +7015,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 166917378}
     m_Modifications:
-    - target: {fileID: 4602878765467084347, guid: 8ed18b3775068a24d93c4b3de4a401ec,
-        type: 3}
-      propertyPath: m_Name
-      value: GrassPatch2 (12)
-      objectReference: {fileID: 0}
     - target: {fileID: 5820096951698216952, guid: 8ed18b3775068a24d93c4b3de4a401ec,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7230,6 +7070,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4602878765467084347, guid: 8ed18b3775068a24d93c4b3de4a401ec,
+        type: 3}
+      propertyPath: m_Name
+      value: GrassPatch2 (12)
+      objectReference: {fileID: 0}
     - target: {fileID: 494690620543245553, guid: 8ed18b3775068a24d93c4b3de4a401ec,
         type: 3}
       propertyPath: m_SortingOrder
@@ -7244,11 +7089,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 166917378}
     m_Modifications:
-    - target: {fileID: 2395042406182035230, guid: 10ed4b5bf14088949ad7cee8da082349,
-        type: 3}
-      propertyPath: m_Name
-      value: GrassPatch (9)
-      objectReference: {fileID: 0}
     - target: {fileID: 2395042406182035231, guid: 10ed4b5bf14088949ad7cee8da082349,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7303,6 +7143,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2395042406182035230, guid: 10ed4b5bf14088949ad7cee8da082349,
+        type: 3}
+      propertyPath: m_Name
+      value: GrassPatch (9)
       objectReference: {fileID: 0}
     - target: {fileID: 2395042407572142032, guid: 10ed4b5bf14088949ad7cee8da082349,
         type: 3}
@@ -7416,11 +7261,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1259210744}
     m_Modifications:
-    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
-        type: 3}
-      propertyPath: m_Name
-      value: Tree (14)
-      objectReference: {fileID: 0}
     - target: {fileID: 3075290766836957100, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7476,6 +7316,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
+        type: 3}
+      propertyPath: m_Name
+      value: Tree (14)
+      objectReference: {fileID: 0}
     - target: {fileID: 3075290768165657278, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
       propertyPath: m_SortingOrder
@@ -7490,11 +7335,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1259210744}
     m_Modifications:
-    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
-        type: 3}
-      propertyPath: m_Name
-      value: Tree (15)
-      objectReference: {fileID: 0}
     - target: {fileID: 3075290766836957100, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7550,10 +7390,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3075290766836957101, guid: a41164bae9f3585408252850a7d2d58f,
+    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
-      propertyPath: myType
-      value: 1
+      propertyPath: m_Name
+      value: Tree (15)
       objectReference: {fileID: 0}
     - target: {fileID: 3075290768165657278, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
@@ -7566,6 +7406,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 9174307616922729892, guid: 93be1ebafcdf70646934f3312d3693c1,
         type: 3}
+    - target: {fileID: 3075290766836957101, guid: a41164bae9f3585408252850a7d2d58f,
+        type: 3}
+      propertyPath: myType
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a41164bae9f3585408252850a7d2d58f, type: 3}
 --- !u!1 &2020318236
@@ -7609,11 +7454,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1259210744}
     m_Modifications:
-    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
-        type: 3}
-      propertyPath: m_Name
-      value: Tree (26)
-      objectReference: {fileID: 0}
     - target: {fileID: 3075290766836957100, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7669,10 +7509,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3075290766836957101, guid: a41164bae9f3585408252850a7d2d58f,
+    - target: {fileID: 3075290766836957074, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
-      propertyPath: myType
-      value: 5
+      propertyPath: m_Name
+      value: Tree (26)
       objectReference: {fileID: 0}
     - target: {fileID: 3075290768165657278, guid: a41164bae9f3585408252850a7d2d58f,
         type: 3}
@@ -7685,6 +7525,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -2898240650649044827, guid: 93be1ebafcdf70646934f3312d3693c1,
         type: 3}
+    - target: {fileID: 3075290766836957101, guid: a41164bae9f3585408252850a7d2d58f,
+        type: 3}
+      propertyPath: myType
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a41164bae9f3585408252850a7d2d58f, type: 3}
 --- !u!1 &2070085923 stripped
@@ -7719,11 +7564,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 166917378}
     m_Modifications:
-    - target: {fileID: 4602878765467084347, guid: 8ed18b3775068a24d93c4b3de4a401ec,
-        type: 3}
-      propertyPath: m_Name
-      value: GrassPatch2 (9)
-      objectReference: {fileID: 0}
     - target: {fileID: 5820096951698216952, guid: 8ed18b3775068a24d93c4b3de4a401ec,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7778,6 +7618,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4602878765467084347, guid: 8ed18b3775068a24d93c4b3de4a401ec,
+        type: 3}
+      propertyPath: m_Name
+      value: GrassPatch2 (9)
       objectReference: {fileID: 0}
     - target: {fileID: 494690620543245553, guid: 8ed18b3775068a24d93c4b3de4a401ec,
         type: 3}
@@ -8120,75 +7965,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d799f07258d029140ac01869a30798ff, type: 3}
---- !u!1001 &1542499445923867053
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 486182824}
-    m_Modifications:
-    - target: {fileID: 1542499446065160187, guid: b2be10595aebbce4d87118d1ccedc8dd,
-        type: 3}
-      propertyPath: m_Name
-      value: BlueMaidenBoss
-      objectReference: {fileID: 0}
-    - target: {fileID: 1542499446065160186, guid: b2be10595aebbce4d87118d1ccedc8dd,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -6.21
-      objectReference: {fileID: 0}
-    - target: {fileID: 1542499446065160186, guid: b2be10595aebbce4d87118d1ccedc8dd,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.89
-      objectReference: {fileID: 0}
-    - target: {fileID: 1542499446065160186, guid: b2be10595aebbce4d87118d1ccedc8dd,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1542499446065160186, guid: b2be10595aebbce4d87118d1ccedc8dd,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1542499446065160186, guid: b2be10595aebbce4d87118d1ccedc8dd,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1542499446065160186, guid: b2be10595aebbce4d87118d1ccedc8dd,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1542499446065160186, guid: b2be10595aebbce4d87118d1ccedc8dd,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1542499446065160186, guid: b2be10595aebbce4d87118d1ccedc8dd,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1542499446065160186, guid: b2be10595aebbce4d87118d1ccedc8dd,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1542499446065160186, guid: b2be10595aebbce4d87118d1ccedc8dd,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1542499446065160186, guid: b2be10595aebbce4d87118d1ccedc8dd,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b2be10595aebbce4d87118d1ccedc8dd, type: 3}
 --- !u!1001 &3280303212097210534
 PrefabInstance:
   m_ObjectHideFlags: 0
