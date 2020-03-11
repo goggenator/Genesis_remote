@@ -16,7 +16,6 @@ public class BasicMovement : MonoBehaviour
     {
         animator.SetFloat("Horizontal", movementManager.GetFacingDirection().x);
         animator.SetFloat("Vertical", movementManager.GetFacingDirection().y);
-        Debug.Log(movementManager.GetWalking());
         animator.SetBool("Walking", movementManager.GetWalking());
     }
 }

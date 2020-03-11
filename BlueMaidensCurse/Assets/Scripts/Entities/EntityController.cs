@@ -16,8 +16,13 @@ public class EntityController : MonoBehaviour
         }
         else
         {
-            isDead = true;
+            GetComponentInChildren<Animator>().SetTrigger("IsDead");
         }
+    }
+
+    public void SetIsDead()
+    {
+        isDead = true;
     }
     public bool GetIsDead()
     {

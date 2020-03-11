@@ -27,7 +27,6 @@ public class ItemManager : MonoBehaviour
                 return true;
             case ItemType.bigMeat:
                 HP.OnRestoreHP();
-                curse.ResetCurse();
                 amountOfMeatEaten++;
                 return true;
             default: return false;
