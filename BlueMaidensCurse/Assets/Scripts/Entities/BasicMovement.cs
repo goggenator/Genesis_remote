@@ -5,7 +5,12 @@ using UnityEngine;
 public class BasicMovement : MonoBehaviour
 {
     public Animator animator;
+    MovementManager movementManager;
 
+    void Awake()
+    {
+        movementManager = GetComponent<MovementManager>();
+    }
     // Update is called once per frame
     void Update()
     {
@@ -14,7 +19,7 @@ public class BasicMovement : MonoBehaviour
 
         animator.SetFloat("Horizontal", movement.x);
         animator.SetFloat("Vertical", movement.y);
-        animator.SetFloat("Magnitude", movement.magnitude);
+        animator.SetBool("Walking", movementManager.GetWalking());
 
     }
 }

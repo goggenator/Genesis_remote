@@ -89,6 +89,10 @@ public class MovementManager : MonoBehaviour //This is the script that should be
     {
         return directionToMove.normalized;
     }
+    public bool GetWalking()
+    {
+        return !(GetDirection() == Vector2.zero);
+    }
     public void SetConstantDirection(Vector2 direction)
     {
         constantDirection = direction;

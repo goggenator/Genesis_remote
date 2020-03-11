@@ -187,7 +187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce08bf016245fcb4fbadcc9f31a97051, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  layer: -40
+  layer: -8
   isEntity: 1
 --- !u!114 &1015642541
 MonoBehaviour:
@@ -275,6 +275,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHP: 10
   HP: 0
+  invulnerabilityTime: 0
 --- !u!114 &8718653747090892856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -379,10 +380,10 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 40
+  m_SortingOrder: 8
   m_Sprite: {fileID: 47719621637774577, guid: 4945ee36e9695c544b0f0e3ff4608262, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.64, y: 0.64}
