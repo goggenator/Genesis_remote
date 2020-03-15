@@ -167,7 +167,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 0.16522783, g: 0.40248334, b: 0.4433962, a: 1}
-  m_Intensity: 0.25
+  m_Intensity: 0.35
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: e38ec7d00000000057c85e7295c75c7a117dfc18a70b222b756ba134c5767720cbc31955
   m_LightCookieSprite: {fileID: 0}
@@ -4287,6 +4287,21 @@ PrefabInstance:
       propertyPath: m_CropFrameY
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 184057690734667425, guid: 5a614ed7b70ad9e468d361b54efeea1d,
+        type: 3}
+      propertyPath: m_AssetsPPU
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 184057690734667425, guid: 5a614ed7b70ad9e468d361b54efeea1d,
+        type: 3}
+      propertyPath: m_UpscaleRT
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 184057690734667424, guid: 5a614ed7b70ad9e468d361b54efeea1d,
+        type: 3}
+      propertyPath: orthographic size
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a614ed7b70ad9e468d361b54efeea1d, type: 3}
 --- !u!1001 &1203432606
@@ -4508,6 +4523,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d81e06a45b75477428453830caa451b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1316286649 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 557649449, guid: 969b83f0a294ee74180c61879002264e,
+    type: 3}
+  m_PrefabInstance: {fileID: 8718653746363411474}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1316286652
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1316286649}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cf8eaf6705c177a4e905d21ff6b66d54, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1322508419
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7157,7 +7197,7 @@ Transform:
   m_GameObject: {fileID: 1953538556}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 100}
-  m_LocalScale: {x: 41.72637, y: 42.849438, z: 43.195}
+  m_LocalScale: {x: 1, y: 1, z: 43.195}
   m_Children: []
   m_Father: {fileID: 1674368848}
   m_RootOrder: 0
@@ -7169,7 +7209,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1953538556}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 674ed7027cea3954ea502bf5fa2820fb, type: 3}
   m_Name: 
@@ -7196,7 +7236,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 1817e5e946f7323498f19367d59e100a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7217,15 +7257,15 @@ SpriteRenderer:
   m_SortingLayerID: -792228125
   m_SortingLayer: -1
   m_SortingOrder: -1
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: ac2c1a0288b8b67498097170c0e51f26, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 49.61, y: 49.61}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1001 &1999084558
@@ -8708,6 +8748,46 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Size.x
       value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 557649450, guid: 969b83f0a294ee74180c61879002264e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.16813643
+      objectReference: {fileID: 0}
+    - target: {fileID: 557649450, guid: 969b83f0a294ee74180c61879002264e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9857638
+      objectReference: {fileID: 0}
+    - target: {fileID: 557649451, guid: 969b83f0a294ee74180c61879002264e, type: 3}
+      propertyPath: m_PointLightOuterRadius
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 557649451, guid: 969b83f0a294ee74180c61879002264e, type: 3}
+      propertyPath: m_PointLightInnerRadius
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 557649451, guid: 969b83f0a294ee74180c61879002264e, type: 3}
+      propertyPath: m_FalloffIntensity
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 557649451, guid: 969b83f0a294ee74180c61879002264e, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 557649451, guid: 969b83f0a294ee74180c61879002264e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.9151632
+      objectReference: {fileID: 0}
+    - target: {fileID: 557649451, guid: 969b83f0a294ee74180c61879002264e, type: 3}
+      propertyPath: m_Color.b
+      value: 0.6462264
+      objectReference: {fileID: 0}
+    - target: {fileID: 557649451, guid: 969b83f0a294ee74180c61879002264e, type: 3}
+      propertyPath: m_Intensity
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 557649451, guid: 969b83f0a294ee74180c61879002264e, type: 3}
+      propertyPath: m_PointLightInnerAngle
+      value: 360
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 969b83f0a294ee74180c61879002264e, type: 3}
