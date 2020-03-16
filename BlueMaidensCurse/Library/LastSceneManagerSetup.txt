@@ -1,8 +1,12 @@
 sceneSetups:
 <<<<<<< HEAD
+<<<<<<< HEAD
 - path: Assets/Scenes/SampleScene.unity
 =======
 - path: Assets/Scenes/on play intro.unity
+>>>>>>> master
+=======
+- path: Assets/Scenes/SampleScene.unity
 >>>>>>> master
   isLoaded: 1
   isActive: 1
