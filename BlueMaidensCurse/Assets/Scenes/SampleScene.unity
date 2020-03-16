@@ -8643,11 +8643,36 @@ PrefabInstance:
     - target: {fileID: 8148696977038051098, guid: 12242ff0d190e3542a27c911e4ac8cd4,
         type: 3}
       propertyPath: sounds.Array.data[0].volume
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 8148696977038051098, guid: 12242ff0d190e3542a27c911e4ac8cd4,
         type: 3}
       propertyPath: sounds.Array.data[0].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8148696977038051098, guid: 12242ff0d190e3542a27c911e4ac8cd4,
+        type: 3}
+      propertyPath: sounds.Array.data[2].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4d89b0d0deeae284d91ac1b9642556a5, type: 3}
+    - target: {fileID: 8148696977038051098, guid: 12242ff0d190e3542a27c911e4ac8cd4,
+        type: 3}
+      propertyPath: sounds.Array.data[2].name
+      value: ZombieDeath
+      objectReference: {fileID: 0}
+    - target: {fileID: 8148696977038051098, guid: 12242ff0d190e3542a27c911e4ac8cd4,
+        type: 3}
+      propertyPath: sounds.Array.data[2].volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8148696977038051098, guid: 12242ff0d190e3542a27c911e4ac8cd4,
+        type: 3}
+      propertyPath: sounds.Array.data[2].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8148696977038051098, guid: 12242ff0d190e3542a27c911e4ac8cd4,
+        type: 3}
+      propertyPath: sounds.Array.data[1].loop
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

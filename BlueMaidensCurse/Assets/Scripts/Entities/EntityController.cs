@@ -17,6 +17,7 @@ public class EntityController : MonoBehaviour
         else
         {
             GetComponentInChildren<Animator>().SetTrigger("IsDead");
+            FindObjectOfType<AudioManager>().Play("ZombieDeath");
         }
     }
 
