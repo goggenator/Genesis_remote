@@ -13,6 +13,7 @@ public class EntityController : MonoBehaviour
         if(HP.GetHP() - damage > 0)
         {
             HP.OnHit(damage);
+            GetComponentInChildren<Animator>().SetTrigger("WitchDamage");
         }
         else
         {
