@@ -9,11 +9,11 @@ EditorBuildSettings:
     path: Assets/Scenes/intro screen.unity
     guid: 7cf34265c4cb66a4dbaaea4062b39f7f
   - enabled: 1
-    path: Assets/Scenes/Bluemaidenscurse main menu.unity
-    guid: 4b94e578051f80842b81ac43d6a19f72
-  - enabled: 1
     path: Assets/Scenes/on play intro.unity
     guid: 58183e06ab61c4c439c50ad294d270e4
+  - enabled: 1
+    path: Assets/Scenes/Bluemaidenscurse main menu.unity
+    guid: 4b94e578051f80842b81ac43d6a19f72
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
