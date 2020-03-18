@@ -498,16 +498,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8718653747848152501}
     m_Modifications:
-<<<<<<< HEAD
+
     - target: {fileID: 6068523412827656254, guid: 1288ceb6f7a8c794192dc8577e2b2ec2,
         type: 3}
       propertyPath: shootingSpeed
       value: 2000
-=======
+
     - target: {fileID: 315859233518772, guid: 1288ceb6f7a8c794192dc8577e2b2ec2, type: 3}
       propertyPath: m_Name
       value: ShotGun
->>>>>>> master
+
       objectReference: {fileID: 0}
     - target: {fileID: 315859233518779, guid: 1288ceb6f7a8c794192dc8577e2b2ec2, type: 3}
       propertyPath: m_LocalPosition.x

@@ -119,6 +119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69f5bc2473f25c34484afeba1fd39b6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dropRate: 
 --- !u!114 &3739336681578101064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,6 +132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5745f6db53dd7174ab9539435bd062cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathSound: 
   score: 100
   walking: 0
   waitUntilChangeDirection: 0.3
@@ -151,9 +153,9 @@ MonoBehaviour:
   shoot: {fileID: 6327515010165702755}
   shootingSpeed: 150
   shootingDelay: 0.1
-  cooldown: 2
-  amountOfSpins: 3
-  amountOfProjectiles: 9
+  cooldown: 3
+  amountOfSpins: 2
+  amountOfProjectiles: 5
 --- !u!114 &7081512450392379953
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -2540,7 +2540,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9159c89052a589948ae1f3aa4eec060e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 100
+  speed: 80
   resilience: 0
   facingDirection: {x: 0, y: 0}
   canAttack: 0
