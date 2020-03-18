@@ -7,6 +7,7 @@ public class HealthManager : MonoBehaviour
     [SerializeField] int MaxHP;
     [SerializeField] float HP;
     [SerializeField] float invulnerabilityTime;
+    [SerializeField] string hit;
     bool vulnerable = true;
 
     public void InitializeHealth(float givenHP)

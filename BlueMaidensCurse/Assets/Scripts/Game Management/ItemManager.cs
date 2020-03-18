@@ -17,6 +17,7 @@ public class ItemManager : MonoBehaviour
                 {
                     curse.IncreaseCurse();
                     HP.OnHeal(3);
+
                 }
                 else
                 {
@@ -27,6 +28,7 @@ public class ItemManager : MonoBehaviour
             case ItemType.potion: 
                 curse.ResetCurse();
                 potionPickedUp = true;
+
                 return true;
             case ItemType.bigMeat:
                 if(amountOfMeatEaten == 0)
@@ -34,6 +36,7 @@ public class ItemManager : MonoBehaviour
                     curse.ActivateCurse();
                 }
                 HP.OnRestoreHP();
+
                 curse.IncreaseCurse();
                 amountOfMeatEaten++;
                 return true;

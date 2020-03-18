@@ -32,7 +32,10 @@ public class Game : MonoBehaviour
         {
             if(itemManager.GetIsPotionPickedUp())
             {
+                itemManager.ResetRound();
+                spawnerManager.ResetRound();
                 spawningPaused = false;
+                round++;
             }
             if(spawnerManager != null && itemManager.GetAmountOfMeatEaten() > 0 && !timeToSpawnBoss && !spawningPaused)
             {
@@ -42,6 +45,7 @@ public class Game : MonoBehaviour
                 }
                 if(spawnerManager.GetAmountOfEnemiesKilledThisRound() > 25 * round)
                 {
+                    Debug.Log("Time to spawn!");
                     spawningPaused = true;
                     timeToSpawnBoss = true;
                 }

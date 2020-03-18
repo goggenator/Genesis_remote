@@ -8,7 +8,7 @@ public class EntityManager : MonoBehaviour
     List<Item> spawnedItems = new List<Item>();
     [SerializeField] List<Item> items;
     [SerializeField] int EnemiesKilled = 0;
-    int EnemiesKilledThisRound = 0;
+    public int EnemiesKilledThisRound = 0;
     [SerializeField] HighScoreManager highScoreManager;
 
     public void Awake()
@@ -78,7 +78,6 @@ public class EntityManager : MonoBehaviour
     {
         foreach(Item item in items)
         {
-            Debug.Log(EnemiesKilled);
             if(EnemiesKilled == 0)
             {
                 Debug.Log("Looking for big meat");
