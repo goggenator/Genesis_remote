@@ -340,6 +340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5745f6db53dd7174ab9539435bd062cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathSound: 
   score: 5000
   walking: 0
   waitUntilChangeDirection: 0.3
@@ -770,6 +771,7 @@ GameObject:
   - component: {fileID: 3723929143524147254}
   - component: {fileID: 4302659878995129997}
   - component: {fileID: 8236738418674348585}
+  - component: {fileID: 7594192774506260673}
   m_Layer: 0
   m_Name: Visuals
   m_TagString: Untagged
@@ -869,6 +871,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7594192774506260673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5743080911688293020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a87552f6d6390a543accd8f6089313e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5753104782376022381
 GameObject:
   m_ObjectHideFlags: 0

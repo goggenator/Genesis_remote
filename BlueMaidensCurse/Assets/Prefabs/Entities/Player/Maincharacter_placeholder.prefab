@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 557649450}
   - component: {fileID: 557649451}
+  - component: {fileID: 1316286652}
   m_Layer: 0
   m_Name: Point Light 2D
   m_TagString: Untagged
@@ -24,7 +25,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 557649449}
-  m_LocalRotation: {x: -0, y: -0, z: -0.0028387369, w: 0.999996}
+  m_LocalRotation: {x: -0, y: -0, z: -0.16813643, w: 0.9857638}
   m_LocalPosition: {x: -0.010000229, y: -0.05000019, z: 140}
   m_LocalScale: {x: 0.96328, y: 1, z: 1}
   m_Children: []
@@ -45,9 +46,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LightType: 3
   m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0.538
-  m_Color: {r: 1, g: 0.77797776, b: 0.3915094, a: 1}
-  m_Intensity: 1
+  m_FalloffIntensity: 0.9
+  m_Color: {r: 1, g: 0.9151632, b: 0.6462264, a: 1}
+  m_Intensity: 1.2
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: e38ec7d00000000057c85e72
   m_LightCookieSprite: {fileID: 0}
@@ -56,8 +57,8 @@ MonoBehaviour:
   m_AlphaBlendOnOverlap: 0
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 1.2109798
-  m_PointLightOuterRadius: 3
+  m_PointLightInnerRadius: 0.5
+  m_PointLightOuterRadius: 4.5
   m_PointLightDistance: 3
   m_PointLightQuality: 1
   m_ShapeLightParametricSides: 5
@@ -70,6 +71,25 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!95 &1316286652
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557649449}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cf8eaf6705c177a4e905d21ff6b66d54, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8718653746958554558
 GameObject:
   m_ObjectHideFlags: 0
@@ -144,7 +164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1b1c6b526f20954f8127e6f303628f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positionCollider: {fileID: 8718653747409283707}
+  positionCollider: {fileID: 0}
   healthCollider: {fileID: 8718653747090892859}
 --- !u!114 &8718653746958554529
 MonoBehaviour:
@@ -174,6 +194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96e45f05726f3844db719dc14bbd5be0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathSound: 
   equippedWeapon: {fileID: 1662575993602676119}
 --- !u!114 &8718653746958554559
 MonoBehaviour:
@@ -187,7 +208,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce08bf016245fcb4fbadcc9f31a97051, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  layer: -8
+  layer: -40
   isEntity: 1
 --- !u!114 &1015642541
 MonoBehaviour:
@@ -248,7 +269,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.25}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -259,7 +280,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.25, y: 0.5}
+  m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
 --- !u!114 &8718653747090892858
 MonoBehaviour:
@@ -275,7 +296,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHP: 10
   HP: 0
-  invulnerabilityTime: 0
+  invulnerabilityTime: 3
 --- !u!114 &8718653747090892856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -380,7 +401,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 8
+  m_SortingOrder: 40
   m_Sprite: {fileID: 47719621637774577, guid: 4945ee36e9695c544b0f0e3ff4608262, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
@@ -401,7 +422,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8718653747409283706}
-  - component: {fileID: 8718653747409283707}
+  - component: {fileID: 8241229153166244445}
   m_Layer: 0
   m_Name: PositionCollider
   m_TagString: Player
@@ -423,8 +444,8 @@ Transform:
   m_Father: {fileID: 8718653746958554556}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &8718653747409283707
-BoxCollider2D:
+--- !u!58 &8241229153166244445
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -437,18 +458,8 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.25}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.1, y: 0.1}
-  m_EdgeRadius: 0
+  m_Radius: 0.1
 --- !u!1 &8718653747848152500
 GameObject:
   m_ObjectHideFlags: 0

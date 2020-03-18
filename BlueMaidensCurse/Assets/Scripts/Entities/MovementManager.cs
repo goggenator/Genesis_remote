@@ -17,6 +17,7 @@ public class MovementManager : MonoBehaviour //This is the script that should be
 
     [SerializeField] Vector2 facingDirection;
     bool canMove = true;
+    bool frozen = false;
 
     int timeSinceMoved = 10;
 
@@ -39,18 +40,22 @@ public class MovementManager : MonoBehaviour //This is the script that should be
 
     public void Move()
     {
-        if(canMove)
+        if(canMove && !frozen)
         {
             myBody.velocity = directionToMove * speed * Time.deltaTime
            + directionToPush * pushStrength * Time.deltaTime
            + constantDirection * speed * Time.deltaTime
            ;
         }
-        else
+        else if(!canMove && !frozen)
         {
             myBody.velocity = directionToPush * pushStrength * Time.deltaTime
            + constantDirection * speed * Time.deltaTime
            ;
+        }
+        else if(frozen)
+        {
+            myBody.velocity = Vector2.zero;
         }
         if (pushStrength > 1)
         {
@@ -123,6 +128,10 @@ public class MovementManager : MonoBehaviour //This is the script that should be
     public void SetCanMove(bool value)
     {
         canMove = value;
+    }
+    public void SetFrozen(bool value)
+    {
+        frozen = value;
     }
     public void OnDeath()
     {

@@ -158,6 +158,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   movementDirection: {x: 0, y: 0}
+  despawnTime: 2
 --- !u!114 &1288852757812874889
 MonoBehaviour:
   m_ObjectHideFlags: 0

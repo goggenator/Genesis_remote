@@ -9,6 +9,7 @@ public class Curse : MonoBehaviour
     [SerializeField] float curseMaxValue;
     [SerializeField] float curseResetValue;
     HealthManager HP;
+    bool activated = false;
 
     public void Awake()
     {
@@ -17,7 +18,10 @@ public class Curse : MonoBehaviour
 
     public void Update()
     {
-        HP.OnHit(curseDamage * Time.deltaTime);
+        if(activated)
+        {
+            HP.OnHit(curseDamage * Time.deltaTime);
+        }
     }
     public void IncreaseCurse()
     {
@@ -30,5 +34,9 @@ public class Curse : MonoBehaviour
     {
         curseDamage = curseResetValue;
         HP.OnRestoreHP();
+    }
+    public void ActivateCurse()
+    {
+        activated = true;
     }
 }

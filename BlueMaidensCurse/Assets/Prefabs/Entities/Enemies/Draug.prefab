@@ -2582,7 +2582,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6392ff2ae44ed34f8c5be2035116b38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< refs/remotes/goggenator/master
   deathSound: 
+=======
+  deathSound: ZombieDeath
+>>>>>>> Fixed sounds, and also big meat
   score: 100
 --- !u!114 &-5275176926119453320
 MonoBehaviour:

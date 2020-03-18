@@ -9,6 +9,7 @@ public class Projectile : MonoBehaviour
     [SerializeField] Vector2 movementDirection;
     ProjectileShadow shadow;
     string identity; //is the player or enemy casting this
+    [SerializeField]float despawnTime;
 
     public void Awake()
     {
@@ -52,7 +53,7 @@ public class Projectile : MonoBehaviour
     }
     public IEnumerator WaitUntilDespawn()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(despawnTime);
         movement.OnDeath();
     }
 }

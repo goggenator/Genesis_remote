@@ -7,7 +7,11 @@ public class EntityController : MonoBehaviour
     protected MovementManager movement;
     bool isDead = false;
     protected HealthManager HP;
+<<<<<<< refs/remotes/goggenator/master
     //[SerializeField] string deathSound;
+=======
+    [SerializeField] string deathSound;
+>>>>>>> Fixed sounds, and also big meat
 
     public void OnHit(int damage)
     {
@@ -18,8 +22,9 @@ public class EntityController : MonoBehaviour
         }
         else
         {
+            movement.SetFrozen(true);
             GetComponentInChildren<Animator>().SetTrigger("IsDead");
-            FindObjectOfType<AudioManager>().Play("ZombieDeath");
+            FindObjectOfType<AudioManager>().Play(deathSound);
         }
     }
 
