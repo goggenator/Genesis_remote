@@ -4,16 +4,10 @@ using UnityEngine;
 
 public class DropItem : MonoBehaviour
 {
+    [SerializeField] List<ItemType> dropRate;
     public ItemType GetItem()
     {
-        List<ItemType> itemsToChooseBetween = new List<ItemType>()
-        {
-            ItemType.meat,ItemType.meat,ItemType.meat,ItemType.meat,
-            ItemType.bigMeat,ItemType.bigMeat,
-            ItemType.none,ItemType.none,ItemType.none,ItemType.none,
-        };
-
-        return itemsToChooseBetween[Random.Range(0, itemsToChooseBetween.Count)];
+        return dropRate[Random.Range(0, dropRate.Count)];
     }
     public Transform GetLocation()
     {

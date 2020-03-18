@@ -8,6 +8,7 @@ public class EntityManager : MonoBehaviour
     List<Item> spawnedItems = new List<Item>();
     [SerializeField] List<Item> items;
     [SerializeField] int EnemiesKilled = 0;
+    int EnemiesKilledThisRound = 0;
     [SerializeField] HighScoreManager highScoreManager;
 
     public void Awake()
@@ -47,7 +48,7 @@ public class EntityManager : MonoBehaviour
                 highScoreManager.AddScore(enemies[i].GetScore());
                 enemies[i].OnDeath();
                 enemies.Remove(enemies[i]); //change to a for loop instead, and remove the return;
-                EnemiesKilled++;
+                EnemiesKilled++; EnemiesKilledThisRound++;
                 i++;
             }
         }
@@ -94,5 +95,13 @@ public class EntityManager : MonoBehaviour
                 }
             }
         }
+    }
+    public int GetAmountOFEnemiesKilled()
+    {
+        return EnemiesKilledThisRound;
+    }
+    public void ResetRound()
+    {
+        EnemiesKilledThisRound = 0;
     }
 }
