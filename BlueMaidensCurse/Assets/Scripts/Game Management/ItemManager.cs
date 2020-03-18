@@ -7,6 +7,7 @@ public class ItemManager : MonoBehaviour
     [SerializeField] Curse curse;
     [SerializeField] HealthManager HP;
     [SerializeField] uint amountOfMeatEaten = 0;
+    bool potionPickedUp = false;
     public bool OnPickUp(ItemType type)
     {
         switch(type)
@@ -23,7 +24,9 @@ public class ItemManager : MonoBehaviour
                 }
                 amountOfMeatEaten++;
                 return true;
-            case ItemType.potion: curse.ResetCurse();
+            case ItemType.potion: 
+                curse.ResetCurse();
+                potionPickedUp = true;
                 return true;
             case ItemType.bigMeat:
                 if(amountOfMeatEaten == 0)
@@ -41,5 +44,14 @@ public class ItemManager : MonoBehaviour
     public uint GetAmountOfMeatEaten()
     {
         return amountOfMeatEaten;
+    }
+
+    public bool GetIsPotionPickedUp()
+    {
+        return potionPickedUp;
+    }
+    public void ResetRound()
+    {
+        potionPickedUp = false;
     }
 }

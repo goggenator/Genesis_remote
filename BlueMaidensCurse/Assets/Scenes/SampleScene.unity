@@ -5802,12 +5802,6 @@ Transform:
   m_Father: {fileID: 2020318237}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &1602360419 stripped
-CircleCollider2D:
-  m_CorrespondingSourceObject: {fileID: 8241229153166244445, guid: 969b83f0a294ee74180c61879002264e,
-    type: 3}
-  m_PrefabInstance: {fileID: 8718653746363411474}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1622543262
 PrefabInstance:
   m_ObjectHideFlags: 0

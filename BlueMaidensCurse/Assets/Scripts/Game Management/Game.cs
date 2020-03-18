@@ -19,6 +19,8 @@ public class Game : MonoBehaviour
     bool timeToSpawnBoss = false;
     bool spawningPaused = false;
 
+    int round = 1;
+
     private void Awake()
     {
         I = this;
@@ -28,13 +30,17 @@ public class Game : MonoBehaviour
     {
         if(Player != null)
         {
+            if(itemManager.GetIsPotionPickedUp())
+            {
+                spawningPaused = false;
+            }
             if(spawnerManager != null && itemManager.GetAmountOfMeatEaten() > 0 && !timeToSpawnBoss && !spawningPaused)
             {
                 if (!spawnerManager.GetSpawning())
                 {
                     StartCoroutine(spawnerManager.Spawn(spawnerManager.ChooseSpawners(), spawnerManager.ChooseWaveAmount()));
                 }
-                if(spawnerManager.GetAmountOfEnemiesSpawnedThisRound() > 50)
+                if(spawnerManager.GetAmountOfEnemiesKilledThisRound() > 25 * round)
                 {
                     spawningPaused = true;
                     timeToSpawnBoss = true;

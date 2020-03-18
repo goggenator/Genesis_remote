@@ -70,4 +70,13 @@ public class SpawnerManager : MonoBehaviour
     {
         return AmountOfEnemiesSpawnedThisRound;
     }
+    public int GetAmountOfEnemiesKilledThisRound()
+    {
+        return entityManager.GetAmountOFEnemiesKilled();
+    }
+    public void ResetRound()
+    {
+        AmountOfEnemiesSpawnedThisRound = 0;
+        entityManager.ResetRound();
+    }
 }
