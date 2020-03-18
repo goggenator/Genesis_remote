@@ -1691,14 +1691,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-<<<<<<< refs/remotes/goggenator/master
-    - target: {fileID: 5920139581065336860, guid: 2ba14a91de8665e4fad50078bb501165,
-        type: 3}
-      propertyPath: deathSound
-      value: ZombieDeath
-      objectReference: {fileID: 0}
-=======
->>>>>>> Fixed sounds, and also big meat
     - target: {fileID: 7734950604017450271, guid: 2ba14a91de8665e4fad50078bb501165,
         type: 3}
       propertyPath: m_SortingOrder
