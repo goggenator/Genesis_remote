@@ -7,6 +7,7 @@ public class EntityController : MonoBehaviour
     protected MovementManager movement;
     bool isDead = false;
     protected HealthManager HP;
+    //[SerializeField] string deathSound;
 
     public void OnHit(int damage)
     {

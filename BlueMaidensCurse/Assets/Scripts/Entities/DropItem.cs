@@ -8,9 +8,9 @@ public class DropItem : MonoBehaviour
     {
         List<ItemType> itemsToChooseBetween = new List<ItemType>()
         {
-            ItemType.meat, ItemType.meat, ItemType.meat,
-            ItemType.bigMeat,
-            ItemType.none,ItemType.none,ItemType.none,ItemType.none,ItemType.none,ItemType.none
+            ItemType.meat,ItemType.meat,ItemType.meat,ItemType.meat,
+            ItemType.bigMeat,ItemType.bigMeat,
+            ItemType.none,ItemType.none,ItemType.none,ItemType.none,
         };
 
         return itemsToChooseBetween[Random.Range(0, itemsToChooseBetween.Count)];

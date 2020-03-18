@@ -2556,7 +2556,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce08bf016245fcb4fbadcc9f31a97051, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  layer: 10
+  layer: 18
   isEntity: 1
 --- !u!114 &8294691189918417101
 MonoBehaviour:
@@ -2582,6 +2582,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6392ff2ae44ed34f8c5be2035116b38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathSound: 
   score: 100
 --- !u!114 &-5275176926119453320
 MonoBehaviour:
@@ -2706,7 +2707,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -10
+  m_SortingOrder: -18
   m_Sprite: {fileID: -728473555795331183, guid: 94a9c9444fc4937468fd3cb988c9cd45,
     type: 3}
   m_Color: {r: 0.9955451, g: 0.9858491, b: 1, a: 1}

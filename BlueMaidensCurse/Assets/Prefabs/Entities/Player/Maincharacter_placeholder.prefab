@@ -288,10 +288,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05b78f72b48678b4b947a792daddc2e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  curseDamage: 0
+  curseDamage: 0.15
   curseIncrease: 1.25
   curseMaxValue: 3
-  curseResetValue: 0.01
+  curseResetValue: 0.15
 --- !u!1 &8718653747382530879
 GameObject:
   m_ObjectHideFlags: 0
@@ -487,10 +487,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8718653747848152501}
     m_Modifications:
-    - target: {fileID: 315859233518772, guid: 1288ceb6f7a8c794192dc8577e2b2ec2, type: 3}
-      propertyPath: m_Name
-      value: ShotGun
-      objectReference: {fileID: 0}
     - target: {fileID: 315859233518779, guid: 1288ceb6f7a8c794192dc8577e2b2ec2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -534,6 +530,10 @@ PrefabInstance:
     - target: {fileID: 315859233518779, guid: 1288ceb6f7a8c794192dc8577e2b2ec2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 315859233518772, guid: 1288ceb6f7a8c794192dc8577e2b2ec2, type: 3}
+      propertyPath: m_Name
+      value: ShotGun
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1288ceb6f7a8c794192dc8577e2b2ec2, type: 3}
