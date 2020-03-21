@@ -1,7 +1,76 @@
 fileFormatVersion: 2
 guid: 80aafd647d0a1ff40bea7497f5506357
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 6487554448679427829
+    second: Ziren_DraugrSpawn_back_v1_0
+  - first:
+      213: 4042955604393226681
+    second: Ziren_DraugrSpawn_back_v1_1
+  - first:
+      213: 376586732018386550
+    second: Ziren_DraugrSpawn_back_v1_2
+  - first:
+      213: -6841009140432918324
+    second: Ziren_DraugrSpawn_back_v1_3
+  - first:
+      213: 8106467683617685887
+    second: Ziren_DraugrSpawn_back_v1_4
+  - first:
+      213: -5285146450014228791
+    second: Ziren_DraugrSpawn_back_v1_5
+  - first:
+      213: 467098995669139928
+    second: Ziren_DraugrSpawn_back_v1_6
+  - first:
+      213: -8217625204189918352
+    second: Ziren_DraugrSpawn_back_v1_7
+  - first:
+      213: 1607050303586872685
+    second: Ziren_DraugrSpawn_back_v1_8
+  - first:
+      213: 5034337670320908683
+    second: Ziren_DraugrSpawn_back_v1_9
+  - first:
+      213: -204684275752971173
+    second: Ziren_DraugrSpawn_back_v1_10
+  - first:
+      213: 4791450315533364574
+    second: Ziren_DraugrSpawn_back_v1_11
+  - first:
+      213: -1988120671748635871
+    second: Ziren_DraugrSpawn_back_v1_12
+  - first:
+      213: -4482403340680874306
+    second: Ziren_DraugrSpawn_back_v1_13
+  - first:
+      213: 7766450020369575151
+    second: Ziren_DraugrSpawn_back_v1_14
+  - first:
+      213: 8761411438861167435
+    second: Ziren_DraugrSpawn_back_v1_15
+  - first:
+      213: -5079775584692815139
+    second: Ziren_DraugrSpawn_back_v1_16
+  - first:
+      213: -628738793374461834
+    second: Ziren_DraugrSpawn_back_v1_17
+  - first:
+      213: 6445102467418633262
+    second: Ziren_DraugrSpawn_back_v1_18
+  - first:
+      213: 7157258735717992618
+    second: Ziren_DraugrSpawn_back_v1_19
+  - first:
+      213: -6293428752139260146
+    second: Ziren_DraugrSpawn_back_v1_20
+  - first:
+      213: 1898303880356026545
+    second: Ziren_DraugrSpawn_back_v1_21
+  - first:
+      213: -3993223349152695157
+    second: Ziren_DraugrSpawn_back_v1_22
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +109,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -70,9 +139,504 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Ziren_DraugrSpawn_back_v1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d015527e6babf08409ec4e16ac135f8d
+      internalID: 6487554448679427829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ziren_DraugrSpawn_back_v1_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34f790cf5fd76c140a5c28daca69c721
+      internalID: 4042955604393226681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ziren_DraugrSpawn_back_v1_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d45bf9c44cca67943ad2e3f87dca758e
+      internalID: 376586732018386550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ziren_DraugrSpawn_back_v1_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adfcd8448e8b8e44182ec56e199a6275
+      internalID: -6841009140432918324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ziren_DraugrSpawn_back_v1_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5349d98c88d0ffc43ad68c7197c862e8
+      internalID: 8106467683617685887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ziren_DraugrSpawn_back_v1_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3e45c38effb3434582c9b7ba4db9654
+      internalID: -5285146450014228791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ziren_DraugrSpawn_back_v1_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8353cd341f46284498b56841473c021
+      internalID: 467098995669139928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ziren_DraugrSpawn_back_v1_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dd1cd4f827f5f6469fd9ee759aad205
+      internalID: -8217625204189918352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ziren_DraugrSpawn_back_v1_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 76
+        width: 64
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f72d17e9149cb014cad83fe7de59e9cb
+      internalID: 1607050303586872685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ziren_DraugrSpawn_back_v1_9
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 76
+        width: 64
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c641eff3a8c1774c81f8b6ba82b740e
+      internalID: 5034337670320908683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ziren_DraugrSpawn_back_v1_10
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 76
+        width: 64
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da15d30db4d638f40a48631a20e14f0c
+      internalID: -204684275752971173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ziren_DraugrSpawn_back_v1_11
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 76
+        width: 64
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38202df3afbbf784cbab193a0ef102a7
+      internalID: 4791450315533364574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ziren_DraugrSpawn_back_v1_12
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 76
+        width: 64
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e728022c08b38a4897e86c3dc8ef777
+      internalID: -1988120671748635871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ziren_DraugrSpawn_back_v1_13
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 76
+        width: 64
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4c355d5b32fdd54fb9857d362924c08
+      internalID: -4482403340680874306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ziren_DraugrSpawn_back_v1_14
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 76
+        width: 64
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88194b74b74ca55419483f11f143f984
+      internalID: 7766450020369575151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ziren_DraugrSpawn_back_v1_15
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 76
+        width: 64
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e4219308764b5945a1258b412555c48
+      internalID: 8761411438861167435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ziren_DraugrSpawn_back_v1_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07c044d966085c647bc3e62f0786589c
+      internalID: -5079775584692815139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ziren_DraugrSpawn_back_v1_17
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4fb718ceb2bebf49b13c4252b74c3d1
+      internalID: -628738793374461834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ziren_DraugrSpawn_back_v1_18
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c2d7891db8f34f4aab739f65ca51dd2
+      internalID: 6445102467418633262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ziren_DraugrSpawn_back_v1_19
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97020a6814096e045a74d871bdcbe3ca
+      internalID: 7157258735717992618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ziren_DraugrSpawn_back_v1_20
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd80cd69862758645b47f8f3c145953e
+      internalID: -6293428752139260146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ziren_DraugrSpawn_back_v1_21
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e8864e55be5b8941b5367187607bb59
+      internalID: 1898303880356026545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ziren_DraugrSpawn_back_v1_22
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0235b565754cc514fbe11c7e4b4df702
+      internalID: -3993223349152695157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

@@ -2007,6 +2007,7 @@ MonoBehaviour:
   - {fileID: 9135933523833713668, guid: 15e822cbfda255e4eb460bccb0cf1dd4, type: 3}
   - {fileID: 5528405723465036246, guid: 7e8c5f5a8e2484b41af357949b21ad4a, type: 3}
   EnemiesKilled: 0
+  EnemiesKilledThisRound: 0
   highScoreManager: {fileID: 686532657}
 --- !u!114 &486182826
 MonoBehaviour:
@@ -8860,6 +8861,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 486182824}
     m_Modifications:
+    - target: {fileID: 8718653746958554558, guid: 969b83f0a294ee74180c61879002264e,
+        type: 3}
+      propertyPath: m_Name
+      value: Maincharacter_placeholder
+      objectReference: {fileID: 0}
     - target: {fileID: 8718653747090892856, guid: 969b83f0a294ee74180c61879002264e,
         type: 3}
       propertyPath: curseIncrease
@@ -8869,11 +8875,6 @@ PrefabInstance:
         type: 3}
       propertyPath: curseMaxValue
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8718653746958554558, guid: 969b83f0a294ee74180c61879002264e,
-        type: 3}
-      propertyPath: m_Name
-      value: Maincharacter_placeholder
       objectReference: {fileID: 0}
     - target: {fileID: 8718653746958554556, guid: 969b83f0a294ee74180c61879002264e,
         type: 3}
