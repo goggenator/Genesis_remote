@@ -8,6 +8,7 @@ public class ItemManager : MonoBehaviour
     [SerializeField] HealthManager HP;
     [SerializeField] uint amountOfMeatEaten = 0;
     bool potionPickedUp = false;
+    bool firstMeatPickedUp = false;
     public bool OnPickUp(ItemType type)
     {
         switch(type)
@@ -24,14 +25,17 @@ public class ItemManager : MonoBehaviour
                     return false;
                 }
                 amountOfMeatEaten++;
+               
                 return true;
-            case ItemType.potion: 
+            case ItemType.potion:
+                FindObjectOfType<AudioManager>().Play("Potion");
                 curse.ResetCurse();
                 potionPickedUp = true;
+                
 
                 return true;
             case ItemType.bigMeat:
-                if(amountOfMeatEaten == 0)
+                if (amountOfMeatEaten == 0 )
                 {
                     curse.ActivateCurse();
                 }
@@ -39,6 +43,11 @@ public class ItemManager : MonoBehaviour
 
                 curse.IncreaseCurse();
                 amountOfMeatEaten++;
+                if (amountOfMeatEaten == 1 && firstMeatPickedUp == false)
+                {
+                    FindObjectOfType<AudioManager>().Play("CurseStarts");
+                    firstMeatPickedUp = true;
+                }
                 return true;
             default: return false;
         }

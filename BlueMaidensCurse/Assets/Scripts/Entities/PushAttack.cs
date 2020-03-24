@@ -18,6 +18,7 @@ public class PushAttack : MonoBehaviour
             {
                 collision.gameObject.GetComponentInParent<MovementManager>().Push(movement.GetFacingDirection(), pushStrength);
                 collision.gameObject.transform.parent.GetComponentInChildren<HealthManager>().OnHit(2);
+                FindObjectOfType<AudioManager>().Play("Push_Hit");
             }
         }
     }

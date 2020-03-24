@@ -8745,12 +8745,12 @@ PrefabInstance:
     - target: {fileID: 8148696977038051098, guid: 12242ff0d190e3542a27c911e4ac8cd4,
         type: 3}
       propertyPath: sounds.Array.size
-      value: 3
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8148696977038051098, guid: 12242ff0d190e3542a27c911e4ac8cd4,
         type: 3}
       propertyPath: sounds.Array.data[1].volume
-      value: 1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 8148696977038051098, guid: 12242ff0d190e3542a27c911e4ac8cd4,
         type: 3}
@@ -8760,7 +8760,7 @@ PrefabInstance:
     - target: {fileID: 8148696977038051098, guid: 12242ff0d190e3542a27c911e4ac8cd4,
         type: 3}
       propertyPath: sounds.Array.data[0].volume
-      value: 0.3
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 8148696977038051098, guid: 12242ff0d190e3542a27c911e4ac8cd4,
         type: 3}
@@ -8795,17 +8795,17 @@ PrefabInstance:
     - target: {fileID: 8148696977038051098, guid: 12242ff0d190e3542a27c911e4ac8cd4,
         type: 3}
       propertyPath: sounds.Array.data[3].name
-      value: ZombieDeath
+      value: CurseStarts
       objectReference: {fileID: 0}
     - target: {fileID: 8148696977038051098, guid: 12242ff0d190e3542a27c911e4ac8cd4,
         type: 3}
       propertyPath: sounds.Array.data[3].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 4d89b0d0deeae284d91ac1b9642556a5, type: 3}
+      objectReference: {fileID: 8300000, guid: 3ba86727638d9004481d9edb45128e86, type: 3}
     - target: {fileID: 8148696977038051098, guid: 12242ff0d190e3542a27c911e4ac8cd4,
         type: 3}
       propertyPath: sounds.Array.data[3].volume
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8148696977038051098, guid: 12242ff0d190e3542a27c911e4ac8cd4,
         type: 3}
@@ -8815,17 +8815,17 @@ PrefabInstance:
     - target: {fileID: 8148696977038051098, guid: 12242ff0d190e3542a27c911e4ac8cd4,
         type: 3}
       propertyPath: sounds.Array.data[4].name
-      value: ZombieDeath
+      value: Potion
       objectReference: {fileID: 0}
     - target: {fileID: 8148696977038051098, guid: 12242ff0d190e3542a27c911e4ac8cd4,
         type: 3}
       propertyPath: sounds.Array.data[4].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 4d89b0d0deeae284d91ac1b9642556a5, type: 3}
+      objectReference: {fileID: 8300000, guid: 21d98d678bfe6d745a0e4f5b7eb11e58, type: 3}
     - target: {fileID: 8148696977038051098, guid: 12242ff0d190e3542a27c911e4ac8cd4,
         type: 3}
       propertyPath: sounds.Array.data[4].volume
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8148696977038051098, guid: 12242ff0d190e3542a27c911e4ac8cd4,
         type: 3}
@@ -8835,13 +8835,13 @@ PrefabInstance:
     - target: {fileID: 8148696977038051098, guid: 12242ff0d190e3542a27c911e4ac8cd4,
         type: 3}
       propertyPath: sounds.Array.data[5].name
-      value: ZombieDeath
+      value: PlayerDamage
       objectReference: {fileID: 0}
     - target: {fileID: 8148696977038051098, guid: 12242ff0d190e3542a27c911e4ac8cd4,
         type: 3}
       propertyPath: sounds.Array.data[5].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 4d89b0d0deeae284d91ac1b9642556a5, type: 3}
+      objectReference: {fileID: 8300000, guid: 412d22b7d13bbad499f43e545bdc4adf, type: 3}
     - target: {fileID: 8148696977038051098, guid: 12242ff0d190e3542a27c911e4ac8cd4,
         type: 3}
       propertyPath: sounds.Array.data[5].volume
@@ -8850,6 +8850,26 @@ PrefabInstance:
     - target: {fileID: 8148696977038051098, guid: 12242ff0d190e3542a27c911e4ac8cd4,
         type: 3}
       propertyPath: sounds.Array.data[5].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8148696977038051098, guid: 12242ff0d190e3542a27c911e4ac8cd4,
+        type: 3}
+      propertyPath: sounds.Array.data[6].name
+      value: Push_Hit
+      objectReference: {fileID: 0}
+    - target: {fileID: 8148696977038051098, guid: 12242ff0d190e3542a27c911e4ac8cd4,
+        type: 3}
+      propertyPath: sounds.Array.data[6].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 2971a088edc658e4f8927b3cc93dc626, type: 3}
+    - target: {fileID: 8148696977038051098, guid: 12242ff0d190e3542a27c911e4ac8cd4,
+        type: 3}
+      propertyPath: sounds.Array.data[6].volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8148696977038051098, guid: 12242ff0d190e3542a27c911e4ac8cd4,
+        type: 3}
+      propertyPath: sounds.Array.data[6].pitch
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

@@ -8,6 +8,9 @@ public class HealthManager : MonoBehaviour
     [SerializeField] float HP;
     [SerializeField] float invulnerabilityTime;
     [SerializeField] string hit;
+    [SerializeField] string hitSound;
+    [SerializeField] string takeDamageSound;
+
     bool vulnerable = true;
 
     public void InitializeHealth(float givenHP)
@@ -19,6 +22,7 @@ public class HealthManager : MonoBehaviour
         if(HP > 0 && vulnerable)
         {
             HP -= damage;
+            FindObjectOfType<AudioManager>().Play(takeDamageSound);
             StartCoroutine(OnBeingInvulnerable());
         }
     }

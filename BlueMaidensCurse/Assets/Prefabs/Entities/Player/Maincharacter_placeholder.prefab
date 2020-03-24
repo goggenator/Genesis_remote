@@ -297,6 +297,9 @@ MonoBehaviour:
   MaxHP: 10
   HP: 0
   invulnerabilityTime: 3
+  hit: 
+  hitSound: 
+  takeDamageSound: PlayerDamage
 --- !u!114 &8718653747090892856
 MonoBehaviour:
   m_ObjectHideFlags: 0
