@@ -13,4 +13,9 @@ public class AnimationListener : MonoBehaviour
     {
         controller.SetIsDead();
     }
+    public void SetSpawned()
+    {
+        controller.SetIsSpawned();
+        controller.GetComponent<MovementManager>().SetFrozen(false);
+    }
 }

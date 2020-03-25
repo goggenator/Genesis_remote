@@ -30,7 +30,6 @@ ScriptsOnlyBuild:
     - Projectile
     - ProjectileShadow
     - PushAttack
-    - RandomEnemyController
     - Shoot
     - ShotGun
     - Spawner
@@ -53,8 +52,11 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateEditor
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -171,8 +173,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
-    - Class: 82
-      Script: {instanceID: 0}
     - Class: 83
       Script: {instanceID: 0}
     - Class: 91
@@ -272,8 +272,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13330}
     - Class: 114
-      Script: {instanceID: 13338}
-    - Class: 114
       Script: {instanceID: 13384}
     - Class: 114
       Script: {instanceID: 13408}
@@ -362,6 +360,10 @@ ScriptsOnlyBuild:
     - Class: 212
       Script: {instanceID: 0}
     - Class: 213
+      Script: {instanceID: 0}
+    - Class: 328
+      Script: {instanceID: 0}
+    - Class: 329
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -576,7 +578,7 @@ ScriptsOnlyBuild:
     className: PhysicsRaycaster
   - hash:
       serializedVersion: 2
-      Hash: 2b4cd52ecbfd067611ecc76dffadb3f4
+      Hash: 0f4e99a36b94073595e19f5b1d2a7ba3
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemyController
@@ -588,7 +590,7 @@ ScriptsOnlyBuild:
     className: Vignette
   - hash:
       serializedVersion: 2
-      Hash: 2b4cd52ecbfd067611ecc76dffadb3f4
+      Hash: 0f4e99a36b94073595e19f5b1d2a7ba3
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DraugController
@@ -648,7 +650,7 @@ ScriptsOnlyBuild:
     className: Mask
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: a9b32391d3b567fb9c345b0807dae7c6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DropItem
@@ -702,13 +704,13 @@ ScriptsOnlyBuild:
     className: ControlPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: 552056f7bb29237894249fa7cdeb443a
+      Hash: fb3ac13220e111b482f2d1869e465f8f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Projectile
   - hash:
       serializedVersion: 2
-      Hash: d8ecbdf20d1e1887cf31cda7f7865f0b
+      Hash: 203b2d92bbd52ac1c21637709719a0f3
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
@@ -768,7 +770,7 @@ ScriptsOnlyBuild:
     className: LightweightRenderPipelineAsset
   - hash:
       serializedVersion: 2
-      Hash: ad8fae1839c4bf6a6b5c54c9195b6f42
+      Hash: 53e414a6b5e7769b88598fd457051f48
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Spawner
@@ -882,7 +884,7 @@ ScriptsOnlyBuild:
     className: RecorderBindings
   - hash:
       serializedVersion: 2
-      Hash: 24c6a565f3dc326b4e9142a1a07d6c80
+      Hash: 49ec7ba72fa9a06b9c32e2ceaae284a5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: HealthManager
@@ -918,7 +920,7 @@ ScriptsOnlyBuild:
     className: Weapon
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 8b3e306e8beb38b4a7c9ebbe638a9884
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EntityController
@@ -1014,7 +1016,7 @@ ScriptsOnlyBuild:
     className: BasicMovement
   - hash:
       serializedVersion: 2
-      Hash: c59af9ae193925edf50f9d611cf1cfba
+      Hash: 45850a07e5660a9239d9670962df8833
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AltEnemyController
@@ -1026,7 +1028,7 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
-      Hash: a9490ea6f96101ae31ddf1d9e45ac62a
+      Hash: ba8875e908e97b866525dc9d19f7569f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GastController
@@ -1098,7 +1100,7 @@ ScriptsOnlyBuild:
     className: TMP_StyleSheet
   - hash:
       serializedVersion: 2
-      Hash: 870622bec6345c060e1fb551e5289baf
+      Hash: 7141c1ed0cdecf8180e2fe3c371a5837
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EntityManager
@@ -1206,7 +1208,7 @@ ScriptsOnlyBuild:
     className: StandaloneInputModule
   - hash:
       serializedVersion: 2
-      Hash: 5d8ddb5821d49e0f3b2b53b1c493d6bf
+      Hash: 4b211ac10264bc545efc67ffe639dc33
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: RandomEnemyController
@@ -1255,7 +1257,8 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/intro screen.unity
-  - Assets/Scenes/Bluemaidenscurse main menu.unity
   - Assets/Scenes/on play intro.unity
+  - Assets/Scenes/Bluemaidenscurse main menu.unity
   - Assets/Scenes/SampleScene.unity
-  playerPath: D:/Backup/Build/New Unity Project (1).exe
+  playerPath: C:/Users/Tinyb/OneDrive/Dokument/Skoldokument Uppsala Universitet/New
+    Unity Project (1).exe

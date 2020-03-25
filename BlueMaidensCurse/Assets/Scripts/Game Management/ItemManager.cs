@@ -9,6 +9,7 @@ public class ItemManager : MonoBehaviour
     [SerializeField] uint amountOfMeatEaten = 0;
     bool potionPickedUp = false;
     bool firstMeatPickedUp = false;
+    bool soundPlayed = false;
     public bool OnPickUp(ItemType type)
     {
         switch(type)
@@ -18,7 +19,6 @@ public class ItemManager : MonoBehaviour
                 {
                     curse.IncreaseCurse();
                     HP.OnHeal(3);
-
                 }
                 else
                 {

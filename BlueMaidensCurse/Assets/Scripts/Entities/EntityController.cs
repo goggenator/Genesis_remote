@@ -6,8 +6,10 @@ public class EntityController : MonoBehaviour
 {
     protected MovementManager movement;
     bool isDead = false;
+    bool isSpawned = false;
     protected HealthManager HP;
     [SerializeField] string deathSound;
+    public Vector2 SpawnDirection;
 
     public void OnHit(int damage)
     {
@@ -24,9 +26,22 @@ public class EntityController : MonoBehaviour
         }
     }
 
+    public void SetSpawnDirection(Vector2 givenDirections)
+    {
+        SpawnDirection = givenDirections;
+    }
+
     public void SetIsDead()
     {
         isDead = true;
+    }
+    public void SetIsSpawned()
+    {
+        isSpawned = true;
+    }
+    public bool GetIsSpawned()
+    {
+        return isSpawned;
     }
     public bool GetIsDead()
     {

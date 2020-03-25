@@ -16,6 +16,10 @@ public class EnemyController : EntityController
     protected Vector2 targetPosition;
     [SerializeField] protected uint score;
 
+    public void Awake()
+    {
+        movement.SetFrozen(true);
+    }
     public uint GetScore()
     {
         return score;
