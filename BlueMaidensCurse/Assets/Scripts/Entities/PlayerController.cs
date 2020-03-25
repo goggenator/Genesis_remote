@@ -11,7 +11,6 @@ public class PlayerController : EntityController
         movement = GetComponent<MovementManager>();
         HP = GetComponentInChildren<HealthManager>();
         HP.InitializeHealth(HP.GetMaxHP()*0.20f);
-        FindObjectOfType<AudioManager>().Play("Spawn_Boss");
     }
     public void Move(KeyCode key)
     {
