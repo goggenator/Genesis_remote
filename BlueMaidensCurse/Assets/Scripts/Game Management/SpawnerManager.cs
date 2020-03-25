@@ -53,6 +53,7 @@ public class SpawnerManager : MonoBehaviour
     public void SpawnBoss()
     {
         Debug.Log("Spawning Boss!!");
+        FindObjectOfType<AudioManager>().Play("Spawn_Boss");
         bossSpawner.Spawn(entityManager);
     }
 

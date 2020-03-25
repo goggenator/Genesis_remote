@@ -341,7 +341,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5745f6db53dd7174ab9539435bd062cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathSound: 
+  deathSound: WitchDeath
   score: 5000
   walking: 0
   waitUntilChangeDirection: 0.3
@@ -509,6 +509,8 @@ MonoBehaviour:
   HP: 0
   invulnerabilityTime: 0
   hit: 
+  hitSound: 
+  takeDamageSound: 
 --- !u!1 &3873794667348691747
 GameObject:
   m_ObjectHideFlags: 0

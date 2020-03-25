@@ -156,7 +156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b722a05d88b9b144bc6cd6fe9bbd5cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 3
   movementDirection: {x: 0, y: 0}
   despawnTime: 10
 --- !u!114 &4017618543409302735

@@ -16,8 +16,10 @@ public class ItemManager : MonoBehaviour
             case ItemType.meat:
                 if(HP.GetHP() < 9)
                 {
+                    FindObjectOfType<AudioManager>().Play("Eat_Small");
                     curse.IncreaseCurse();
                     HP.OnHeal(3);
+                    
 
                 }
                 else
@@ -39,8 +41,8 @@ public class ItemManager : MonoBehaviour
                 {
                     curse.ActivateCurse();
                 }
+                FindObjectOfType<AudioManager>().Play("Eat_Big");
                 HP.OnRestoreHP();
-
                 curse.IncreaseCurse();
                 amountOfMeatEaten++;
                 if (amountOfMeatEaten == 1 && firstMeatPickedUp == false)
