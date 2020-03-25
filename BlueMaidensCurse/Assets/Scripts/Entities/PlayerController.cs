@@ -10,7 +10,7 @@ public class PlayerController : EntityController
     {
         movement = GetComponent<MovementManager>();
         HP = GetComponentInChildren<HealthManager>();
-        HP.InitializeHealth(HP.GetMaxHP()*0.20f);
+        HP.InitializeHealth(HP.GetMaxHP() * 0.20f);
     }
     public void Move(KeyCode key)
     {

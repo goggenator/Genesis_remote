@@ -194,7 +194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96e45f05726f3844db719dc14bbd5be0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathSound: 
+  deathSound: PlayerDeath
   equippedWeapon: {fileID: 1662575993602676119}
 --- !u!114 &8718653746958554559
 MonoBehaviour:
