@@ -24,6 +24,7 @@ public class Game : MonoBehaviour
     private void Awake()
     {
         I = this;
+        FindObjectOfType<AudioManager>().Play("PlayerSpawn");
     }
 
     public void Update()
@@ -58,6 +59,7 @@ public class Game : MonoBehaviour
             if (Player.GetComponentInChildren<HealthManager>().GetHP() <= 0)
             {
                 Player.GetComponent<MovementManager>().OnDeath();
+                FindObjectOfType<AudioManager>().Play("PlayerDeath");
                 DeathScreen.SetActive(true);
             }
         }

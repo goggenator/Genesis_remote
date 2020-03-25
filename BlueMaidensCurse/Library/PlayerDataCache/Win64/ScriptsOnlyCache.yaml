@@ -578,7 +578,11 @@ ScriptsOnlyBuild:
     className: PhysicsRaycaster
   - hash:
       serializedVersion: 2
+<<<<<<< HEAD
       Hash: 0f4e99a36b94073595e19f5b1d2a7ba3
+=======
+      Hash: d7c486bf9f71653acbdb19b9d84d596d
+>>>>>>> master
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemyController
@@ -590,7 +594,11 @@ ScriptsOnlyBuild:
     className: Vignette
   - hash:
       serializedVersion: 2
+<<<<<<< HEAD
       Hash: 0f4e99a36b94073595e19f5b1d2a7ba3
+=======
+      Hash: d7c486bf9f71653acbdb19b9d84d596d
+>>>>>>> master
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DraugController
@@ -710,7 +718,11 @@ ScriptsOnlyBuild:
     className: Projectile
   - hash:
       serializedVersion: 2
+<<<<<<< HEAD
       Hash: 203b2d92bbd52ac1c21637709719a0f3
+=======
+      Hash: 5a00a7f9e1be5e00211747dc6aa78b82
+>>>>>>> master
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
@@ -920,7 +932,11 @@ ScriptsOnlyBuild:
     className: Weapon
   - hash:
       serializedVersion: 2
+<<<<<<< HEAD
       Hash: 8b3e306e8beb38b4a7c9ebbe638a9884
+=======
+      Hash: d7e7dcc8fb1dc8261dc71305059dc97a
+>>>>>>> master
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EntityController
@@ -1016,7 +1032,11 @@ ScriptsOnlyBuild:
     className: BasicMovement
   - hash:
       serializedVersion: 2
+<<<<<<< HEAD
       Hash: 45850a07e5660a9239d9670962df8833
+=======
+      Hash: 7449872afb360fdc7bd22173828ae1c7
+>>>>>>> master
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AltEnemyController
@@ -1028,7 +1048,11 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
+<<<<<<< HEAD
       Hash: ba8875e908e97b866525dc9d19f7569f
+=======
+      Hash: 5dc83e6e6ffc41746b60c9cbb5e4d7e0
+>>>>>>> master
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GastController
@@ -1208,7 +1232,11 @@ ScriptsOnlyBuild:
     className: StandaloneInputModule
   - hash:
       serializedVersion: 2
+<<<<<<< HEAD
       Hash: 4b211ac10264bc545efc67ffe639dc33
+=======
+      Hash: ce794eaac88a4e90c2b02232499f343a
+>>>>>>> master
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: RandomEnemyController
@@ -1260,5 +1288,9 @@ ScriptsOnlyBuild:
   - Assets/Scenes/on play intro.unity
   - Assets/Scenes/Bluemaidenscurse main menu.unity
   - Assets/Scenes/SampleScene.unity
+<<<<<<< HEAD
   playerPath: C:/Users/Tinyb/OneDrive/Dokument/Skoldokument Uppsala Universitet/New
     Unity Project (1).exe
+=======
+  playerPath: C:/Users/9904niha/Desktop/FinalBuild/New Unity Project (1).exe
+>>>>>>> master

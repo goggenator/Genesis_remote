@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 8148696977038051099}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.4155, y: 1.4155, z: 1.4155}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -46,16 +46,97 @@ MonoBehaviour:
   sounds:
   - name: Gunshot
     clip: {fileID: 8300000, guid: a47b861aa4e874248a987a3d5e4d524e, type: 3}
-    volume: 0
-    pitch: 0.1
+    volume: 0.08
+    pitch: 1
+    loop: 0
     source: {fileID: 0}
   - name: Music
     clip: {fileID: 8300000, guid: 8ee48203d0adab34a935ff9016b8fbf1, type: 3}
-    volume: 0
-    pitch: 0.1
+    volume: 0.05
+    pitch: 1
+    loop: 1
     source: {fileID: 0}
-  - name: 
-    clip: {fileID: 0}
-    volume: 0
-    pitch: 0.1
+  - name: ZombieDeath
+    clip: {fileID: 8300000, guid: 4d89b0d0deeae284d91ac1b9642556a5, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: CurseStarts
+    clip: {fileID: 8300000, guid: 3ba86727638d9004481d9edb45128e86, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Potion
+    clip: {fileID: 8300000, guid: 21d98d678bfe6d745a0e4f5b7eb11e58, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: PlayerDamage
+    clip: {fileID: 8300000, guid: 412d22b7d13bbad499f43e545bdc4adf, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Push_Hit
+    clip: {fileID: 8300000, guid: ee58d416b9f767a4fa3711a8d5d881d0, type: 3}
+    volume: 0.4
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Eat_Small
+    clip: {fileID: 8300000, guid: ec74e83e134efff49aacb377f5675d17, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Eat_Big
+    clip: {fileID: 8300000, guid: bfd4934bf34d2854d92c9517690df5db, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: BossDeath
+    clip: {fileID: 8300000, guid: c7939aff6e98cc7448b08b3ab8aab99e, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Spawn_Boss
+    clip: {fileID: 8300000, guid: af3253fa7fdf8c44e932ae0688dc5d35, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: PlayerDeath
+    clip: {fileID: 8300000, guid: 2b959b370c2458244a6cad66f96433a8, type: 3}
+    volume: 0.7
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: PlayerSpawn
+    clip: {fileID: 8300000, guid: 5e9c66697616b824bba77bf1503b5ad7, type: 3}
+    volume: 0.4
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Whisper1
+    clip: {fileID: 8300000, guid: e4a9beb5f6cc5694fa5fdd681e1ea4ce, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Whisper2
+    clip: {fileID: 8300000, guid: 3cb2191dda9cc064796cb4f16607ce13, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Whisper3
+    clip: {fileID: 8300000, guid: 2a9350c78c08f074487ea44c62c52836, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
     source: {fileID: 0}
