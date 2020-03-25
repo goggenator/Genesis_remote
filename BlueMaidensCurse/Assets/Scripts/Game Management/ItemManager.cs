@@ -20,13 +20,14 @@ public class ItemManager : MonoBehaviour
                     FindObjectOfType<AudioManager>().Play("Eat_Small");
                     curse.IncreaseCurse();
                     HP.OnHeal(3);
+                    amountOfMeatEaten++;
+                    PlaySound();
                 }
                 else
                 {
                     return false;
                 }
-                amountOfMeatEaten++;
-                PlaySound();
+                
 
                 return true;
             case ItemType.potion:
@@ -40,6 +41,8 @@ public class ItemManager : MonoBehaviour
                 if (amountOfMeatEaten == 0)
                 {
                     curse.ActivateCurse();
+                    FindObjectOfType<AudioManager>().Play("CurseStarts");
+                    FindObjectOfType<AudioManager>().Play("PlayerEatFirstMeat");
                 }
                 FindObjectOfType<AudioManager>().Play("Eat_Big");
                 HP.OnRestoreHP();
@@ -47,26 +50,16 @@ public class ItemManager : MonoBehaviour
                 amountOfMeatEaten++;
                 PlaySound();
 
-                if (amountOfMeatEaten == 1 && firstMeatPickedUp == false)
-                {
-                    FindObjectOfType<AudioManager>().Play("CurseStarts");
-                    FindObjectOfType<AudioManager>().Play("PlayerEatFirstMeat");
-                    firstMeatPickedUp = true;
-                }
                 return true;
             default: return false;
         }
     }
     public void PlaySound()
     {
-        if (amountOfMeatEaten % 5 == 0)
+        if (amountOfMeatEaten % 4 == 0)
         {
             string[] WhisperArray = new string[3] { "Whisper1", "Whisper2", "Whisper3" };
-            FindObjectOfType<AudioManager>().Play(WhisperArray[Random.Range(0, 4)]); 
-        }
-        else
-        {
-            return;
+            FindObjectOfType<AudioManager>().Play(WhisperArray[Random.Range(0, 4)]);
         }
     }
 
