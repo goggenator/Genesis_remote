@@ -6,12 +6,13 @@ public class AltEnemyController : EnemyController
 {
     [SerializeField] bool walking = false;
     [SerializeField]float waitUntilChangeDirection;
-    private void Awake()
+    private void Awake() 
     {
         movement = GetComponent<MovementManager>();
         HP = GetComponentInChildren<HealthManager>();
         HP.InitializeHealth(HP.GetMaxHP());
         targetPosition = Vector2.zero;
+        movement.SetFrozen(false);
     }
     public virtual void Update()
     {

@@ -7,6 +7,7 @@ public class DraugController : EnemyController
     public void Awake()
     {
         movement = GetComponent<MovementManager>();
+        movement.SetFrozen(true);
         HP = GetComponentInChildren<HealthManager>();
         HP.InitializeHealth(HP.GetMaxHP());
     }

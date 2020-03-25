@@ -37,7 +37,10 @@ public class Spawner : MonoBehaviour
                     break;
             }
             newEnemy.SetSpawnDirection(directionToGive);
-            newEnemy.GetComponent<MovementManager>().SetFrozen(true);
+            if(newEnemy is DraugController)
+            {
+                newEnemy.GetComponent<MovementManager>().SetFrozen(true);
+            }
             entityManager.AddEnemyToList(newEnemy);
         }
     }

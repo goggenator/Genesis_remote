@@ -957,8 +957,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a87552f6d6390a543accd8f6089313e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-=======
 --- !u!1 &5753104782376022381
 GameObject:
   m_ObjectHideFlags: 0
@@ -1030,7 +1028,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pushStrength: 600
->>>>>>> master
 --- !u!1 &6166072758840509210
 GameObject:
   m_ObjectHideFlags: 0
